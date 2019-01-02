@@ -1,0 +1,614 @@
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\ApplicationInsights.config
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Owin.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\WebGrease.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\nicol\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\ApplicationInsights.config
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\WebApplication1.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\EntityFramework.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Owin.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\WebGrease.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\EntityFramework.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+D:\Example-of-Microservices\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+D:\Example-of-Microservices\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\ApplicationInsights.config
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Owin.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\WebGrease.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\nicol\Desktop\Example-of-Microservices-\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\ApplicationInsights.config
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Owin.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\WebGrease.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\nicol\OneDrive\שולחן העבודה\Example-of-Microservices-\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\Example-of-Microservices\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\ApplicationInsights.config
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Owin.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\WebGrease.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\daniera3\Documents\GitHub\Example-of-Microservices\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\ApplicationInsights.config
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Owin.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\WebGrease.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\IronPython.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\IronPython.Modules.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\IronPython.SQLite.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\IronPython.Wpf.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Dynamic.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Scripting.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Scripting.Metadata.dll
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\IronPython.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\IronPython.Modules.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\IronPython.SQLite.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\IronPython.Wpf.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Dynamic.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Scripting.xml
+C:\Users\97254\Documents\microserviceProject\Example-of-Microservices\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Scripting.Metadata.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\IronPython.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\IronPython.Modules.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\IronPython.SQLite.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\IronPython.Wpf.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Dynamic.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Scripting.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Scripting.Metadata.dll
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\IronPython.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\IronPython.Modules.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\IronPython.SQLite.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\IronPython.Wpf.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Dynamic.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Scripting.xml
+D:\Example-of-Microservices\WebApplication1\WebApplication1\bin\Microsoft.Scripting.Metadata.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\ApplicationInsights.config
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\WebApplication1.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\EntityFramework.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\IronPython.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\IronPython.Modules.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\IronPython.SQLite.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\IronPython.Wpf.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.AI.Agent.Intercept.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Dynamic.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Scripting.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Scripting.Metadata.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Owin.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\WebGrease.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\IronPython.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\IronPython.Modules.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\IronPython.SQLite.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\IronPython.Wpf.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Dynamic.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Scripting.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Scripting.Metadata.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\EntityFramework.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Core.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Facebook.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Cookies.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Google.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+D:\asp.net-nvc-movies\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
