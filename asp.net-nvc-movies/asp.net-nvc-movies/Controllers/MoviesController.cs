@@ -58,18 +58,7 @@ namespace WebApplication1.Controllers
             
             return View();
         }
-        public ActionResult AddNewMovie(Movies movie)
-        {
-            if (ModelState.IsValid) {
-                MoviesDal dal = new MoviesDal();
-                dal.Movie.Add(movie);
-                dal.SaveChanges();
-                return View(movie);
-            }
-            else
-                return View(movie);
-
-        }
+      
     }
 
 }

@@ -10,16 +10,16 @@
 
 <div>
 
-    @using (Html.BeginForm("submit", "Movies", FormMethod.Post))
+    @using (Html.BeginForm("AddStars", "Movies", FormMethod.Post))
     {
         <i>title:</i> @Html.TextBoxFor(m => m.Title) @Html.ValidationMessageFor(x => x.Title)
-        <br />
+        <br /><br />
         <i>Rating:</i> @Html.TextBoxFor(m => m.Rating) @Html.ValidationMessageFor(x => x.Rating)
-        <br />
+        <br /><br />
         <i>Outline:</i> @Html.TextBoxFor(m => m.Outline) @Html.ValidationMessageFor(x => x.Outline)
-        <br />
+        <br /><br />
         <i>Certificate:</i> @Html.TextBoxFor(m => m.Certificate) @Html.ValidationMessageFor(x => x.Certificate)
-        <br />
+        <br /><br />
         <input id="Submit1" type="submit" value="submit" />
     }
 </div>
