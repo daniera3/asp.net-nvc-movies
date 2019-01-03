@@ -1,0 +1,591 @@
+﻿@using WebApplication1.Models;
+@using System.Collections.Generic;
+@{
+    ViewBag.Title = "_panelSite";
+    List<Movies> Movie;
+    List<Ganers> Ganer;
+    if (TempData["MovieList"] != null)
+    {
+        Movie = ((IEnumerable<Movies>)TempData["MovieList"]).Cast<Movies>().ToList();
+    }
+    else
+    {
+        Movie = new List<Movies>();
+    }
+    if (TempData["GanersList"] != null)
+    {
+         Ganer = ((IEnumerable<Ganers>)TempData["GanersList"]).Cast<Ganers>().ToList();
+    }
+    else
+    {
+         Ganer = new List<Ganers>();
+    }
+}
+
+
+<script type='text/javascript'>var ue_t0 = ue_t0 || +new Date();</script>
+<script type='text/javascript'>
+    window.ue_ihb = (window.ue_ihb || window.ueinit || 0) + 1;
+    if (window.ue_ihb === 1) {
+
+        var ue_csm = window,
+        var ue_err_chan = 'jserr';
+        (function (d, e) {
+            function h(f, b) { if (!(a.ec > a.mxe) && f) { a.ter.push(f); b = b || {}; var c = f.logLevel || b.logLevel; c && c !== k && c !== m && c !== n && c !== p || a.ec++; c && c != k || a.ecf++; b.pageURL = "" + (e.location ? e.location.href : ""); b.logLevel = c; b.attribution = f.attribution || b.attribution; a.erl.push({ ex: f, info: b }) } } function l(a, b, c, e, g) { d.ueLogError({ m: a, f: b, l: c, c: "" + e, err: g, fromOnError: 1, args: arguments }, g ? { attribution: g.attribution, logLevel: g.logLevel } : void 0); return !1 } var k = "FATAL", m = "ERROR", n = "WARN", p = "DOWNGRADED", a = {
+                ec: 0, ecf: 0,
+                pec: 0, ts: 0, erl: [], ter: [], mxe: 50, startTimer: function () { a.ts++; setInterval(function () { d.ue && a.pec < a.ec && d.uex("at"); a.pec = a.ec }, 1E4) }
+            }; l.skipTrace = 1; h.skipTrace = 1; h.isStub = 1; d.ueLogError = h; d.ue_err = a; e.onerror = l
+        })(ue_csm, window);
+
+
+        var ue_id = 'JXKXRQN964A1P4YRS6YE',
+            ue_url,
+            ue_navtiming = 1,
+            ue_mid = 'A1EVAM02EL8SFB',
+            ue_sid = '130-2305925-2976168',
+            ue_sn = 'www.imdb.com',
+            ue_furl = 'fls-na.amazon.com',
+            ue_surl = 'https://unagi-na.amazon.com/1/events/com.amazon.csm.nexusclient.prod',
+            ue_int = 0,
+            ue_fcsn = 1,
+            ue_urt = 3,
+            ue_rpl_ns = 'cel-rpl',
+            ue_ddq = 1,
+            ue_fpf = '//fls-na.amazon.com/1/batch/1/OP/A1EVAM02EL8SFB:130-2305925-2976168:JXKXRQN964A1P4YRS6YE$uedata=s:',
+            ue_rsc = 0,
+            ue_mcimp = 0,
+            ue_sbuimp = 1,
+
+            ue_swi = 1;
+        function ue_viz() {
+            (function (c, e, a) {
+                function k(b) { if (c.ue.viz.length < p && !l) { var a = b.type; b = b.originalEvent; /^focus./.test(a) && b && (b.toElement || b.fromElement || b.relatedTarget) || (a = e[m] || ("blur" == a || "focusout" == a ? "hidden" : "visible"), c.ue.viz.push(a + ":" + (+new Date - c.ue.t0)), "visible" == a && (ue.isl && uex("at"), l = 1)) } } for (var l = 0, f, g, m, n = ["", "webkit", "o", "ms", "moz"], d = 0, p = 20, h = 0; h < n.length && !d; h++)if (a = n[h], f = (a ? a + "H" : "h") + "idden", d = "boolean" == typeof e[f]) g = a + "visibilitychange", m = (a ? a + "V" : "v") + "isibilityState";
+                k({}); d && e.addEventListener(g, k, 0); c.ue && d && (c.ue.pageViz = { event: g, propHid: f })
+            })(ue_csm, document, window)
+        };
+
+        (function (a, g, u) {
+            function x(a) { return a && a.replace && a.replace(/^\s+|\s+$/g, "") } function q(a) { return "undefined" === typeof a } function y(a) { try { var b = u.cookie.match(RegExp("(^| )" + a + "=([^;]+)")); if (b) return b[2].trim() } catch (c) { } } function A(d, b) { d && (a.ue_id = h.id = h.rid = d, a.ue_fpf = a.ue_fpf.replace(/((.*?:){2})(\w+)/, function (a, b) { return b + d })); b && (a.ue_fpf = a.ue_fpf.replace(/(.*?:)(\w|-)+/, function (a, d) { return d + b }), a.ue_sid = b); a.ue.tag("accelerated-experience") } function t(d, b, c, k) {
+                var g = k || +new Date, n;
+                a.ueam && a.ueam(b, d, k); if (b || q(c)) { if (d) for (n in k = b ? f("t", b) || f("t", b, {}) : a.ue.t, k[d] = g, c) c.hasOwnProperty(n) && f(n, b, c[n]); return g }
+            } function f(d, b, c) { var f = a.ue, g = b && b != f.id ? f.sc[b] : f; g || (g = f.sc[b] = {}); "id" == d && c && (f.cfa2 = 1); return g[d] = c || g[d] } function C(d, b, c, f, g) { c = "on" + c; var n = b[c]; "function" === typeof n ? d && (a.ue.h[d] = n) : n = function () { }; b[c] = g ? function (a) { f(a); n(a) } : function (a) { n(a); f(a) }; b[c] && (b[c].isUeh = 1) } function D(d, b, c) {
+                function k(b, c) {
+                    var e = [b], J = 0, g = {}, n, k; c ? (e.push("m=1"), g[c] = 1) : g = a.ue.sc;
+                    for (k in g) if (g.hasOwnProperty(k)) { var l = f("wb", k), h = f("t", k) || {}, p = f("t0", k) || a.ue.t0, m; if (c || 2 == l) { l = l ? J++ : ""; e.push("sc" + l + "=" + k); for (m in h) 3 >= m.length && !q(h[m]) && null !== h[m] && e.push(m + l + "=" + (h[m] - p)); e.push("t" + l + "=" + h[d]); if (f("ctb", k) || f("wb", k)) n = 1 } } !z && n && e.push("ctb=1"); return e.join("&")
+                } function B(b, c, d, e) {
+                    if (b) {
+                        var f = a.ue_err, k; a.ue_url && (!e || !a.ue.log) && b && 0 < b.length && (k = new Image, a.ue.iel.push(k), k.src = b); K ? a.ue_fpf && g.encodeURIComponent && b && (e = new Image, b = "" + a.ue_fpf + g.encodeURIComponent(b) +
+                            ":" + (+new Date - a.ue_t0), a.ue.iel.push(e), e.src = b) : a.ue.log && (k = g.chrome && "ul" == c, a.ue.log(b, "uedata", a.ue_svi ? { n: 1, img: !e && k ? 1 : 0 } : { n: 1 }), a.ue.ielf.push(b)); f && !f.ts && f.startTimer(); a.ue.b && (f = a.ue.b, a.ue.b = "", B(f, c, d, 1))
+                    }
+                } function n(b) {
+                    if (!ue.collected) {
+                        var c = b.timing, e = b.navigation, d = ue.t; c && (d.na_ = c.navigationStart, d.ul_ = c.unloadEventStart, d._ul = c.unloadEventEnd, d.rd_ = c.redirectStart, d._rd = c.redirectEnd, d.fe_ = c.fetchStart, d.lk_ = c.domainLookupStart, d._lk = c.domainLookupEnd, d.co_ = c.connectStart, d._co =
+                            c.connectEnd, d.sc_ = c.secureConnectionStart, d.rq_ = c.requestStart, d.rs_ = c.responseStart, d._rs = c.responseEnd, d.dl_ = c.domLoading, d.di_ = c.domInteractive, d.de_ = c.domContentLoadedEventStart, d._de = c.domContentLoadedEventEnd, d._dc = c.domComplete, d.ld_ = c.loadEventStart, d._ld = c.loadEventEnd, c = d.na_, b = "function" !== typeof b.now || q(c) ? 0 : new Date(c + b.now()) - new Date, d.ntd = b + a.ue.t0); e && (d.ty = e.type + a.ue.t0, d.rc = e.redirectCount + a.ue.t0); ue.collected = 1
+                    }
+                } function s(b) {
+                    var c = r && r.navigation ? r.navigation.type : w, d = c &&
+                        2 != c, e = a.ue.bfini; a.ue.cfa2 || (e && 1 < e && (b += "&bfform=1", d || (a.ue.isBFT = e - 1)), 2 == c && (b += "&bfnt=1", a.ue.isBFT = a.ue.isBFT || 1), a.ue.ssw && a.ue.isBFT && (q(a.ue.isNRBF) && (c = a.ue.ssw(a.ue.oid), c.e || q(c.val) || (a.ue.isNRBF = 1 < c.val ? 0 : 1)), q(a.ue.isNRBF) || (b += "&nrbf=" + a.ue.isNRBF)), a.ue.isBFT && !a.ue.isNRBF && (b += "&bft=" + a.ue.isBFT)); return b
+                } if (!h.paused && (b || q(c))) {
+                    for (var p in c) c.hasOwnProperty(p) && f(p, b, c[p]); t("pc", b, c); p = f("id", b) || a.ue.id; var e = a.ue.url + "?" + d + "&v=" + a.ue.v + "&id=" + p, z = f("ctb", b) || f("wb", b), r =
+                        g.performance || g.webkitPerformance, l, m; z && (e += "&ctb=" + z); 1 < a.ueinit && (e += "&ic=" + a.ueinit); !a.ue._fi || "at" != d || b && b != p || (e += a.ue._fi()); if (!("ld" != d && "ul" != d || b && b != p)) {
+                            if ("ld" == d) { try { g.onbeforeunload && g.onbeforeunload.isUeh && (g.onbeforeunload = null) } catch (y) { } if (g.chrome) for (m = 0; m < ue.ulh.length; m++)E("beforeunload", ue.ulh[m]); (m = u.ue_backdetect) && m.ue_back && m.ue_back.value++; a._uess && (l = a._uess()); a.ue.isl = 1 } ue._bf && (e += "&bf=" + ue._bf()); a.ue_navtiming && r && r.timing && (f("ctb", p, "1"), 1 == a.ue_navtiming &&
+                                t("tc", w, w, r.timing.navigationStart)); r && n(r); a.ue.t.hob = a.ue_hob; a.ue.t.hoe = a.ue_hoe; a.ue.ifr && (e += "&ifr=1")
+                        } t(d, b, c); c = "ld" == d && b && f("wb", b); var v; c || b && b !== p || L(b); c || p == a.ue.oid || M((f("t", b) || {}).tc || +f("t0", b), +f("t0", b)); a.ue_mbl && a.ue_mbl.cnt && !c && (e += a.ue_mbl.cnt()); c ? f("wb", b, 2) : "ld" == d && (h.lid = x(p)); for (v in a.ue.sc) if (1 == f("wb", v)) break; if (c) { if (a.ue.s) return; e = k(e, null) } else m = k(e, null), m != e && (m = s(m), a.ue.b = m), l && (e += l), e = k(e, b || a.ue.id); e = s(e); if (a.ue.b || c) for (v in a.ue.sc) 2 == f("wb",
+                            v) && delete a.ue.sc[v]; l = 0; ue._rt && (e += "&rt=" + ue._rt()); c || (a.ue.s = 0, (l = a.ue_err) && 0 < l.ec && l.pec < l.ec && (l.pec = l.ec, e += "&ec=" + l.ec + "&ecf=" + l.ecf), l = f("ctb", b), f("t", b, {})); e && a.ue.tag && 0 < a.ue.tag().length && (e += "&csmtags=" + a.ue.tag().join("|"), a.ue.tag = a.ue.tagC()); e && a.ue.viz && 0 < a.ue.viz.length && (e += "&viz=" + a.ue.viz.join("|"), a.ue.viz = []); e && !q(a.ue_pty) && (e += "&pty=" + a.ue_pty + "&spty=" + a.ue_spty + "&pti=" + a.ue_pti); e && a.ue.tabid && (e += "&tid=" + a.ue.tabid); e && a.ue.aftb && (e += "&aftb=1"); e && a.ue.sbf && (e += "&sbf=1");
+                    !a.ue._ui || b && b != p || (e += a.ue._ui()); a.ue.a = e; B(e, d, l, c)
+                }
+            } function L(a) { var b = g.ue_csm_markers || {}, c; for (c in b) b.hasOwnProperty(c) && t(c, a, w, b[c]) } function s(d, b, c) { c = c || g; a.ue_pel && window.EventTarget && window.EventTarget.prototype && window.EventTarget.prototype.addEventListener ? window.EventTarget.prototype.addEventListener.call(c, d, b, !!window.ue_clf) : c.addEventListener ? c.addEventListener(d, b, !!window.ue_clf) : c.attachEvent && c.attachEvent("on" + d, b) } function E(d, b, c) {
+                c = c || g; a.ue_pel && window.EventTarget &&
+                    window.EventTarget.prototype && window.EventTarget.prototype.removeEventListener ? window.EventTarget.prototype.removeEventListener.call(c, d, b, !!window.ue_clf) : c.removeEventListener ? c.removeEventListener(d, b, !!window.ue_clf) : c.detachEvent && c.detachEvent("on" + d, b)
+            } function F() {
+                function d() { a.onUl() } function b(a) { return function () { c[a] || (c[a] = 1, D(a)) } } var c = a.ue.r, f, h; a.onLd = b("ld"); a.onLdEnd = b("ld"); a.onUl = b("ul"); f = { stop: b("os") }; g.chrome ? (s("beforeunload", d), ue.ulh.push(d)) : f[N] = a.onUl; for (h in f) f.hasOwnProperty(h) &&
+                    C(0, g, h, f[h]); a.ue_viz && ue_viz(); O && s("readystatechange", P, u); s("load", a.onLd); t("ue")
+            } function P() { "complete" === u.readyState && (Q ? setTimeout(G, 0) : G()) } function G() { var d; if (!(d = ue.isl) && (d = R)) a: { d = u.images || []; for (var b = 0; b < d.length; b++)if (!1 === d[b].complete) { d = !1; break a } d = !0 } if (!d) a.onUl() } function M(d, b) { a.ue_mbl && a.ue_mbl.ajax && a.ue_mbl.ajax(d, b); a.ue.tag("ajax-transition") } a.ueinit = (a.ueinit || 0) + 1; var h = {
+                t0: g.aPageStart || a.ue_t0, id: a.ue_id, url: a.ue_url, rid: a.ue_id, a: "", b: "", h: {}, r: {
+                    ld: 0, oe: 0,
+                    ul: 0
+                }, s: 1, t: {}, sc: {}, iel: [], ielf: [], fc_idx: {}, viz: [], v: "0.202502.0", d: a.ue && a.ue.d, log: a.ue && a.ue.log, clog: a.ue && a.ue.clog, onflush: a.ue && a.ue.onflush, onunload: a.ue && a.ue.onunload, stub: a.ue && a.ue.stub, lr: a.ue && a.ue.lr, exec: a.ue && a.ue.exec, event: a.ue && a.ue.event, onSushiUnload: a.ue && a.ue.onSushiUnload, onSushiFlush: a.ue && a.ue.onSushiFlush, ulh: [], cfa2: 0, paused: !1
+            }, K = a.ue_fpf ? 1 : 0, O = 1 === a.ue_rsc || 3 === a.ue_rsc, Q = 3 === a.ue_rsc, R = 1 === a.ue_rsc, N = "beforeunload", w; h.oid = x(h.id); h.lid = x(h.id); a.ue = h; a.ue._t0 = a.ue.t0;
+            a.ue.tagC = function () { var a = {}; return function (b) { b && (a[b] = 1); b = []; for (var c in a) a.hasOwnProperty(c) && b.push(c); return b } }; a.ue.tag = a.ue.tagC(); a.ue.ifr = g.top !== g.self || g.frameElement ? 1 : 0; ue.attach = s; ue.detach = E; if ("000-0000000-8675309" === a.ue_sid) { var H = y("cdn-rid"), I = y("session-id"); H && I && A(H, I) } a.uei = F; a.ueh = C; a.ues = f; a.uet = t; a.uex = D; h.reset = A; h.pause = function (a) { h.paused = a }; F()
+        })(ue_csm, window, ue_csm.document);
+
+
+        ue.stub(ue, "log"); ue.stub(ue, "onunload"); ue.stub(ue, "onflush");
+        (function (c) {
+            var a = c.ue; a.cv = {}; a.cv.scopes = {}; a.count = function (d, c, b) { var e = {}, f = a.cv, g = b && 0 === b.c; e.counter = d; e.value = c; e.t = a.d(); b && b.scope && (f = a.cv.scopes[b.scope] = a.cv.scopes[b.scope] || {}, e.scope = b.scope); if (void 0 === c) return f[d]; f[d] = c; d = 0; b && b.bf && (d = 1); ue_csm.ue_sclog || !a.clog || 0 !== d || g ? a.log && a.log(e, "csmcount", { c: 1, bf: d }) : a.clog(e, "csmcount", { bf: d }) }; a.count("baselineCounter2", 1); a && a.event && (a.event({ requestId: c.ue_id || "rid", server: c.ue_sn || "sn", obfuscatedMarketplaceId: c.ue_mid || "mid" },
+                "csm", "csm.CSMBaselineEvent.4"), a.count("nexusBaselineCounter", 1, { bf: 1 }))
+        })(ue_csm);
+
+
+
+        var ue_hoe = +new Date();
+    }
+    window.ueinit = window.ue_ihb;
+</script>
+
+<!-- 7knwjyevrqg52 -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="apple-itunes-app" content="app-id=342792525, app-argument=imdb:///?src=mdot">
+
+
+
+<script type="text/javascript">var IMDbTimer = { starttime: new Date().getTime(), pt: 'java' };</script>
+
+<script>
+    if (typeof uet == 'function') {
+        uet("bb", "LoadTitle", { wb: 1 });
+    }
+</script>
+<script>(function (t) { (t.events = t.events || {})["csm_head_pre_title"] = new Date().getTime(); })(IMDbTimer);</script>
+<title>New Movies In Theaters - IMDb</title>
+<script>(function (t) { (t.events = t.events || {})["csm_head_post_title"] = new Date().getTime(); })(IMDbTimer);</script>
+<script>
+    if (typeof uet == 'function') {
+        uet("be", "LoadTitle", { wb: 1 });
+    }
+</script>
+<script>
+    if (typeof uex == 'function') {
+        uex("ld", "LoadTitle", { wb: 1 });
+    }
+</script>
+
+
+
+<script>
+    if (typeof uet == 'function') {
+        uet("bb", "LoadIcons", { wb: 1 });
+    }
+</script>
+<script>(function (t) { (t.events = t.events || {})["csm_head_pre_icon"] = new Date().getTime(); })(IMDbTimer);</script>
+
+
+
+
+
+
+
+
+<script>
+    if (typeof uet == 'function') {
+        uet("bb", "LoadCSS", { wb: 1 });
+    }
+</script>
+<script>(function (t) { (t.events = t.events || {})["csm_head_pre_css"] = new Date().getTime(); })(IMDbTimer);</script>
+<link rel="stylesheet" type="text/css" href="https://m.media-amazon.com/images/G/01/imdb/css/collections/consumersite-1452307554._CB459434138_.css" />
+<!-- h=ics-c42xl-1-1e-693d1f79.us-east-1 -->
+<link rel="stylesheet" type="text/css" href="https://m.media-amazon.com/images/G/01/imdb/css/site/consumer-navbar-mega-2155272170._CB459529130_.css" />
+<link rel="stylesheet" type="text/css" href="https://m.media-amazon.com/images/G/01/imdb/css/collections/other-3521600064._CB459410562_.css" />
+<link rel="stylesheet" type="text/css" href="https://m.media-amazon.com/images/G/01/imdb/css/collections/watchlistButton-197279306._CB482060654_.css" />
+<link rel="stylesheet" type="text/css" href="https://m.media-amazon.com/images/G/01/imdb/css/collections/starbarwidget-2454701167._CB470040909_.css" />
+<!--[if IE]><link rel="stylesheet" type="text/css" href="https://m.media-amazon.com/images/G/01/imdb/css/collections/ie-3579153447._CB470040875_.css" /><![endif]-->
+
+<noscript>
+    <link rel="stylesheet" type="text/css" href="https://m.media-amazon.com/images/G/01/imdb/css/wheel/nojs-2827156349._CB470041026_.css">
+</noscript>
+<script>(function (t) { (t.events = t.events || {})["csm_head_post_css"] = new Date().getTime(); })(IMDbTimer);</script>
+<script>
+    if (typeof uet == 'function') {
+        uet("be", "LoadCSS", { wb: 1 });
+    }
+</script>
+<script>
+    if (typeof uex == 'function') {
+        uex("ld", "LoadCSS", { wb: 1 });
+    }
+</script>
+
+<script>
+    if (typeof uet == 'function') {
+        uet("bb", "LoadJS", { wb: 1 });
+    }
+</script>
+<script>(function (t) { (t.events = t.events || {})["csm_head_pre_ads"] = new Date().getTime(); })(IMDbTimer);</script>
+<script>
+    window.ads_js_start = new Date().getTime();
+    var imdbads = imdbads || {}; imdbads.cmd = imdbads.cmd || [];
+</script>
+<!-- begin SRA -->
+<script>
+    !function a(b, c, d) { function e(g, h) { if (!c[g]) { if (!b[g]) { var i = "function" == typeof require && require; if (!h && i) return i(g, !0); if (f) return f(g, !0); var j = new Error("Cannot find module '" + g + "'"); throw j.code = "MODULE_NOT_FOUND", j } var k = c[g] = { exports: {} }; b[g][0].call(k.exports, function (a) { var c = b[g][1][a]; return e(c ? c : a) }, k, k.exports, a, b, c, d) } return c[g].exports } for (var f = "function" == typeof require && require, g = 0; g < d.length; g++)e(d[g]); return e }({ 1: [function (a, b, c) { "use strict"; a(2) }, { 2: 2 }], 2: [function (a, b, c) { "use strict"; !function () { var a, b, c = function (a) { return "[object Array]" === Object.prototype.toString.call(a) }, d = function (a, b) { for (var c = 0; c < a.length; c++)c in a && b.call(null, a[c], c) }, e = [], f = !1, g = !1, h = function () { var a = [], b = [], c = {}; return d(e, function (e) { var f = ""; d(e.dartsite.split("/"), function (b) { "" !== b && (b in c || (c[b] = a.length, a.push(b)), f += "/" + c[b]) }), b.push(f) }), { iu_parts: a, enc_prev_ius: b } }, i = function () { var a = []; return d(e, function (b) { var c = []; d(b.sizes, function (a) { c.push(a.join("x")) }), a.push(c.join("|")) }), a }, j = function () { var a = []; return d(e, function (b) { a.push(k(b.targeting)) }), a.join("|") }, k = function (a, b) { var c, d = []; for (var e in a) { c = []; for (var f = 0; f < a[e].length; f++)c.push(encodeURIComponent(a[e][f])); b ? d.push(e + "=" + encodeURIComponent(c.join(","))) : d.push(e + "=" + c.join(",")) } return d.join("&") }, l = function () { var a = +new Date; g || document.readyState && "loaded" !== document.readyState || (g = !0, f && imdbads.cmd.push(function () { for (var b = 0; b < e.length; b++)generic.monitoring.record_metric(e[b].name + ".fail", csm.duration(a)) })) }; window.tinygpt = { define_slot: function (a, b, c, d) { e.push({ dartsite: a.replace(/\/$/, ""), sizes: b, name: c, targeting: d }) }, set_targeting: function (b) { a = b }, callback: function (a) { var c, d, f = {}, g = +new Date; try { for (var h = 0; h < e.length; h++)c = e[h].dartsite, d = e[h].name, a[h][c] ? f[d] = a[h][c] : window.console && console.error && console.error("Unable to correlate GPT response for " + d); imdbads.cmd.push(function () { for (var a = 0; a < e.length; a++)ad_utils.slot_events.trigger(e[a].name, "request", { timestamp: b }), ad_utils.slot_events.trigger(e[a].name, "tagdeliver", { timestamp: g }); ad_utils.gpt.handle_response(f) }) } catch (i) { window.console && console.error && console.error("Exception in GPT callback: " + i.message) } }, send: function () { var d, g, m = [], n = function (a, b) { c(b) && (b = b.join(",")), b && m.push(a + "=" + encodeURIComponent("" + b)) }; if (0 === e.length) return void tinygpt.callback({}); n("gdfp_req", "1"), n("correlator", Math.floor(4503599627370496 * Math.random())), n("output", "json_html"), n("callback", "tinygpt.callback"), n("impl", "fifs"), n("json_a", "1"); var o = h(); n("iu_parts", o.iu_parts), n("enc_prev_ius", o.enc_prev_ius), n("prev_iu_szs", i()), n("prev_scp", j()), n("cust_params", k(a, !0)), d = document.createElement("script"), g = document.getElementsByTagName("script")[0], d.async = !0, d.type = "text/javascript", d.src = "http://pubads.g.doubleclick.net/gampad/ads?" + m.join("&"), d.id = "tinygpt", d.onload = d.onerror = d.onreadystatechange = l, f = !0, g.parentNode.insertBefore(d, g), b = +new Date } } }() }, {}] }, {}, [1]);</script>
+<!-- begin ads header -->
+<script src="https://ia.media-imdb.com/images/G/01/imdbads/js/collections/tarnhelm-3604737327._CB461056085_.js"></script>
+<script id="ads_doWithAds">
+    doWithAds = function (inside, failureMessage) {
+        if ('consoleLog' in window &&
+            'generic' in window &&
+            'ad_utils' in window &&
+            'custom' in window &&
+            'monitoring' in generic &&
+            'document_is_ready' in generic) {
+            try {
+                inside.call(this);
+            } catch (e) {
+                if (window.ueLogError) {
+                    if (typeof failureMessage !== 'undefined') {
+                        e.message = failureMessage;
+                    }
+                    e.attribution = "Advertising";
+                    e.logLevel = "ERROR";
+                    ueLogError(e);
+                }
+                if ((document.location.hash.match('debug=1')) &&
+                    (typeof failureMessage !== 'undefined')) {
+                    console.error(failureMessage);
+                }
+            }
+        } else {
+            if ((document.location.hash.match('debug=1')) &&
+                (typeof failureMessage !== 'undefined')) {
+                console.error(failureMessage);
+            }
+        }
+    };
+</script>
+<script id="ads_monitoring_setup">
+    doWithAds(function () {
+        generic.monitoring.set_forester_info("showtimes");
+        generic.monitoring.set_twilight_info(
+            "showtimes",
+            "IL",
+            "d0047bf1e9a144f195026ed8210b7240b1f25bd1",
+            "2018-12-14T14%3A55%3A47GMT",
+            "https://s.media-imdb.com/twilight/?",
+            "consumer");
+        generic.monitoring.start_timing("page_load");
+        generic.seconds_to_midnight = 61453;
+        generic.days_to_midnight = 0.7112615704536438;
+    }, "Generic not defined, skipping monitoring setup.");
+</script>
+<script src="https://images-na.ssl-images-amazon.com/images/G/01/ape/sf/desktop/DAsf-1.24._V496156188_.js"></script>
+<script id="ads_safeframe_setup">
+    doWithAds(function () {
+        if (typeof DAsf != 'undefined' && typeof DAsf.registerCustomMessageListener === 'function') {
+            DAsf.registerCustomMessageListener('updateAdDetails', window.ad_utils.update_ad_details);
+            DAsf.registerCustomMessageListener('setPartner', window.ad_utils.set_partner);
+            DAsf.registerCustomMessageListener('adFeedback', window.ad_utils.show_ad_feedback);
+            DAsf.registerCustomMessageListener('sendMetrics', window.generic.monitoring.update_sf_slot_metrics);
+            DAsf.registerCustomMessageListener('expand', window.ad_utils.expand_overlay);
+            DAsf.registerCustomMessageListener('collapse', window.ad_utils.collapse_overlay);
+        }
+    }, "ads js missing, skipping safeframe setup.");
+</script>
+<script id="ads_general_setup">
+    doWithAds(function () {
+        generic.monitoring.record_metric("ads_js_request_to_done", (new Date().getTime()) - window.ads_js_start);
+        generic.send_csm_head_metrics && generic.send_csm_head_metrics();
+        ad_utils.set_slots_on_page({ 'injected_billboard': 1, 'injected_navstrip': 1, 'sis_pixel': 1, 'top_ad': 1, 'custom_banner': 1, 'top_rhs': 1 });
+        custom.full_page.data_url = "https://ia.media-imdb.com/images/G/01/imdbads/js/graffiti_data-197231884._CB483360278_.js";
+        consoleLog('advertising initialized', 'ads');
+    }, "ads js missing, skipping general setup.");
+    var _gaq = _gaq || [];
+    _gaq.push(['_setCustomVar', 4, 'ads_abtest_treatment', 'e']);
+</script>
+<script>doWithAds(function () { ad_utils.ads_header.done(); });</script>
+<!-- end ads header -->
+<script type="text/javascript">
+    // ensures js doesn't die if ads service fails.
+    // Note that we need to define the js here, since ad js is being rendered inline after this.
+    (function (f) {
+        // Fallback javascript, when the ad Service call fails.
+        if ((window.csm == null || window.generic == null || window.consoleLog == null)) {
+            if (window.console && console.log) {
+                console.log("one or more of window.csm, window.generic or window.consoleLog has been stubbed...");
+            }
+        }
+        window.csm = window.csm || { measure: f, record: f, duration: f, listen: f, metrics: {} };
+        window.generic = window.generic || { monitoring: { start_timing: f, stop_timing: f } };
+        window.consoleLog = window.consoleLog || f;
+    })(function () { });
+</script>
+<script>
+    if ('csm' in window) {
+        csm.measure('csm_head_delivery_finished');
+    }
+</script>
+<script>
+    if (typeof uet == 'function') {
+        uet("be", "LoadJS", { wb: 1 });
+    }
+</script>
+<script>
+    if (typeof uex == 'function') {
+        uex("ld", "LoadJS", { wb: 1 });
+    }
+</script>
+<script type='text/javascript'>
+    window.ue_ihe = (window.ue_ihe || 0) + 1;
+    if (window.ue_ihe === 1) {
+        (function (e, c) { function h(b, a) { f.push([b, a]) } function g(b, a) { if (b) { var c = e.head || e.getElementsByTagName("head")[0] || e.documentElement, d = e.createElement("script"); d.async = "async"; d.src = b; d.setAttribute("crossorigin", "anonymous"); a && a.onerror && (d.onerror = a.onerror); a && a.onload && (d.onload = a.onload); c.insertBefore(d, c.firstChild) } } function k() { ue.uels = g; for (var b = 0; b < f.length; b++) { var a = f[b]; g(a[0], a[1]) } ue.deffered = 1 } var f = []; c.ue && (ue.uels = h, c.ue.attach && c.ue.attach("load", k)) })(document, window);
+        (function (k, l, g) {
+            function m(a) { c || (c = b[a.type].id, "undefined" === typeof a.clientX ? (e = a.pageX, f = a.pageY) : (e = a.clientX, f = a.clientY), 2 != c || h && (h != e || n != f) ? (r(), d.isl && l.setTimeout(function () { p("at", d.id) }, 0)) : (h = e, n = f, c = 0)) } function r() { for (var a in b) b.hasOwnProperty(a) && d.detach(a, m, b[a].parent) } function s() { for (var a in b) b.hasOwnProperty(a) && d.attach(a, m, b[a].parent) } function t() { var a = ""; !q && c && (q = 1, a += "&ui=" + c); return a } var d = k.ue, p = k.uex, q = 0, c = 0, h, n, e, f, b = {
+                click: { id: 1, parent: g }, mousemove: {
+                    id: 2,
+                    parent: g
+                }, scroll: { id: 3, parent: l }, keydown: { id: 4, parent: g }
+            }; d && p && (s(), d._ui = t)
+        })(ue_csm, window, document);
+
+
+
+        if (window.ue && window.ue.uels) {
+            var cel_widgets = [{ "c": "celwidget" }];
+
+            ue.uels("https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/ClientSideMetricsAUIJavascript@jserrorsForester.d727867491aa5bec2e4c2e1e85bf6315beaae6ce._V2_.js");
+        }
+
+        (function (k, c) {
+            function l(a, b) { return a.filter(function (a) { return a.initiatorType == b }) } function f(a, c) { if (b.t[a]) { var g = b.t[a] - b._t0, e = c.filter(function (a) { return 0 !== a.responseEnd && m(a) < g }), f = l(e, "script"), h = l(e, "link"), k = l(e, "img"), n = e.map(function (a) { return a.name.split("/")[2] }).filter(function (a, b, c) { return a && c.lastIndexOf(a) == b }), q = e.filter(function (a) { return a.duration < p }), s = g - Math.max.apply(null, e.map(m)) < r | 0; "af" == a && (b._afjs = f.length); return a + ":" + [e[d], f[d], h[d], k[d], n[d], q[d], s].join("-") } }
+            function m(a) { return a.responseEnd - (b._t0 - c.timing.navigationStart) } function n() { var a = c[h]("resource"), d = f("cf", a), g = f("af", a), a = f("ld", a); delete b._rt; b._ld = b.t.ld - b._t0; b._art && b._art(); return [d, g, a].join("_") } var p = 20, r = 50, d = "length", b = k.ue, h = "getEntriesByType"; b._rre = m; b._rt = c && c.timing && c[h] && n
+        })(ue_csm, window.performance);
+
+
+        (function (s, f) {
+            function m(b, e, c) { var a = l; f.ue_cmi && (a = t); c = c || new Date(+new Date + a); c = "expires=" + c.toUTCString(); n.cookie = b + "=" + e + ";" + c + ";path=/" } function p(b) { b += "="; for (var e = n.cookie.split(";"), c = 0; c < e.length; c++) { for (var a = e[c]; " " == a.charAt(0);)a = a.substring(1); if (0 === a.indexOf(b)) return decodeURIComponent(a.substring(b.length, a.length)) } return "" } function q(b, e, c) {
+                if (!e) return b; -1 < b.indexOf("{") && (b = ""); for (var a = b.split("&"), g, d = !1, f = !1, h = 0; h < a.length; h++)g = a[h].split(":"), g[0] == e ? (!c || d ? a.splice(h,
+                    1) : (g[1] = c, a[h] = g.join(":")), f = d = !0) : 2 > g.length && (a.splice(h, 1), f = !0); f && (b = a.join("&")); !d && c && (0 < b.length && (b += "&"), b += e + ":" + c); return b
+            } var k = s.ue || {}, l = 6048E5, t = 100 * l, n = ue_csm.document || f.document, r = null, d; a: { try { d = f.localStorage; break a } catch (u) { } d = void 0 } k.count && k.count("csm.cookieSize", document.cookie.length); k.cookie = {
+                get: p, set: m, updateCsmHit: function (b, e, c) {
+                    try {
+                        var a; if (!(a = r)) { var g; a: { try { if (d && d.getItem) { g = d.getItem("csm-hit"); break a } } catch (k) { } g = void 0 } a = g || p("csm-hit") || "{}" } a = q(a,
+                            b, e); f.ue_cmi && (a = q(a, "t", +new Date)); r = a; try { d && d.setItem && d.setItem("csm-hit", a) } catch (l) { } m("csm-hit", a, c)
+                    } catch (h) { "function" == typeof f.ueLogError && ueLogError(Error("Cookie manager: " + h.message), { logLevel: "WARN" }) }
+                }
+            }
+        })(ue_csm, window);
+
+        (function (l, d) {
+            function c(b) { b = ""; var c = a.isBFT ? "b" : "s", d = "" + a.oid, f = "" + a.lid, g = d; d != f && 20 == f.length && (c += "a", g += "-" + f); a.tabid && (b = a.tabid + "+"); b += c + "-" + g; b != e && 100 > b.length && (e = b, a.cookie ? a.cookie.updateCsmHit(m, b + ("|" + +new Date)) : document.cookie = "csm-hit=" + b + ("|" + +new Date) + n + "; path=/") } function p() { e = 0 } function h(b) { !0 === d[a.pageViz.propHid] ? e = 0 : !1 === d[a.pageViz.propHid] && c({ type: "visible" }) } var n = "; expires=" + (new Date(+new Date + 6048E5)).toGMTString(), m = "tb", e, a = l.ue || {}, k = a.pageViz && a.pageViz.event &&
+                a.pageViz.propHid; a.attach && (a.attach("click", c), a.attach("keyup", c), k || (a.attach("focus", c), a.attach("blur", p)), k && (a.attach(a.pageViz.event, h, d), h({}))); a.aftb = 1
+        })(ue_csm, document);
+
+
+        ue_csm.ue.stub(ue, "impression");
+
+        (function (d) { d.ue_cel_stub || (d.ue_cel_stub = function () { var b = {}; return { registerModule: function (a, c) { b[a] || (b[a] = c, b[a].on()) }, replayModule: function (a, c) { b[a] && (b[a].replay(c), b[a].off(), delete b[a]) } } }()) })(ue_csm);
+        (function (a, d, h) {
+        a.ue_mcm_stub || a.ue && a.ue.isBF || (a.ue_mcm_stub = function () { function e(a) { var b = c.d(), e = (d.body || {}).scrollWidth, k = (d.body || {}).scrollHeight, f; h && "function" === typeof h.now && a.timeStamp && (f = h.now() - a.timeStamp, f = parseFloat(f.toFixed(2))); g.push({ rawEvent: a, additionalData: { ots: b, ow: e, oh: k, odt: f } }) } var c = a.ue, g = []; return { on: function () { c.attach && c.attach("click", e, d) }, off: function () { c.detach && c.detach("click", e, d) }, replay: function (a) { for (var b = 0; b < g.length; b++)a(g[b].rawEvent, g[b].additionalData) } } }(),
+            a.ue_cel_stub && a.ue_cel_stub.registerModule("mcm", a.ue_mcm_stub))
+        })(ue_csm, document, window.performance);
+
+
+
+        if (window.ue && uet) { uet('bb'); }
+
+    }
+</script>
+
+
+<script>
+    if (typeof uet == 'function') {
+        uet("bb");
+    }
+</script>
+<script>
+    if ('csm' in window) {
+        csm.measure('csm_body_delivery_started');
+    }
+</script>
+<script>
+    setTimeout(function () {
+        var el = document.getElementById("sis_pixel_sitewide");
+        el.src = "https://aax-eu.amazon-adsystem.com/s/iu3?d=imdb.com&a1=&a2=01017aeb870568ff74ead13945322fd3a4dad5f0614cb72a9835988f648b76c0822d&cb=616149922219&pId=&r=1&rP=https%3A%2F%2Fwww.imdb.com%2Fmovies-in-theaters%2F%3Fref_%3Dnv_tp_inth_1&encoding=server";
+        el.onload = function () {
+            if (typeof uex == 'function') {
+                uex("ld", "LoadSis", { wb: 1 });
+            }
+        }
+    }, 20);
+
+    if (typeof uet == 'function') {
+        uet("be", "LoadSis", { wb: 1 });
+    }
+</script>
+
+<!-- End SIS code -->
+<!-- begin comscore beacon -->
+<script type="text/javascript" src='https://ia.media-imdb.com/images/G/01/imdbads/js/beacon-1792157672._CB470343349_.js'></script>
+<script type="text/javascript">
+    if (window.COMSCORE) {
+        COMSCORE.beacon({
+            c1: 2,
+            c2: "6034961",
+            c3: "",
+            c4: "https://www.imdb.com/movies-in-theaters/?ref_=nv_tp_inth_1",
+            c5: "",
+            c6: "",
+            c15: ""
+        });
+    }
+</script>
+<noscript>
+    <img src="https://sb.scorecardresearch.com/p?c1=2&c2=6034961&c3=&c4=https%3A%2F%2Fwww.imdb.com%2Fmovies-in-theaters%2F%3Fref_%3Dnv_tp_inth_1&c5=c6=&15=&cj=1" />
+</noscript>
+<!-- end comscore beacon -->
+<!-- end sis pixel slot -->
+
+<div id="nb20" class="navbarSprite">
+    <div id="supertab">
+        <!-- begin TOP_AD -->
+        <div id="top_ad_wrapper" class="cornerstone_slot">
+            <script type="text/javascript">
+                doWithAds(function () {
+                    if ('cornerstone_slot' != 'injected_slot') {
+                        ad_utils.register_ad('top_ad');
+                    }
+                });
+            </script>
+            <iframe allowtransparency="true" class="yesScript" data-blank-serverside frameborder="0" id="top_ad" marginwidth="0" marginheight="0" name="top_ad" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });" scrolling="no" data-original-width="0" data-original-height="85" width="0" height="85"></iframe>
+        </div>
+        <div id="top_ad_reflow_helper"></div>
+        <script id="top_ad_rendering">
+            doWithAds(function () {
+                if ('cornerstone_slot' == 'cornerstone_slot') {
+                    ad_utils.inject_serverside_ad('top_ad', '');
+                }
+                else if ('cornerstone_slot' == 'injected_slot') {
+                    ad_utils.inject_ad.register('top_ad');
+                } else {
+                    ad_utils.gpt.render_ad('top_ad');
+                }
+            }, "ad_utils not defined, unable to render client-side GPT ad or injected ad.");
+        </script>
+        <!-- End TOP_AD -->
+    </div>
+    <script>
+        if (typeof uet == 'function') {
+            uet("ns");
+        }
+    </script>
+    <div id="navbar" class="navbarSprite">
+        <noscript>
+            <style>
+                #pagecontent {
+                    margin-top: -17px
+                }
+            </style>
+        </noscript>
+
+
+
+        <span id="home_img_holder">
+            <a href="/?ref_=nv_home"
+               title="Home" class="navbarSprite" id="home_img"></a> <span class="alt_logo">
+                <a href="/?ref_=nv_home"
+                   title="Home">IMDb</a>
+            </span>
+        </span>
+        <div id="megaMenu">
+            <ul id="consumer_main_nav" class="main_nav">
+                <li class="spacer"></li>
+                <li class="css_nav_item" id="navTitleMenu">
+                    <p class="navCategory">
+                        <a href="/Movies/Movie">Movies</a>
+                    </p>
+                    <span class="downArrow"></span>
+                    <div id="navMenu1" class="sub_nav">
+                        <div class="container">
+                            <div class="subNavListContainer">
+                                <h5>MOVIES</h5>
+                                <ul>
+                                    @{foreach (Movies m in Movie)
+                                        {
+                                            <il  class="h4">  @Html.ActionLink(m.Title, "CMovie", "Movies", new { id = m.Idmovie.ToString() }, new { @class = "active" })</il>
+                                            <br />
+
+                                        }
+                                    }
+                                </ul>
+
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="spacer"></li>
+                <li class="css_nav_item" id="navNameMenu">
+                    <p class="navCategory">
+                        <a href="/Movies/Top10">top 10</a>
+                    </p>
+                    <span class="downArrow"></span>
+                    <div id="navMenu2" class="sub_nav">
+                        <div class="subNavListContainer">
+                            <h5>TOP</h5>
+                            <ul>
+                                <li>
+                                    <a href="/Movies/Top10?num=5">Top 5</a>
+                                </li>
+                                <li>
+                                    <a href="/Movies/Top10?num=50">Top 50</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li class="css_nav_item" id="navNewsMenu">
+                    <p class="navCategory">
+                        <a href="/Movies/Genre">Ganer</a>
+                    </p>
+                    <span class="downArrow"></span>
+                    <div id="navMenu3" class="sub_nav">
+                        <div class="subNavListContainer">
+                            <h3 style="color:royalblue">All Ganers</h3>
+                            <ul>
+                                @{foreach (Ganers g in Ganer)
+                                    {
+                                            <il id="doit" class="h4">  @Html.ActionLink(g.NameGaner, "MoviesPerGaner", "Movies", new { ganer = g.NameGaner }, new { @class = "active" })</il>
+                                        <br />
+                                   
+                                    }
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li class="spacer"></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        if (typeof uet == 'function') {
+            uet("ne");
+        }
+    </script>
+    <!-- no content received for slot: navstrip -->
+    <!-- begin INJECTED_NAVSTRIP -->
+    <div id="injected_navstrip_wrapper" class="injected_slot">
+        <script type="text/javascript">
+            doWithAds(function () {
+                if ('injected_slot' != 'injected_slot') {
+                    ad_utils.register_ad('injected_navstrip');
+                }
+            });
+        </script>
+        <iframe allowtransparency="true" class="yesScript" data-dart-params="#doubleclick;u=616149922219;ord=616149922219?" frameborder="0" id="injected_navstrip" marginwidth="0" marginheight="0" name="injected_navstrip" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });" scrolling="no" data-original-width="0" data-original-height="0" width="0" height="0"></iframe>
+    </div>
+    <div id="injected_navstrip_reflow_helper"></div>
+    <script id="injected_navstrip_rendering">
+        doWithAds(function () {
+            if ('injected_slot' == 'cornerstone_slot') {
+                ad_utils.inject_serverside_ad('injected_navstrip', '');
+            }
+            else if ('injected_slot' == 'injected_slot') {
+                ad_utils.inject_ad.register('injected_navstrip');
+            } else {
+                ad_utils.gpt.render_ad('injected_navstrip');
+            }
+        }, "ad_utils not defined, unable to render client-side GPT ad or injected ad.");
+    </script>
+    <!-- End INJECTED_NAVSTRIP -->
+</div>
+
+
