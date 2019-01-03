@@ -8,7 +8,8 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using WebApplication1.Models;
+using asp.net_nvc_movies.DEL;
+using asp.net_nvc_movies.Models;
 
 
 namespace WebApplication1.Controllers
@@ -29,6 +30,7 @@ namespace WebApplication1.Controllers
        
         public ActionResult Movie()
         {
+
             return View();
 
         }
@@ -55,6 +57,18 @@ namespace WebApplication1.Controllers
         {
             
             return View();
+        }
+        public ActionResult AddNewMovie(Movies movie)
+        {
+            if (ModelState.IsValid) {
+                MoviesDal dal = new MoviesDal();
+                dal.Movie.Add(movie);
+                dal.SaveChanges();
+                return View(movie);
+            }
+            else
+                return View(movie);
+
         }
     }
 
