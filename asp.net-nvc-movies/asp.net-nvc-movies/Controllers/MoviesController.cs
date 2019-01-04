@@ -12,7 +12,7 @@ using asp.net_nvc_movies.DEL;
 using asp.net_nvc_movies.Models;
 
 
-namespace WebApplication1.Controllers
+namespace asp.net_nvc_movies.Controllers
 {
     public class MoviesController : Controller
     {
