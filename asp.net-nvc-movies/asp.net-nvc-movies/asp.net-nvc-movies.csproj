@@ -180,7 +180,11 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
+    <Compile Include="DEL\DirectorDal.cs" />
+    <Compile Include="DEL\GanersDal.cs" />
+    <Compile Include="DEL\ImgeDal.cs" />
     <Compile Include="DEL\MoviesDal.cs" />
+    <Compile Include="DEL\StarDal.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
