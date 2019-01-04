@@ -322,3 +322,4 @@ C:\Users\nicol\Desktop\asp.net-nvc-movies\asp.net-nvc-movies\asp.net-nvc-movies\
 C:\Users\nicol\Desktop\asp.net-nvc-movies\asp.net-nvc-movies\asp.net-nvc-movies\obj\Debug\asp.net-nvc-movies.csprojResolveAssemblyReference.cache
 C:\Users\nicol\Desktop\asp.net-nvc-movies\asp.net-nvc-movies\asp.net-nvc-movies\obj\Debug\asp.net-nvc-movies.dll
 C:\Users\nicol\Desktop\asp.net-nvc-movies\asp.net-nvc-movies\asp.net-nvc-movies\obj\Debug\asp.net-nvc-movies.pdb
+D:\asp.net-nvc-movies\asp.net-nvc-movies\asp.net-nvc-movies\obj\Debug\asp.net-nvc-movies.csprojAssemblyReference.cache

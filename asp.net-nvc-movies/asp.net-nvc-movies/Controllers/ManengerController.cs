@@ -12,23 +12,26 @@ namespace asp.net_nvc_movies.Controllers
     public class ManengerController : Controller
     {
         // GET: ADMIN
-        public ActionResult AddStars()
+        [HttpPost]
+        public ActionResult Submit()
         {
+
             return View();
         }
 
-        public ActionResult AddNewMovie(MoviesModelView m)
+        public ActionResult AddNewMovie(MoviesModelView t)
         {
-            
+            MoviesDal dal = new MoviesDal();
+            MoviesModelView m = new MoviesModelView();
+            m.movies = dal.Movie.ToList<Movies>();
             if (ModelState.IsValid)
             {
-                MoviesDal dal = new MoviesDal();
                 dal.Movie.Add(m.movie);
                 dal.SaveChanges();
-                return View(m);
+                m.movie = new Movies();
             }
-            else
-                return View(m);
+
+                return View(t);
 
         }
     }
