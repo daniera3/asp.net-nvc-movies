@@ -18,5 +18,9 @@ namespace asp.net_nvc_movies.Models
             idmovie = id;
             NameDirector = url;
         }
+
+        public Director()
+        {
+        }
     }
 }

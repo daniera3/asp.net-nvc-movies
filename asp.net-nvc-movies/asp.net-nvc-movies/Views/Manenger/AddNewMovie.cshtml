@@ -10,15 +10,17 @@
 
 
 <div id="image">
-    @using (Html.BeginForm("AddStars", "Admin", FormMethod.Post))
+    @using (Html.BeginForm("AddImage", "Admin", FormMethod.Post))
     {
-        <i>title:</i> @Html.TextBoxFor(m => m.movie.Img) @Html.ValidationMessageFor(x => x.movie.Title)
+        <i>img:</i> @Html.TextBoxFor(m => m.movie.Img.img) @Html.ValidationMessageFor(x => x.movie.Img.img)
         <br /><br />
-        <i>Rating:</i> @Html.TextBoxFor(m => m.movie.Rating) @Html.ValidationMessageFor(x => x.movie.Rating)
+        <i>title:</i> @Html.TextBoxFor(m => m.movie.Img.title) @Html.ValidationMessageFor(x => x.movie.Img.title)
         <br /><br />
-        <i>Outline:</i> @Html.TextBoxFor(m => m.movie.Outline) @Html.ValidationMessageFor(x => x.movie.Outline)
+        <i>alt:</i> @Html.TextBoxFor(m => m.movie.Img.alt) @Html.ValidationMessageFor(x => x.movie.Img.alt)
         <br /><br />
-        <i>Certificate:</i> @Html.TextBoxFor(m => m.movie.Certificate) @Html.ValidationMessageFor(x => x.movie.Certificate)
+        <i>width:</i> @Html.TextBoxFor(m => m.movie.Img.width) @Html.ValidationMessageFor(x => x.movie.Img.width)
+        <br /><br />
+        <i>height:</i> @Html.TextBoxFor(m => m.movie.Img.height) @Html.ValidationMessageFor(x => x.movie.Img.height)
         <br /><br />
         <input id="B_image" type="button" value="Add img" />
     }
@@ -27,15 +29,15 @@
 
 
 <div id="Movies">
-    @using (Html.BeginForm("AddStars", "Admin", FormMethod.Post))
+    @using (Html.BeginForm("AddMovies", "Admin", FormMethod.Post))
     {
-        <i>title:</i> @Html.TextBoxFor(m => m.movie.Title) @Html.ValidationMessageFor(x => x.Title)
+        <i>title:</i> @Html.TextBoxFor(m => m.movie.Title) @Html.ValidationMessageFor(x => x.movie.Title)
         <br /><br />
-        <i>Rating:</i> @Html.TextBoxFor(m => m.movie.Rating) @Html.ValidationMessageFor(x => x.Rating)
+        <i>Rating:</i> @Html.TextBoxFor(m => m.movie.Rating) @Html.ValidationMessageFor(x => x.movie.Rating)
         <br /><br />
-        <i>Outline:</i> @Html.TextBoxFor(m => m.movie.Outline) @Html.ValidationMessageFor(x => x.Outline)
+        <i>Outline:</i> @Html.TextBoxFor(m => m.movie.Outline) @Html.ValidationMessageFor(x => x.movie.Outline)
         <br /><br />
-        <i>Certificate:</i> @Html.TextBoxFor(m => m.movie.Certificate) @Html.ValidationMessageFor(x => x.Certificate)
+        <i>Certificate:</i> @Html.TextBoxFor(m => m.movie.Certificate) @Html.ValidationMessageFor(x => x.movie.Certificate)
         <br /><br />
         <input id="B_image" type="button" value="Add movie" />
     }
@@ -44,43 +46,25 @@
 <div id="star">
     @using (Html.BeginForm("AddStars", "Admin", FormMethod.Post))
     {
-        <i>title:</i> @Html.TextBoxFor(m => m.movie.Title) @Html.ValidationMessageFor(x => x.movie.Title)
-        <br /><br />
-        <i>Rating:</i> @Html.TextBoxFor(m => m.movie.Rating) @Html.ValidationMessageFor(x => x.movie.Rating)
-        <br /><br />
-        <i>Outline:</i> @Html.TextBoxFor(m => m.movie.Outline) @Html.ValidationMessageFor(x => x.movie.Outline)
-        <br /><br />
-        <i>Certificate:</i> @Html.TextBoxFor(m => m.movie.Certificate) @Html.ValidationMessageFor(x => x.movie.Certificate)
+        <i>Namestar:</i> @Html.TextBoxFor(m => m.stars.Namestar) @Html.ValidationMessageFor(x => x.stars.Namestar)
         <br /><br />
         <input id="B_image" type="button" class="left" value="Add star" />
     }
 </div>
 
 <div id="ganer">
-    @using (Html.BeginForm("AddStars", "Admin", FormMethod.Post))
+    @using (Html.BeginForm("AddGaner", "Admin", FormMethod.Post))
     {
-        <i>title:</i> @Html.TextBoxFor(m => m.movie.Title) @Html.ValidationMessageFor(x => x.movie.Title)
-        <br /><br />
-        <i>Rating:</i> @Html.TextBoxFor(m => m.movie.Rating) @Html.ValidationMessageFor(x => x.movie.Rating)
-        <br /><br />
-        <i>Outline:</i> @Html.TextBoxFor(m => m.movie.Outline) @Html.ValidationMessageFor(x => x.movie.Outline)
-        <br /><br />
-        <i>Certificate:</i> @Html.TextBoxFor(m => m.movie.Certificate) @Html.ValidationMessageFor(x => x.movie.Certificate)
+        <i>NameGaner:</i> @Html.TextBoxFor(m => m.genres.NameGaner) @Html.ValidationMessageFor(x => x.genres.NameGaner)
         <br /><br />
         <input id="B_ganer" type="button" class="left" value="Add ganer" />
     }
 </div>
 
 <div id="Director">
-    @using (Html.BeginForm("AddStars", "Admin", FormMethod.Post))
+    @using (Html.BeginForm("AddDirector", "Admin", FormMethod.Post))
     {
-        <i>title:</i> @Html.TextBoxFor(m => m.movie.Title) @Html.ValidationMessageFor(x => x.movie.Title)
-        <br /><br />
-        <i>Rating:</i> @Html.TextBoxFor(m => m.movie.Rating) @Html.ValidationMessageFor(x => x.movie.Rating)
-        <br /><br />
-        <i>Outline:</i> @Html.TextBoxFor(m => m.movie.Outline) @Html.ValidationMessageFor(x => x.movie.Outline)
-        <br /><br />
-        <i>Certificate:</i> @Html.TextBoxFor(m => m.movie.Certificate) @Html.ValidationMessageFor(x => x.movie.Certificate)
+        <i>NameDirector:</i> @Html.TextBoxFor(m => m.directors.NameDirector) @Html.ValidationMessageFor(x => x.directors.NameDirector)
         <br /><br />
         <input id="B_Director" type="button" class="left" value="Add Director" />
     }
