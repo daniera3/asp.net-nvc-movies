@@ -102,7 +102,6 @@ D:\asp.net-nvc-movies\asp.net-nvc-movies\asp.net-nvc-movies\bin\Microsoft.Owin.S
 D:\asp.net-nvc-movies\asp.net-nvc-movies\asp.net-nvc-movies\bin\System.Diagnostics.DiagnosticSource.xml
 D:\asp.net-nvc-movies\asp.net-nvc-movies\asp.net-nvc-movies\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 D:\asp.net-nvc-movies\asp.net-nvc-movies\asp.net-nvc-movies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\asp.net-nvc-movies\asp.net-nvc-movies\asp.net-nvc-movies\obj\Debug\asp.net-nvc-movies.csprojAssemblyReference.cache
 D:\asp.net-nvc-movies\asp.net-nvc-movies\asp.net-nvc-movies\obj\Debug\asp.net-nvc-movies.csproj.CoreCompileInputs.cache
 D:\asp.net-nvc-movies\asp.net-nvc-movies\asp.net-nvc-movies\obj\Debug\asp.net-nvc-movies.csproj.CopyComplete
 D:\asp.net-nvc-movies\asp.net-nvc-movies\asp.net-nvc-movies\obj\Debug\asp.net-nvc-movies.dll

@@ -1,5 +1,6 @@
 ﻿using asp.net_nvc_movies.DEL;
 using asp.net_nvc_movies.Models;
+using asp.net_nvc_movies.ModelView;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,17 +17,18 @@ namespace asp.net_nvc_movies.Controllers
             return View();
         }
 
-        public ActionResult AddNewMovie(Movies movie)
+        public ActionResult AddNewMovie(MoviesModelView m)
         {
+            
             if (ModelState.IsValid)
             {
                 MoviesDal dal = new MoviesDal();
-                dal.Movie.Add(movie);
+                dal.Movie.Add(m.movie);
                 dal.SaveChanges();
-                return View(movie);
+                return View(m);
             }
             else
-                return View(movie);
+                return View(m);
 
         }
     }
