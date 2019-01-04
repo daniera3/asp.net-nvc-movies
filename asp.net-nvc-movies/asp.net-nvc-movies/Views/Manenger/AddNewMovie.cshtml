@@ -73,3 +73,13 @@
 <br />
    <span style="color:green"> Current Movies</span>
 <br/>
+@{
+
+    WebGrid obj = new WebGrid(Model.movies);
+   
+}
+
+@obj.GetHtml(tableStyle: "webgrid-table",
+headerStyle: "webgrid-header",
+alternatingRowStyle: "webgrid-alternating-row",
+mode: WebGridPagerModes.All);W

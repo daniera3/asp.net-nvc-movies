@@ -266,6 +266,7 @@
     <Content Include="Views\movies\Top10.cshtml" />
     <Content Include="Views\movies\_panelSite.cshtml" />
     <Content Include="Views\Manenger\AddNewMovie.cshtml" />
+    <Content Include="Views\movies\search.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
