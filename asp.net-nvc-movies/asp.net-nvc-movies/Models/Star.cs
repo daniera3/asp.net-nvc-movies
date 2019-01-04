@@ -16,5 +16,9 @@ namespace asp.net_nvc_movies.Models
             Idmovie = id;
             Namestar = url;
         }
+
+        public Star()
+        {
+        }
     }
 }
