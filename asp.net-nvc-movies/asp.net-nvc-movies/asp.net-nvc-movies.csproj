@@ -176,73 +176,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ManengerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
-    <Compile Include="DEL\AspNetRoles.cs">
-      <DependentUpon>delMovies.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\AspNetUserClaims.cs">
-      <DependentUpon>delMovies.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\AspNetUserLogins.cs">
-      <DependentUpon>delMovies.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\AspNetUsers.cs">
-      <DependentUpon>delMovies.tt</DependentUpon>
-    </Compile>
     <Compile Include="DEL\MoviesDal.cs" />
-    <Compile Include="DEL\C__MigrationHistory.cs">
-      <DependentUpon>delMovies.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\delMovies.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>delMovies.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\delMovies.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>delMovies.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\delMovies.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>delMovies.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\Director.cs">
-      <DependentUpon>delMovies.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\genre.cs">
-      <DependentUpon>delMovies.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\Movie.cs">
-      <DependentUpon>delMovies.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\movieimg.cs">
-      <DependentUpon>delMovies.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\MSreplication_options.cs">
-      <DependentUpon>delMovies.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\spt_fallback_db.cs">
-      <DependentUpon>delMovies.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\spt_fallback_dev.cs">
-      <DependentUpon>delMovies.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\spt_fallback_usg.cs">
-      <DependentUpon>delMovies.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\spt_monitor.cs">
-      <DependentUpon>delMovies.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\spt_values.cs">
-      <DependentUpon>delMovies.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\star.cs">
-      <DependentUpon>delMovies.tt</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -258,33 +196,20 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-WebApplication1-20181211112737.mdf" />
+    <Content Include="App_Data\aspnet-WebApplication1-20181211112737_log.ldf">
+      <DependentUpon>aspnet-WebApplication1-20181211112737.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="DEL\delMovies.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>delMovies.edmx</DependentUpon>
-      <LastGenOutput>delMovies.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="DEL\delMovies.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>delMovies.edmx</DependentUpon>
-      <LastGenOutput>delMovies.cs</LastGenOutput>
-    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="DEL\delMovies.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>delMovies.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="DEL\delMovies.edmx.diagram">
-      <DependentUpon>delMovies.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -337,11 +262,9 @@
     <Content Include="Views\movies\ShowAllMovies.cshtml" />
     <Content Include="Views\movies\Top10.cshtml" />
     <Content Include="Views\movies\_panelSite.cshtml" />
-    <Content Include="Views\movies\AddNewMovie.cshtml" />
+    <Content Include="Views\Manenger\AddNewMovie.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
