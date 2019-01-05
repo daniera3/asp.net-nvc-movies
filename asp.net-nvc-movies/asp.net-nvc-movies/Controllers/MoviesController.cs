@@ -10,16 +10,24 @@ using System.Web;
 using System.Web.Mvc;
 using asp.net_nvc_movies.DEL;
 using asp.net_nvc_movies.Models;
-
+using asp.net_nvc_movies.ModelView;
 
 namespace asp.net_nvc_movies.Controllers
 {
     public class MoviesController : Controller
     {
-
+        private MoviesModelView GetData()
+        {
+            movies_Dal dal = new movies_Dal();
+            MoviesModelView T = new MoviesModelView
+            {
+                movies = dal.Movie.ToList<Movies>()
+            };
+            return T;
+        }
         // GET: Movies
-      
-        
+
+
         public ActionResult CMovie()
         {
             
@@ -31,7 +39,7 @@ namespace asp.net_nvc_movies.Controllers
         public ActionResult Movie()
         {
 
-            return View();
+            return View(GetData());
 
         }
 
@@ -41,14 +49,14 @@ namespace asp.net_nvc_movies.Controllers
         {
           
             ViewBag.num = num;
-            return View();
+            return View(GetData());
             
         }
 
         public ActionResult Genre()
         {
 
-            return View();
+            return View(GetData());
 
         }
  
@@ -56,7 +64,7 @@ namespace asp.net_nvc_movies.Controllers
         public ActionResult MoviesPerGaner(string ganer)
         {
             
-            return View();
+            return View(GetData());
         }
       
     }

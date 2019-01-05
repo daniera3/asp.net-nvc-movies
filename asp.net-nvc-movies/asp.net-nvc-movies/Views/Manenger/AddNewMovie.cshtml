@@ -94,8 +94,9 @@
     $.get("GetMoviesByJson", null, BindData);
 
     function BindData(Movies) {
-        window.alert("sd");
+        
         $("#ShowALL").find("tr:gt(0)").remove();
+        window.alert("sd");
         var tb1 = $("#ShowALL");
         for (k = 0; k < Movies.length; k++) {
             var newRow = "<tr>" +
@@ -126,7 +127,7 @@
         $("#directors_NameDirector").val("");
         $("#stars_Namestar").val("");
         $("#genres_NameGaner").val("");
-        $.get("GetMoviesByJson", null, BindData);
+       // $.get("GetMoviesByJson", null, BindData);
         //delet taxt boxs
 
     }

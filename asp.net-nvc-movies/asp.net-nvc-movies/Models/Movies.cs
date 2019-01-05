@@ -7,6 +7,7 @@ namespace asp.net_nvc_movies.Models
 {
     public class Movies
     {
+
         static int num = 1;
         public Movies()
         {
