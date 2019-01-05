@@ -10,17 +10,13 @@
 
 
 <div id="image">
-    @using (Html.BeginForm("Submit1", "Manenger", FormMethod.Post))
+    @using (Html.BeginForm("Submit1", "Manenger", FormMethod.Post,new { id = "frmimg" }))
     {
-        <i>img:</i> @Html.TextBoxFor(m => m.movie.Img.img) <a style="color:red">@Html.ValidationMessageFor(x => x.movie.Img.img)</a>
+        <i>img:</i> @Html.TextBoxFor(m => m.movie.Img.img) <a  id="i1" style="color:red">@Html.ValidationMessageFor(x => x.movie.Img.img)</a>
         <br /><br />
-        <i>title:</i> @Html.TextBoxFor(m => m.movie.Img.title)<a style="color:red"> @Html.ValidationMessageFor(x => x.movie.Img.title)</a>
+        <i>title:</i> @Html.TextBoxFor(m => m.movie.Img.title)<i id="i2" style="color:red"> @Html.ValidationMessageFor(x => x.movie.Img.title)</i>
         <br /><br />
-        <i>alt:</i> @Html.TextBoxFor(m => m.movie.Img.alt)<a style="color:red"> @Html.ValidationMessageFor(x => x.movie.Img.alt)</a>
-        <br /><br />
-        <i>width:</i> @Html.TextBoxFor(m => m.movie.Img.width)<a style="color:red"> @Html.ValidationMessageFor(x => x.movie.Img.width)</a>
-        <br /><br />
-        <i>height:</i> @Html.TextBoxFor(m => m.movie.Img.height) <a style="color:red">@Html.ValidationMessageFor(x => x.movie.Img.height)</a>
+        <i>alt:</i> @Html.TextBoxFor(m => m.movie.Img.alt)<i id="i3" style="color:red"> @Html.ValidationMessageFor(x => x.movie.Img.alt)</i>
         <br /><br />
         <input id="B_image" type="button" value="Add img" onclick="SendData1()" />
     }
@@ -31,13 +27,15 @@
 <div id="Movies">
     @using (Html.BeginForm("AddMovies", "Admin", FormMethod.Post))
     {
-        <i>title:</i> @Html.TextBoxFor(m => m.movie.Title)<a style="color:red"> @Html.ValidationMessageFor(x => x.movie.Title)</a>
+        <i>title:</i> @Html.TextBoxFor(m => m.movie.Title)<i style="color:red"> @Html.ValidationMessageFor(x => x.movie.Title)</i>
         <br /><br />
-        <i>Rating:</i> @Html.TextBoxFor(m => m.movie.Rating) <a style="color:red">@Html.ValidationMessageFor(x => x.movie.Rating)</a>
+        <i>Rating:</i> @Html.TextBoxFor(m => m.movie.Rating) <i style="color:red">@Html.ValidationMessageFor(x => x.movie.Rating)</i>
         <br /><br />
-        <i>Outline:</i> @Html.TextBoxFor(m => m.movie.Outline)<a style="color:red"> @Html.ValidationMessageFor(x => x.movie.Outline)</a>
+        <i>Outline:</i> @Html.TextBoxFor(m => m.movie.Outline)<i style="color:red"> @Html.ValidationMessageFor(x => x.movie.Outline)</i>
         <br /><br />
-        <i>Certificate:</i> @Html.TextBoxFor(m => m.movie.Certificate) <a style="color:red">@Html.ValidationMessageFor(x => x.movie.Certificate)</a>
+        <i>Certificate:</i> @Html.TextBoxFor(m => m.movie.Certificate) <i style="color:red">@Html.ValidationMessageFor(x => x.movie.Certificate)</i>
+        <br /><br />
+        <i>Certificate:</i> @Html.TextBoxFor(m => m.movie.Time) <i style="color:red">@Html.ValidationMessageFor(x => x.movie.Time)</i>
         <br /><br />
         <input id="B_image" type="button" value="Add movie" />
     }
@@ -46,17 +44,26 @@
 <div id="star">
     @using (Html.BeginForm("AddStars", "Admin", FormMethod.Post))
     {
-        <i>Namestar:</i> @Html.TextBoxFor(m => m.stars.Namestar)<a style="color:red"> @Html.ValidationMessageFor(x => x.stars.Namestar)</a>
-        <br /><br />
+        <table class="table" id="sr">
+            <tr>
+                <i>Namestar:</i> @Html.TextBoxFor(m => m.stars.Namestar)
+                <td><i style="color:red"> @Html.ValidationMessageFor(x => x.stars.Namestar)</i></td>
+            </tr>
+        </table>
         <input id="B_image" type="button" class="left" value="Add star" />
+        <input id="B_image" type="button" class="right" value="More star" onclick="morestar()" />
     }
 </div>
 
 <div id="ganer">
     @using (Html.BeginForm("AddGaner", "Admin", FormMethod.Post))
     {
-        <i>NameGaner:</i> @Html.TextBoxFor(m => m.genres.NameGaner)<a style="color:red"> @Html.ValidationMessageFor(x => x.genres.NameGaner)</a>
-        <br /><br />
+    <table class="table" id="gr">
+        <tr>
+            <i>NameGaner:</i> @Html.TextBoxFor(m => m.genres.NameGaner)
+            <td><i style="color:red"> @Html.ValidationMessageFor(x => x.genres.NameGaner)</i></td>
+        </tr>
+    </table>
         <input id="B_ganer" type="button" class="left" value="Add ganer" />
     }
 </div>
@@ -64,7 +71,7 @@
 <div id="Director">
     @using (Html.BeginForm("AddDirector", "Admin", FormMethod.Post))
     {
-        <i>NameDirector:</i> @Html.TextBoxFor(m => m.directors.NameDirector)<a style="color:red"> @Html.ValidationMessageFor(x => x.directors.NameDirector)</a>
+        <i>NameDirector:</i> @Html.TextBoxFor(m => m.directors.NameDirector)<i style="color:red"> @Html.ValidationMessageFor(x => x.directors.NameDirector)</i>
         <br /><br />
         <input id="B_Director" type="button" class="left" value="Add Director" />
     }
@@ -97,7 +104,7 @@
 
     function BindData(Movies) {
         $("#ShowALL").find("tr:gt(0)").remove();
-        var tb1 = $("ShowALL");
+        var tb1 = $("#ShowALL");
         for (k = 0; k < Movies.length; k++) {
             var newRow = "<tr>" +
                 "<td>" + Movies[k].title + "</td>" +
@@ -110,16 +117,16 @@
     }
 
     function SendData1() {
-        document.getElementById("image").style.display = "none";
-        document.getElementById("Movies").style.display = "none";
-        document.getElementById("star").style.display = "none";
-        document.getElementById("ganer").style.display = "none";
-        document.getElementById("Director").style.display = "none";
-        document.getElementById("Movies").style.display = "block";
-
-        
-        var frmData = $("#frmAdd").serialize();
-        $.post("Submit1", frmData);
+        if ($("#i1").innerHTML == "") {
+            var frmData = $("#frmimg").serialize();
+            $.post("Submit1", frmData);
+            document.getElementById("image").style.display = "none";
+            document.getElementById("Movies").style.display = "none";
+            document.getElementById("star").style.display = "none";
+            document.getElementById("ganer").style.display = "none";
+            document.getElementById("Director").style.display = "none";
+            document.getElementById("Movies").style.display = "block";
+        }
         //delet taxt boxs
     }
 
@@ -134,7 +141,14 @@
         $.post("Submit", frmData, BindData);
         //delet taxt boxs
     }
-       
+
+    function morestar() {
+
+        var frmData = $("#frmAdd").serialize();
+        $.post("", frmData);
+
+    }
+
 
 
 </script>

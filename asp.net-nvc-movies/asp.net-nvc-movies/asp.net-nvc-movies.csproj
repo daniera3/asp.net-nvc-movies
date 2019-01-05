@@ -180,55 +180,10 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
-    <Compile Include="DEL\AspNetRole.cs">
-      <DependentUpon>databace.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\AspNetUser.cs">
-      <DependentUpon>databace.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\AspNetUserClaim.cs">
-      <DependentUpon>databace.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\AspNetUserLogin.cs">
-      <DependentUpon>databace.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\C__MigrationHistory.cs">
-      <DependentUpon>databace.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\databace.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>databace.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\databace.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>databace.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\databace.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>databace.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\Director.cs">
-      <DependentUpon>databace.tt</DependentUpon>
-    </Compile>
     <Compile Include="DEL\DirectorDal.cs" />
     <Compile Include="DEL\GanersDal.cs" />
-    <Compile Include="DEL\genre.cs">
-      <DependentUpon>databace.tt</DependentUpon>
-    </Compile>
     <Compile Include="DEL\ImgeDal.cs" />
-    <Compile Include="DEL\Movie.cs">
-      <DependentUpon>databace.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DEL\movieimg.cs">
-      <DependentUpon>databace.tt</DependentUpon>
-    </Compile>
     <Compile Include="DEL\MoviesDal.cs" />
-    <Compile Include="DEL\star.cs">
-      <DependentUpon>databace.tt</DependentUpon>
-    </Compile>
     <Compile Include="DEL\StarDal.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -254,29 +209,12 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="DEL\databace.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>databace.edmx</DependentUpon>
-      <LastGenOutput>databace.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="DEL\databace.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>databace.edmx</DependentUpon>
-      <LastGenOutput>databace.cs</LastGenOutput>
-    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="DEL\databace.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>databace.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="DEL\databace.edmx.diagram">
-      <DependentUpon>databace.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

@@ -15,6 +15,7 @@ namespace asp.net_nvc_movies.DEL
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Movies>().ToTable("Movie");
         }
+
         public DbSet<Movies> Movie { get; set; }
     }
 } 
