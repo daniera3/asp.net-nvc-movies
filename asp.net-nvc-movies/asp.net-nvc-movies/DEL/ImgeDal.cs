@@ -13,8 +13,8 @@ namespace asp.net_nvc_movies.DEL
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Movies>().ToTable("movieimg");
+            modelBuilder.Entity<Imge>().ToTable("movieimg");
         }
-        public DbSet<Movies> Image { get; set; }
+        public DbSet<Imge> Image { get; set; }
     }
 }

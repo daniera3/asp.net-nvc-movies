@@ -13,25 +13,36 @@ namespace asp.net_nvc_movies.Controllers
     {
         // GET: ADMIN
         [HttpPost]
-        public ActionResult Submit()
+        public ActionResult Submit1()
         {
 
-            return View();
+            ImgeDal dal = new ImgeDal();
+            Imge obj = new Imge();
+            obj.img = Request.Form["movie.Img.img"];
+
+            if (ModelState.IsValid)
+            {
+                dal.Image.Add(obj);
+                dal.SaveChanges();
+            }
+                return View();  
+        }
+        public ActionResult GetMoviesByJson()
+        {
+            MoviesDal dal = new MoviesDal();
+            List<Movies> objmovies = dal.Movie.ToList<Movies>();
+            return Json(objmovies, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult AddNewMovie(MoviesModelView t)
+        
+
+
+        public ActionResult AddNewMovie()
         {
             MoviesDal dal = new MoviesDal();
             MoviesModelView m = new MoviesModelView();
             m.movies = dal.Movie.ToList<Movies>();
-            if (ModelState.IsValid)
-            {
-                dal.Movie.Add(m.movie);
-                dal.SaveChanges();
-                m.movie = new Movies();
-            }
-
-                return View(t);
+            return View(m);
 
         }
     }

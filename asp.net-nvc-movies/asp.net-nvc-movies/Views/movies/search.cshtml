@@ -5,7 +5,16 @@
 }
 
 <form action="SerchMovies" method="post">
-    
-    <p> <input id="Text1" name="name movie" type="text" />  <input id="Submit1" type="submit" value="Serch" /></p>
+
+    <input id="Text1" name="name movie" type="text" />
+    <br />
+    <input id="Submit1" type="submit" value="Serch" />
 </form>
 
+@{
+
+    WebGrid obj = new WebGrid(Model.movies);
+
+}
+
+@obj.GetHtml()
