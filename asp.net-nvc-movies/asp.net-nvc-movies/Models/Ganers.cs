@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace asp.net_nvc_movies.Models
 {
     public class Ganers
     {
-        [Key]
+        [Key, Column(Order = 2)]
         public int Idmovie { get; set; }
         [Required]
+        [Key, Column(Order = 1)]
         public string NameGaner { get; set; }
         public List<NameMoviesAndIMG> NMAndIMG { get; set; }
         public Ganers() { }
@@ -24,8 +26,6 @@ namespace asp.net_nvc_movies.Models
     public class NameMoviesAndIMG
     {
         public NameMoviesAndIMG(int a, string b, string c) { Idmovie = a; NameMovies = b; NameIMG = c; }
-        [StringLength(50, MinimumLength = 2, ErrorMessage = "Length must be between 2 and 50 characters")]
-        [Required]
         public string NameMovies { get; set; }
         public string NameIMG { get; set; }
         [Key]

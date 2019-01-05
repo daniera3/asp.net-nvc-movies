@@ -1,5 +1,5 @@
 ﻿@model asp.net_nvc_movies.ModelView.MoviesModelView
-     @using asp.net_nvc_movies.Models
+@using asp.net_nvc_movies.Models
 @{
     ViewBag.Title = "AddNewMovie";
 }
@@ -10,82 +10,80 @@
 
 
 <div id="image">
-    @using (Html.BeginForm("Submit1", "Manenger", FormMethod.Post,new { id = "frmimg" }))
+    @using (Html.BeginForm("Submit1", "Manenger", FormMethod.Post, new { id = "frmimg" }))
     {
-        <i>img:</i> @Html.TextBoxFor(m => m.movie.Img.img) <a  id="i1" style="color:red">@Html.ValidationMessageFor(x => x.movie.Img.img)</a>
-        <br /><br />
-        <i>title:</i> @Html.TextBoxFor(m => m.movie.Img.title)<i id="i2" style="color:red"> @Html.ValidationMessageFor(x => x.movie.Img.title)</i>
-        <br /><br />
-        <i>alt:</i> @Html.TextBoxFor(m => m.movie.Img.alt)<i id="i3" style="color:red"> @Html.ValidationMessageFor(x => x.movie.Img.alt)</i>
-        <br /><br />
-        <input id="B_image" type="button" value="Add img" onclick="SendData1()" />
-    }
-</div>
+        <div class="table">
+            <i>img:</i> @Html.TextBoxFor(m => m.movie.Img.img) <a id="i1" style="color:red">@Html.ValidationMessageFor(x => x.movie.Img.img)</a>
+            <br />
+            <i>title:</i> @Html.TextBoxFor(m => m.movie.Img.title)<i id="i2" style="color:red"> @Html.ValidationMessageFor(x => x.movie.Img.title)</i>
+            <br />
+            <i>alt:</i> @Html.TextBoxFor(m => m.movie.Img.alt)  <i id="i3" style="color:red">    @Html.ValidationMessageFor(x => x.movie.Img.alt)</i>
+            <br />
+        </div>
 
 
 
-<div id="Movies">
-    @using (Html.BeginForm("AddMovies", "Admin", FormMethod.Post))
-    {
-        <i>title:</i> @Html.TextBoxFor(m => m.movie.Title)<i style="color:red"> @Html.ValidationMessageFor(x => x.movie.Title)</i>
-        <br /><br />
-        <i>Rating:</i> @Html.TextBoxFor(m => m.movie.Rating) <i style="color:red">@Html.ValidationMessageFor(x => x.movie.Rating)</i>
-        <br /><br />
-        <i>Outline:</i> @Html.TextBoxFor(m => m.movie.Outline)<i style="color:red"> @Html.ValidationMessageFor(x => x.movie.Outline)</i>
-        <br /><br />
-        <i>Certificate:</i> @Html.TextBoxFor(m => m.movie.Certificate) <i style="color:red">@Html.ValidationMessageFor(x => x.movie.Certificate)</i>
-        <br /><br />
-        <i>Certificate:</i> @Html.TextBoxFor(m => m.movie.Time) <i style="color:red">@Html.ValidationMessageFor(x => x.movie.Time)</i>
-        <br /><br />
-        <input id="B_image" type="button" value="Add movie" />
-    }
-</div>
 
-<div id="star">
-    @using (Html.BeginForm("AddStars", "Admin", FormMethod.Post))
-    {
-        <table class="table" id="sr">
-            <tr>
-                <i>Namestar:</i> @Html.TextBoxFor(m => m.stars.Namestar)
-                <td><i style="color:red"> @Html.ValidationMessageFor(x => x.stars.Namestar)</i></td>
-            </tr>
-        </table>
-        <input id="B_image" type="button" class="left" value="Add star" />
-        <input id="B_image" type="button" class="right" value="More star" onclick="morestar()" />
-    }
-</div>
+        <div id="Movies">
 
-<div id="ganer">
-    @using (Html.BeginForm("AddGaner", "Admin", FormMethod.Post))
-    {
-    <table class="table" id="gr">
-        <tr>
+            <div class="table">
+                <i>title:</i> @Html.TextBoxFor(m => m.movie.Title)<i style="color:red"> @Html.ValidationMessageFor(x => x.movie.Title)</i>
+                <br />
+                <i>Rating:</i> @Html.TextBoxFor(m => m.movie.Rating) <i style="color:red">@Html.ValidationMessageFor(x => x.movie.Rating)</i>
+                <br />
+                <i>Outline:</i> @Html.TextBoxFor(m => m.movie.Outline)<i style="color:red"> @Html.ValidationMessageFor(x => x.movie.Outline)</i>
+                <br />
+                <i>Certificate:</i> @Html.TextBoxFor(m => m.movie.Certificate) <i style="color:red">@Html.ValidationMessageFor(x => x.movie.Certificate)</i>
+                <br />
+                <i>time:</i> @Html.TextBoxFor(m => m.movie.Time) <i style="color:red">@Html.ValidationMessageFor(x => x.movie.Time)</i>
+                <br />
+            </div>
+
+        </div>
+
+        <div id="star">
+
+
+            <i>Namestar:</i> @Html.TextBoxFor(m => m.stars.Namestar)
+            <i style="color:red"> @Html.ValidationMessageFor(x => x.stars.Namestar)</i>
+            <br />
+            <input id="B_image" type="button" class="right" value="More star" onclick="morestar()" /><br />
+
+        </div>
+
+        <div id="ganer">
+
+
             <i>NameGaner:</i> @Html.TextBoxFor(m => m.genres.NameGaner)
-            <td><i style="color:red"> @Html.ValidationMessageFor(x => x.genres.NameGaner)</i></td>
-        </tr>
-    </table>
-        <input id="B_ganer" type="button" class="left" value="Add ganer" />
-    }
-</div>
+            <i style="color:red"> @Html.ValidationMessageFor(x => x.genres.NameGaner)</i>
+            <br />
+            <input id="B_ganer" type="button" class="left" value="More ganer" onclick="moreGaner()" />
+            <br />
 
-<div id="Director">
-    @using (Html.BeginForm("AddDirector", "Admin", FormMethod.Post))
-    {
-        <i>NameDirector:</i> @Html.TextBoxFor(m => m.directors.NameDirector)<i style="color:red"> @Html.ValidationMessageFor(x => x.directors.NameDirector)</i>
-        <br /><br />
-        <input id="B_Director" type="button" class="left" value="Add Director" />
+        </div>
+
+        <div id="Director">
+
+            <i>NameDirector:</i> @Html.TextBoxFor(m => m.directors.NameDirector)<i style="color:red"> @Html.ValidationMessageFor(x => x.directors.NameDirector)</i>
+            <br />
+            <input id="B_Director" type="button" class="left" value="More Director" onclick="moreDir()" />
+            <br /><br />
+            <input id="add" type="button" value="Add Movie" onclick="SendData()" />
+
+        </div>
     }
 </div>
 
 <br />
-   <span style="color:green"> Current Movies</span>
-<br/>
+<span style="color:green"> Current Movies</span>
+<br />
 <table id="ShowALL" class="table">
     <tr>
         <td>title</td>
         <td>Rating</td>
         <td>Outline</td>
         <td>Certificate</td>
+        <td>Time movie</td>
     </tr>
 
 
@@ -93,61 +91,62 @@
 
 <script>
 
-    document.getElementById("image").style.display = "none";
-    document.getElementById("Movies").style.display = "none";
-    document.getElementById("star").style.display = "none";
-    document.getElementById("ganer").style.display = "none";
-    document.getElementById("Director").style.display = "none";
-    document.getElementById("image").style.display = "block";
-
     $.get("GetMoviesByJson", null, BindData);
 
     function BindData(Movies) {
+        window.alert("sd");
         $("#ShowALL").find("tr:gt(0)").remove();
         var tb1 = $("#ShowALL");
         for (k = 0; k < Movies.length; k++) {
             var newRow = "<tr>" +
-                "<td>" + Movies[k].title + "</td>" +
-                "<td>" + Movies[k].title + "</td>" +
-                "<td>" + Movies[k].title + "</td>" +
-                "<td>" + Movies[k].title + "</td>" +
+                "<td>" + Movies[k].Title + "</td>" +
+                "<td>" + Movies[k].Rating + "</td>" +
+                "<td>" + Movies[k].Outline + "</td>" +
+                "<td>" + Movies[k].Certificate + "</td>" +
+                "<td>" + Movies[k].Time + "</td>" +
                 "</tr>";
             tb1.append(newRow);
         }
     }
 
-    function SendData1() {
-        if ($("#i1").innerHTML == "") {
-            var frmData = $("#frmimg").serialize();
-            $.post("Submit1", frmData);
-            document.getElementById("image").style.display = "none";
-            document.getElementById("Movies").style.display = "none";
-            document.getElementById("star").style.display = "none";
-            document.getElementById("ganer").style.display = "none";
-            document.getElementById("Director").style.display = "none";
-            document.getElementById("Movies").style.display = "block";
-        }
-        //delet taxt boxs
-    }
 
     function SendData() {
-        document.getElementById("image").style.display = "none";
-        document.getElementById("Movies").style.display = "none";
-        document.getElementById("star").style.display = "none";
-        document.getElementById("ganer").style.display = "none";
-        document.getElementById("Director").style.display = "none";
-        document.getElementById("star").style.display = "block";
-        var frmData = $("#frmAdd").serialize();
-        $.post("Submit", frmData, BindData);
+        var frmData = $("#frmimg").serialize();
+        $.post("Submit1", frmData, BindData);
+        $("#movie_Img_img").val("");
+        $("#movie_Img_title").val("");
+        $("#movie_Img_alt").val("");
+
+        $("#movie_Title").val("");
+        $("#movie_Rating").val("");
+        $("#movie_Outline").val("");
+        $("#movie_Certificate").val("");
+        $("#movie_Time").val("");
+
+        $("#directors_NameDirector").val("");
+        $("#stars_Namestar").val("");
+        $("#genres_NameGaner").val("");
+        $.get("GetMoviesByJson", null, BindData);
         //delet taxt boxs
+
     }
 
     function morestar() {
-
-        var frmData = $("#frmAdd").serialize();
-        $.post("", frmData);
-
+        var frmData = $("#frmimg").serialize();
+        $.post("AddStar", frmData);
+        $("#stars_Namestar").val("");
     }
+    function moreGaner() {
+        var frmData = $("#frmimg").serialize();
+        $.post("AddGaner", frmData);
+        $("#genres_NameGaner").val("");
+    }
+    function moreDir() {
+        var frmData = $("#frmimg").serialize();
+        $.post("AddDir", frmData);
+        $("#directors_NameDirector").val("");
+    }
+
 
 
 
