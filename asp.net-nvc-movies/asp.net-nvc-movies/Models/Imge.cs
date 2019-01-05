@@ -10,10 +10,13 @@ namespace asp.net_nvc_movies.Models
     {
         [Key]
         public int idimg { get; set; }
+        [Required]
         public string img { get; set; }
         public string title { get; set; }
         public string alt { get; set; }
+        [Required]
         public string width { get; set; }
+        [Required]
         public string height { get; set; }
 
         public Imge() { }

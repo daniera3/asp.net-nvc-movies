@@ -28,14 +28,18 @@ namespace asp.net_nvc_movies.Models
             this.Dir = new List<Director>();
             this.Ganer = new List<Ganers>();
         }
-
+        
         public int TOP { get; set; }
         public Imge Img { get; set; }
         public string Outline { get; set; }
         [Key]
         public int Idmovie { get; set; }
+        [Required]
+        [StringLength(50, MinimumLength = 2, ErrorMessage = "Length must be between 2 and 50 characters")]
         public string Title { get; set; }
         public int Idimg { get; set; }
+        [Required]
+        [RegularExpression("^[0-9]{1,4}$", ErrorMessage = "Time should contain between 1 and 4 digits")]
         public string Time { get; set; }
         public int Rating { get; set; }
         public string Certificate { get; set; }
