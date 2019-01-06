@@ -9,11 +9,12 @@ namespace asp.net_nvc_movies.Models
 {
     public class Ganers
     {
-        [Key, Column(Order = 2)]
+        [Key, Column(Order = 1)]
         public int Idmovie { get; set; }
         [Required]
-        [Key, Column(Order = 1)]
+        [Key, Column(Order = 2)]
         public string NameGaner { get; set; }
+        public virtual Movies Movie { get; set; }
         public List<NameMoviesAndIMG> NMAndIMG { get; set; }
         public Ganers() { }
         public Ganers(string url, int id)

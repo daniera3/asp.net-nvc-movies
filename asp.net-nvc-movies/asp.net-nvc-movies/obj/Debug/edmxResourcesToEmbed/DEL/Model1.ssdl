@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="asp.net_nvc_movies.DEL.movie_DalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="__MigrationHistory">
     <Key>
       <PropertyRef Name="MigrationId" />
@@ -10,258 +10,154 @@
     <Property Name="Model" Type="varbinary(max)" Nullable="false" />
     <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
   </EntityType>
-  <EntityType Name="AspNetRoles">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
-    <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
-  </EntityType>
-  <EntityType Name="AspNetUserClaims">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
-    <Property Name="ClaimType" Type="nvarchar(max)" />
-    <Property Name="ClaimValue" Type="nvarchar(max)" />
-  </EntityType>
-  <EntityType Name="AspNetUserLogins">
-    <Key>
-      <PropertyRef Name="LoginProvider" />
-      <PropertyRef Name="ProviderKey" />
-      <PropertyRef Name="UserId" />
-    </Key>
-    <Property Name="LoginProvider" Type="nvarchar" MaxLength="128" Nullable="false" />
-    <Property Name="ProviderKey" Type="nvarchar" MaxLength="128" Nullable="false" />
-    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
-  </EntityType>
-  <EntityType Name="AspNetUserRoles">
-    <Key>
-      <PropertyRef Name="UserId" />
-      <PropertyRef Name="RoleId" />
-    </Key>
-    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
-    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
-  </EntityType>
-  <EntityType Name="AspNetUsers">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
-    <Property Name="Email" Type="nvarchar" MaxLength="256" />
-    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
-    <Property Name="PasswordHash" Type="nvarchar(max)" />
-    <Property Name="SecurityStamp" Type="nvarchar(max)" />
-    <Property Name="PhoneNumber" Type="nvarchar(max)" />
-    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
-    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
-    <Property Name="LockoutEndDateUtc" Type="datetime" />
-    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
-    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
-    <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
-  </EntityType>
-  <EntityType Name="Director">
+  <EntityType Name="Directors">
     <Key>
       <PropertyRef Name="NameDirector" />
-      <PropertyRef Name="idmovie" />
     </Key>
-    <Property Name="NameDirector" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="NameDirector" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="idmovie" Type="int" Nullable="false" />
   </EntityType>
-  <EntityType Name="genre">
+  <EntityType Name="Ganers">
     <Key>
-      <PropertyRef Name="Namegenre" />
-      <PropertyRef Name="idmovie" />
+      <PropertyRef Name="NameGaner" />
     </Key>
-    <Property Name="Namegenre" Type="nvarchar" MaxLength="20" Nullable="false" />
-    <Property Name="idmovie" Type="int" Nullable="false" />
+    <Property Name="NameGaner" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Idmovie" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Imges">
+    <Key>
+      <PropertyRef Name="Idmovie" />
+    </Key>
+    <Property Name="Idmovie" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="img" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="alt" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="width" Type="nvarchar(max)" />
+    <Property Name="height" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Movie">
     <Key>
-      <PropertyRef Name="idmovie" />
+      <PropertyRef Name="Idmovie" />
     </Key>
-    <Property Name="idmovie" Type="int" Nullable="false" />
-    <Property Name="title" Type="nvarchar" MaxLength="150" Nullable="false" />
-    <Property Name="idimg" Type="int" />
-    <Property Name="time" Type="nvarchar" MaxLength="150" Nullable="false" />
-    <Property Name="rating" Type="int" Nullable="false" />
-    <Property Name="Certificate" Type="nvarchar" MaxLength="150" Nullable="false" />
-    <Property Name="outline" Type="nvarchar" MaxLength="550" Nullable="false" />
-    <Property Name="date" Type="date" />
+    <Property Name="Idmovie" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TOP" Type="int" Nullable="false" />
+    <Property Name="Outline" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Idimg" Type="int" Nullable="false" />
+    <Property Name="Time" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Rating" Type="int" Nullable="false" />
+    <Property Name="Certificate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Img_Idmovie" Type="int" />
   </EntityType>
-  <EntityType Name="movieimg">
+  <EntityType Name="NameMoviesAndIMGs">
     <Key>
-      <PropertyRef Name="idimg" />
+      <PropertyRef Name="Idmovie" />
     </Key>
-    <Property Name="idimg" Type="int" Nullable="false" />
-    <Property Name="img" Type="varchar" MaxLength="150" Nullable="false" />
-    <Property Name="title" Type="nvarchar" MaxLength="130" Nullable="false" />
-    <Property Name="alt" Type="nvarchar" MaxLength="130" />
+    <Property Name="Idmovie" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameMovies" Type="nvarchar(max)" />
+    <Property Name="NameIMG" Type="nvarchar(max)" />
+    <Property Name="Ganers_NameGaner" Type="nvarchar" MaxLength="128" />
   </EntityType>
-  <EntityType Name="star">
+  <EntityType Name="Stars">
     <Key>
       <PropertyRef Name="Namestar" />
-      <PropertyRef Name="idmovie" />
     </Key>
-    <Property Name="Namestar" Type="nvarchar" MaxLength="20" Nullable="false" />
-    <Property Name="idmovie" Type="int" Nullable="false" />
+    <Property Name="Namestar" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Idmovie" Type="int" Nullable="false" />
   </EntityType>
-  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
-    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="AspNetUsers">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="AspNetUserClaims">
-        <PropertyRef Name="UserId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
-    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="AspNetUsers">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="AspNetUserLogins">
-        <PropertyRef Name="UserId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
-    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="AspNetRoles">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="AspNetUserRoles">
-        <PropertyRef Name="RoleId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
-    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="AspNetUsers">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="AspNetUserRoles">
-        <PropertyRef Name="UserId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_dbo_Director_dbo_movie_movieId">
+  <Association Name="FK_dbo_Directors_dbo_Movie_idmovie">
     <End Role="Movie" Type="Self.Movie" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
-    <End Role="Director" Type="Self.Director" Multiplicity="*" />
+    <End Role="Directors" Type="Self.Directors" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Movie">
-        <PropertyRef Name="idmovie" />
+        <PropertyRef Name="Idmovie" />
       </Principal>
-      <Dependent Role="Director">
+      <Dependent Role="Directors">
         <PropertyRef Name="idmovie" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_dbo_genre_dbo_movie_movieId">
+  <Association Name="FK_dbo_Ganers_dbo_Movie_Idmovie">
     <End Role="Movie" Type="Self.Movie" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
-    <End Role="genre" Type="Self.genre" Multiplicity="*" />
+    <End Role="Ganers" Type="Self.Ganers" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Movie">
-        <PropertyRef Name="idmovie" />
+        <PropertyRef Name="Idmovie" />
       </Principal>
-      <Dependent Role="genre">
-        <PropertyRef Name="idmovie" />
+      <Dependent Role="Ganers">
+        <PropertyRef Name="Idmovie" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_dbo_movieimg_dbo_movie_imgId">
-    <End Role="movieimg" Type="Self.movieimg" Multiplicity="0..1">
-      <OnDelete Action="Cascade" />
-    </End>
+  <Association Name="FK_dbo_Movie_dbo_Imges_Img_Idmovie">
+    <End Role="Imges" Type="Self.Imges" Multiplicity="0..1" />
     <End Role="Movie" Type="Self.Movie" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="movieimg">
-        <PropertyRef Name="idimg" />
+      <Principal Role="Imges">
+        <PropertyRef Name="Idmovie" />
       </Principal>
       <Dependent Role="Movie">
-        <PropertyRef Name="idimg" />
+        <PropertyRef Name="Img_Idmovie" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_dbo_star_dbo_movie_movieId">
+  <Association Name="FK_dbo_NameMoviesAndIMGs_dbo_Ganers_Ganers_NameGaner">
+    <End Role="Ganers" Type="Self.Ganers" Multiplicity="0..1" />
+    <End Role="NameMoviesAndIMGs" Type="Self.NameMoviesAndIMGs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ganers">
+        <PropertyRef Name="NameGaner" />
+      </Principal>
+      <Dependent Role="NameMoviesAndIMGs">
+        <PropertyRef Name="Ganers_NameGaner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Stars_dbo_Movie_Idmovie">
     <End Role="Movie" Type="Self.Movie" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
-    <End Role="star" Type="Self.star" Multiplicity="*" />
+    <End Role="Stars" Type="Self.Stars" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Movie">
-        <PropertyRef Name="idmovie" />
+        <PropertyRef Name="Idmovie" />
       </Principal>
-      <Dependent Role="star">
-        <PropertyRef Name="idmovie" />
+      <Dependent Role="Stars">
+        <PropertyRef Name="Idmovie" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="ModelStoreContainer">
+  <EntityContainer Name="aspnet_nvc_moviesDELmovie_DalModelStoreContainer">
     <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Director" EntityType="Self.Director" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="genre" EntityType="Self.genre" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Directors" EntityType="Self.Directors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ganers" EntityType="Self.Ganers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Imges" EntityType="Self.Imges" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Movie" EntityType="Self.Movie" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="movieimg" EntityType="Self.movieimg" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="star" EntityType="Self.star" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
-      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
-      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
-    </AssociationSet>
-    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
-      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
-      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
-    </AssociationSet>
-    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
-      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
-      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
-    </AssociationSet>
-    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
-      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
-      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
-    </AssociationSet>
-    <AssociationSet Name="FK_dbo_Director_dbo_movie_movieId" Association="Self.FK_dbo_Director_dbo_movie_movieId">
+    <EntitySet Name="NameMoviesAndIMGs" EntityType="Self.NameMoviesAndIMGs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stars" EntityType="Self.Stars" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_dbo_Directors_dbo_Movie_idmovie" Association="Self.FK_dbo_Directors_dbo_Movie_idmovie">
       <End Role="Movie" EntitySet="Movie" />
-      <End Role="Director" EntitySet="Director" />
+      <End Role="Directors" EntitySet="Directors" />
     </AssociationSet>
-    <AssociationSet Name="FK_dbo_genre_dbo_movie_movieId" Association="Self.FK_dbo_genre_dbo_movie_movieId">
+    <AssociationSet Name="FK_dbo_Ganers_dbo_Movie_Idmovie" Association="Self.FK_dbo_Ganers_dbo_Movie_Idmovie">
       <End Role="Movie" EntitySet="Movie" />
-      <End Role="genre" EntitySet="genre" />
+      <End Role="Ganers" EntitySet="Ganers" />
     </AssociationSet>
-    <AssociationSet Name="FK_dbo_movieimg_dbo_movie_imgId" Association="Self.FK_dbo_movieimg_dbo_movie_imgId">
-      <End Role="movieimg" EntitySet="movieimg" />
+    <AssociationSet Name="FK_dbo_Movie_dbo_Imges_Img_Idmovie" Association="Self.FK_dbo_Movie_dbo_Imges_Img_Idmovie">
+      <End Role="Imges" EntitySet="Imges" />
       <End Role="Movie" EntitySet="Movie" />
     </AssociationSet>
-    <AssociationSet Name="FK_dbo_star_dbo_movie_movieId" Association="Self.FK_dbo_star_dbo_movie_movieId">
+    <AssociationSet Name="FK_dbo_NameMoviesAndIMGs_dbo_Ganers_Ganers_NameGaner" Association="Self.FK_dbo_NameMoviesAndIMGs_dbo_Ganers_Ganers_NameGaner">
+      <End Role="Ganers" EntitySet="Ganers" />
+      <End Role="NameMoviesAndIMGs" EntitySet="NameMoviesAndIMGs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Stars_dbo_Movie_Idmovie" Association="Self.FK_dbo_Stars_dbo_Movie_Idmovie">
       <End Role="Movie" EntitySet="Movie" />
-      <End Role="star" EntitySet="star" />
+      <End Role="Stars" EntitySet="Stars" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

@@ -59,7 +59,9 @@ namespace asp.net_nvc_movies.Models
         public List<Star> Str { get; set; }
         public List<Ganers> Ganer { get; set; }
         public List<Director> Dir { get; set; }
+        public virtual Imge Imge { get; set; }
 
+    
         public void addG(Ganers G)
         {
             G.Idmovie = Idmovie;

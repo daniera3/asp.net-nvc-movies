@@ -41,36 +41,8 @@
 
         </div>
 
-        <div id="star">
-
-
-            <i>Namestar:</i> @Html.TextBoxFor(m => m.stars.Namestar)
-            <i style="color:red"> @Html.ValidationMessageFor(x => x.stars.Namestar)</i>
-            <br />
-            <input id="B_image" type="button" class="right" value="More star" onclick="morestar()" /><br />
-
-        </div>
-
-        <div id="ganer">
-
-
-            <i>NameGaner:</i> @Html.TextBoxFor(m => m.genres.NameGaner)
-            <i style="color:red"> @Html.ValidationMessageFor(x => x.genres.NameGaner)</i>
-            <br />
-            <input id="B_ganer" type="button" class="left" value="More ganer" onclick="moreGaner()" />
-            <br />
-
-        </div>
-
-        <div id="Director">
-
-            <i>NameDirector:</i> @Html.TextBoxFor(m => m.directors.NameDirector)<i style="color:red"> @Html.ValidationMessageFor(x => x.directors.NameDirector)</i>
-            <br />
-            <input id="B_Director" type="button" class="left" value="More Director" onclick="moreDir()" />
-            <br /><br />
-            <input id="add" type="button" value="Add Movie" onclick="SendData()" />
-
-        </div>
+        <br />
+        <input id="add" type="button" value="Add Movie" onclick="SendData()" />
     }
 </div>
 
@@ -96,7 +68,6 @@
     function BindData(Movies) {
         
         $("#ShowALL").find("tr:gt(0)").remove();
-        window.alert("sd");
         var tb1 = $("#ShowALL");
         for (k = 0; k < Movies.length; k++) {
             var newRow = "<tr>" +
@@ -112,7 +83,7 @@
 
 
     function SendData() {
-        var frmData = $("#frmimg").serialize();
+        var frmData = $("#frmimg").serialize(); 
         $.post("Submit1", frmData, BindData);
         $("#movie_Img_img").val("");
         $("#movie_Img_title").val("");
@@ -127,29 +98,7 @@
         $("#directors_NameDirector").val("");
         $("#stars_Namestar").val("");
         $("#genres_NameGaner").val("");
-       // $.get("GetMoviesByJson", null, BindData);
-        //delet taxt boxs
 
     }
-
-    function morestar() {
-        var frmData = $("#frmimg").serialize();
-        $.post("AddStar", frmData);
-        $("#stars_Namestar").val("");
-    }
-    function moreGaner() {
-        var frmData = $("#frmimg").serialize();
-        $.post("AddGaner", frmData);
-        $("#genres_NameGaner").val("");
-    }
-    function moreDir() {
-        var frmData = $("#frmimg").serialize();
-        $.post("AddDir", frmData);
-        $("#directors_NameDirector").val("");
-    }
-
-
-
-
 </script>
 

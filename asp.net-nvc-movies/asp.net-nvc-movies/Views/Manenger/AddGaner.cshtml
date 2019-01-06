@@ -1,0 +1,18 @@
+﻿@model asp.net_nvc_movies.ModelView.MoviesModelView
+
+@{
+    ViewBag.Title = "AddGaner";
+}
+
+<h2>Add Ganer</h2>
+
+<div id="ganer">
+
+
+    <i>NameGaner:</i> @Html.TextBoxFor(m => m.genres.NameGaner)
+    <i style="color:red"> @Html.ValidationMessageFor(x => x.genres.NameGaner)</i>
+    <br />
+    <input id="B_ganer" type="button" class="left" value="More ganer" onclick="moreGaner()" />
+    <br />
+
+</div>

@@ -17,20 +17,15 @@ namespace asp.net_nvc_movies.Models
         [Required]
         public string alt { get; set; }
         
-        public string width { get; set; }
-        
-        public string height { get; set; }
-
+        public virtual Movies Movie { get; set; }
         public Imge() {
         }
-        public Imge(int id, string url, string titl, string alt, string width, string height)
+        public Imge(int id, string url, string titl, string alt)
         {
             Idmovie = id;
             img = url;
             title = titl;
             this.alt = alt;
-            this.width = width;
-            this.height = height;
         }
     }
 }

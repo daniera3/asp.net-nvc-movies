@@ -1,0 +1,17 @@
+﻿@model project.Models.MoviesModelView
+@using project.Models
+@{
+    ViewBag.Title = "AddStar";
+}
+
+<h2>AddStar</h2>
+
+<div id="star">
+
+
+    <i>Namestar:</i> @Html.TextBoxFor(m => m.stars.Namestar)
+    <i style="color:red"> @Html.ValidationMessageFor(x => x.stars.Namestar)</i>
+    <br />
+    <input id="add" type="button" value="Add star" onclick="SendData()" />
+
+</div>

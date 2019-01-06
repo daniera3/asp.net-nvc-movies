@@ -265,6 +265,14 @@
     <Content Include="Views\movies\_panelSite.cshtml" />
     <Content Include="Views\Manenger\AddNewMovie.cshtml" />
     <Content Include="Views\movies\search.cshtml" />
+    <Content Include="Views\Movies1\Create.cshtml" />
+    <Content Include="Views\Movies1\Delete.cshtml" />
+    <Content Include="Views\Movies1\Details.cshtml" />
+    <Content Include="Views\Movies1\Edit.cshtml" />
+    <Content Include="Views\Movies1\Index.cshtml" />
+    <Content Include="Views\Manenger\AddGaner.cshtml" />
+    <Content Include="Views\Manenger\AddDir.cshtml" />
+    <Content Include="Views\Manenger\AddStar.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

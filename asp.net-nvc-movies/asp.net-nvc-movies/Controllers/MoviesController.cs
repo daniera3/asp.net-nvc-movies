@@ -18,7 +18,7 @@ namespace asp.net_nvc_movies.Controllers
     {
         private MoviesModelView GetData()
         {
-            movies_Dal dal = new movies_Dal();
+            Bb_Dal dal = new Bb_Dal();
             MoviesModelView T = new MoviesModelView
             {
                 movies = dal.Movie.ToList<Movies>()

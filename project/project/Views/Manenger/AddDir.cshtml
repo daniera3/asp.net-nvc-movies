@@ -1,0 +1,15 @@
+﻿@model project.Models.MoviesModelView
+@using project.Models
+@{
+    ViewBag.Title = "AddDir";
+}
+
+<h2>Add Dir</h2>
+
+<div id="Director">
+
+    <i>NameDirector:</i> @Html.TextBoxFor(m => m.directors.NameDirector)<i style="color:red"> @Html.ValidationMessageFor(x => x.directors.NameDirector)</i>
+    <br />
+    <input id="add" type="button" value="Add Director" onclick="SendData()" />
+
+</div>

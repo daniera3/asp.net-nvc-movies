@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+  <EntityContainerMapping StorageEntityContainer="aspnet_nvc_moviesDELmovie_DalModelStoreContainer" CdmEntityContainer="Entities">
     <EntitySetMapping Name="C__MigrationHistory">
-      <EntityTypeMapping TypeName="Model.C__MigrationHistory">
+      <EntityTypeMapping TypeName="asp.net_nvc_movies.DEL.movie_DalModel.C__MigrationHistory">
         <MappingFragment StoreEntitySet="__MigrationHistory">
           <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
           <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
@@ -11,106 +11,66 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="AspNetRoles">
-      <EntityTypeMapping TypeName="Model.AspNetRoles">
-        <MappingFragment StoreEntitySet="AspNetRoles">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="AspNetUserClaims">
-      <EntityTypeMapping TypeName="Model.AspNetUserClaims">
-        <MappingFragment StoreEntitySet="AspNetUserClaims">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="UserId" ColumnName="UserId" />
-          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
-          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="AspNetUserLogins">
-      <EntityTypeMapping TypeName="Model.AspNetUserLogins">
-        <MappingFragment StoreEntitySet="AspNetUserLogins">
-          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
-          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
-          <ScalarProperty Name="UserId" ColumnName="UserId" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="AspNetUsers">
-      <EntityTypeMapping TypeName="Model.AspNetUsers">
-        <MappingFragment StoreEntitySet="AspNetUsers">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
-          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
-          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
-          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
-          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
-          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
-          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
-          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
-          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
-          <ScalarProperty Name="UserName" ColumnName="UserName" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Director">
-      <EntityTypeMapping TypeName="Model.Director">
-        <MappingFragment StoreEntitySet="Director">
+    <EntitySetMapping Name="Directors">
+      <EntityTypeMapping TypeName="asp.net_nvc_movies.DEL.movie_DalModel.Director">
+        <MappingFragment StoreEntitySet="Directors">
           <ScalarProperty Name="NameDirector" ColumnName="NameDirector" />
           <ScalarProperty Name="idmovie" ColumnName="idmovie" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="genre">
-      <EntityTypeMapping TypeName="Model.genre">
-        <MappingFragment StoreEntitySet="genre">
-          <ScalarProperty Name="Namegenre" ColumnName="Namegenre" />
-          <ScalarProperty Name="idmovie" ColumnName="idmovie" />
+    <EntitySetMapping Name="Ganers">
+      <EntityTypeMapping TypeName="asp.net_nvc_movies.DEL.movie_DalModel.Ganer">
+        <MappingFragment StoreEntitySet="Ganers">
+          <ScalarProperty Name="NameGaner" ColumnName="NameGaner" />
+          <ScalarProperty Name="Idmovie" ColumnName="Idmovie" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Movie">
-      <EntityTypeMapping TypeName="Model.Movie">
-        <MappingFragment StoreEntitySet="Movie">
-          <ScalarProperty Name="idmovie" ColumnName="idmovie" />
-          <ScalarProperty Name="title" ColumnName="title" />
-          <ScalarProperty Name="idimg" ColumnName="idimg" />
-          <ScalarProperty Name="time" ColumnName="time" />
-          <ScalarProperty Name="rating" ColumnName="rating" />
-          <ScalarProperty Name="Certificate" ColumnName="Certificate" />
-          <ScalarProperty Name="outline" ColumnName="outline" />
-          <ScalarProperty Name="date" ColumnName="date" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="movieimg">
-      <EntityTypeMapping TypeName="Model.movieimg">
-        <MappingFragment StoreEntitySet="movieimg">
-          <ScalarProperty Name="idimg" ColumnName="idimg" />
+    <EntitySetMapping Name="Imges">
+      <EntityTypeMapping TypeName="asp.net_nvc_movies.DEL.movie_DalModel.Imge">
+        <MappingFragment StoreEntitySet="Imges">
+          <ScalarProperty Name="Idmovie" ColumnName="Idmovie" />
           <ScalarProperty Name="img" ColumnName="img" />
           <ScalarProperty Name="title" ColumnName="title" />
           <ScalarProperty Name="alt" ColumnName="alt" />
+          <ScalarProperty Name="width" ColumnName="width" />
+          <ScalarProperty Name="height" ColumnName="height" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="star">
-      <EntityTypeMapping TypeName="Model.star">
-        <MappingFragment StoreEntitySet="star">
+    <EntitySetMapping Name="Movies">
+      <EntityTypeMapping TypeName="asp.net_nvc_movies.DEL.movie_DalModel.Movie">
+        <MappingFragment StoreEntitySet="Movie">
+          <ScalarProperty Name="Idmovie" ColumnName="Idmovie" />
+          <ScalarProperty Name="TOP" ColumnName="TOP" />
+          <ScalarProperty Name="Outline" ColumnName="Outline" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Idimg" ColumnName="Idimg" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="Certificate" ColumnName="Certificate" />
+          <ScalarProperty Name="Img_Idmovie" ColumnName="Img_Idmovie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NameMoviesAndIMGs">
+      <EntityTypeMapping TypeName="asp.net_nvc_movies.DEL.movie_DalModel.NameMoviesAndIMG">
+        <MappingFragment StoreEntitySet="NameMoviesAndIMGs">
+          <ScalarProperty Name="Idmovie" ColumnName="Idmovie" />
+          <ScalarProperty Name="NameMovies" ColumnName="NameMovies" />
+          <ScalarProperty Name="NameIMG" ColumnName="NameIMG" />
+          <ScalarProperty Name="Ganers_NameGaner" ColumnName="Ganers_NameGaner" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stars">
+      <EntityTypeMapping TypeName="asp.net_nvc_movies.DEL.movie_DalModel.Star">
+        <MappingFragment StoreEntitySet="Stars">
           <ScalarProperty Name="Namestar" ColumnName="Namestar" />
-          <ScalarProperty Name="idmovie" ColumnName="idmovie" />
+          <ScalarProperty Name="Idmovie" ColumnName="Idmovie" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <AssociationSetMapping Name="AspNetUserRoles" TypeName="Model.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
-      <EndProperty Name="AspNetRoles">
-        <ScalarProperty Name="Id" ColumnName="RoleId" />
-      </EndProperty>
-      <EndProperty Name="AspNetUsers">
-        <ScalarProperty Name="Id" ColumnName="UserId" />
-      </EndProperty>
-    </AssociationSetMapping>
   </EntityContainerMapping>
 </Mapping>

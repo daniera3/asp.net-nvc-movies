@@ -10,13 +10,13 @@ namespace asp.net_nvc_movies.Models
 
     public class Director
     {
-        [Key, Column(Order = 2)]
+        [Key, Column(Order = 1)]
         public int idmovie { get; set; }
         [Required]
-        [Key, Column(Order = 1)]
+        [Key, Column(Order = 2)]
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Length must be between 2 and 50 characters")]
         public string NameDirector { get; set; }
-
+        public virtual Movies Movie { get; set; }
         public Director(string url, int id)
         {
             idmovie = id;

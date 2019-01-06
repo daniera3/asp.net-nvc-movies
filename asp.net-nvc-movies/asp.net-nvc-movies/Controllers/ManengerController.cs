@@ -11,59 +11,56 @@ namespace asp.net_nvc_movies.Controllers
 {
     public class ManengerController : Controller
     {
-        // GET: ADMIN
-        [HttpPost]
+
+        Bb_Dal dal = new Bb_Dal();
+        MoviesModelView T = new MoviesModelView();
+
+    // GET: ADMIN
+            [HttpPost]
         public ActionResult Submit1(MoviesModelView T)
         {
 
-            movies_Dal dal = new movies_Dal();
+           
             if (ModelState.IsValid)
             {
-                T.movie.addG(T.genres);
-                T.movie.addS(T.stars);
-                T.movie.addD(T.directors);
+
                 dal.Movie.Add(T.movie);
                 dal.SaveChanges();
             }
-                return View(T);  
+            return View("AddNewMovie", T);
         }
 
-
+        
         public ActionResult GetMoviesByJson()
         {
-            movies_Dal dal = new movies_Dal();
+           
             List<Movies> objmovies = dal.Movie.ToList<Movies>();
             return Json(objmovies, JsonRequestBehavior.AllowGet);
         }
 
-
-        public ActionResult AddStar(MoviesModelView T) {
-            if(T.stars.Namestar!=null)
-            T.movie.addS(T.stars);
-            
+        [HttpPost]
+        public ActionResult AddStar(String idmovie) {
+          
             return View(T);
         }
 
-
-        public ActionResult AddGaner(MoviesModelView T) {
-            T.movie.addG(T.genres);
+        [HttpPost]
+        public ActionResult AddGaner(String idmovie) {
+           // T.movie.addG(G.genres);
             return View(T);
         }
 
-
-        public ActionResult AddDir(MoviesModelView T) {
-            T.movie.addD(T.directors);
+        [HttpPost]
+        public ActionResult AddDir(String idmovie) {
+           // T.movie.addD(G.directors);
             return View(T);
 
         }
 
-        public ActionResult AddNewMovie()
+        public ActionResult AddNewMovie(MoviesModelView G)
         {
-            movies_Dal dal = new movies_Dal();
-            MoviesModelView T = new MoviesModelView
-            {
-                movies = dal.Movie.ToList<Movies>()
-            };
+            T = G;
+            T.movies = dal.Movie.ToList<Movies>();
             return View(T);
 
         }
