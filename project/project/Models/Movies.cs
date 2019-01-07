@@ -33,7 +33,7 @@ namespace project.Models
             this.Ganer = new List<Ganers>();
         }
         
-        public int TOP { get; set; }
+        
 
        
 

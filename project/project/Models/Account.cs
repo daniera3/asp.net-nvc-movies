@@ -20,7 +20,7 @@ namespace project.Models
         public string Password { get; set; }
         public bool Admin { get; set; }
     }
-    public class LoginViewModel
+    public class Login
     {
         [Key]
         [Required]
@@ -37,7 +37,7 @@ namespace project.Models
         public bool RememberMe { get; set; }
     }
 
-    public class RegisterViewModel
+    public class Register
     {
         [Key]
         [Required]
