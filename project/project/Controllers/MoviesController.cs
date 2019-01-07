@@ -1,20 +1,17 @@
-﻿
-using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Diagnostics;
-using System.IO;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
+using project.DEL;
+using project.Models;
 
 
 namespace asp.net_nvc_movies.Controllers
 {
     public class MoviesController : Controller
     {
-
+        private Movie_del db = new Movie_del();
+        private MoviesModelView D = new MoviesModelView();
         // GET: Movies
 
 
@@ -29,7 +26,9 @@ namespace asp.net_nvc_movies.Controllers
         public ActionResult Movie()
         {
 
-            return View();
+            D.movies = db.Movies.ToList<Movies>();
+            
+            return View(D);
 
         }
 
