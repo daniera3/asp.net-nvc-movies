@@ -21,6 +21,9 @@ namespace project.DEL
 
         public DbSet<Imge> Imges { get; set; }
 
-        public System.Data.Entity.DbSet<project.Models.Star> Stars { get; set; }
+        public DbSet<Star> Stars { get; set; }
+        public DbSet<Ganers> Ganers { get; set; }
+        public DbSet<Director> Directors { get; set; }
+        public DbSet<Account> Accounts { get; set; }
     }
 }

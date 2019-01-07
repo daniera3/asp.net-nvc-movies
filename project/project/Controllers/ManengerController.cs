@@ -13,7 +13,7 @@ namespace project.Controllers
     {
 
         private Movies_Del dal = new Movies_Del();
-
+        private MoviesModelView D=new MoviesModelView() ;
         [HttpPost]
         public ActionResult Submit1(MoviesModelView T)
         {
@@ -27,8 +27,64 @@ namespace project.Controllers
             }
             return View("AddNewMovie", T);
         }
+        [HttpPost]
+        public ActionResult SubmitS(MoviesModelView T)
+        {
+            try
+            {
+                var id = T.movie.Title.Split(' ').GetValue(0);
+                dal.Stars.Add(new Star(T.stars.Namestar, Int32.Parse(id.ToString())));
+                dal.SaveChanges();
+            }
+            
+            catch (Exception)
+            {
+                return View(T);
+            }
+            
+            return View(T);
+        }
+        [HttpPost]
+        public ActionResult SubmitD(MoviesModelView T)
+        {
 
-        
+
+            try
+            {
+                var id = T.movie.Title.Split(' ').GetValue(0);
+                dal.Directors.Add(new Director(T.directors.NameDirector, Int32.Parse(id.ToString())));
+                dal.SaveChanges();
+            }
+
+            catch (Exception )
+            {
+              
+                return View(T);
+            }
+
+            return View(T);
+        }
+        [HttpPost]
+        public ActionResult SubmitG(MoviesModelView T)
+        {
+
+
+            try
+            {
+                var id = T.movie.Title.Split(' ').GetValue(0);
+                dal.Ganers.Add(new Ganers(T.genres.NameGaner, Int32.Parse(id.ToString())));
+                dal.SaveChanges();
+            }
+
+            catch (Exception )
+            {
+              
+                return View(T);
+            }
+
+            return View(T);
+        }
+
         public ActionResult GetMoviesByJson()
         {
            
@@ -37,28 +93,32 @@ namespace project.Controllers
         }
 
         
+       
         public ActionResult AddStar() {
-          
-            return View();
+            D.movies = dal.Movies.ToList<Movies>();
+            return View(D);
         }
 
+        
         
         public ActionResult AddGaner() {
-            return View();
+            D.movies = dal.Movies.ToList<Movies>();
+            return View(D);
         }
 
         
+        
         public ActionResult AddDir() {
-
-            return View();
+            D.movies = dal.Movies.ToList<Movies>();
+            return View(D);
 
         }
 
         public ActionResult AddNewMovie()
         {
-            MoviesModelView T=new MoviesModelView() ;
-            T.movies = dal.Movies.ToList<Movies>();
-            return View(T);
+            
+            D.movies = dal.Movies.ToList<Movies>();
+            return View(D);
 
         }
     }
