@@ -3,7 +3,11 @@
 @{
     ViewBag.Title = "AddGaner";
 }
-
+<p>
+    @Html.ActionLink("Add Movies", "AddNewMovie")<i> | </i>
+    @Html.ActionLink("Add Directors", "AddDir")<i> | </i>
+    @Html.ActionLink("Add Starts", "AddStar")
+</p>
 <h2>Add Ganer</h2>
 
 <div id="ganer">
@@ -11,8 +15,7 @@
 
     <i>NameGaner:</i> @Html.TextBoxFor(m => m.genres.NameGaner)
     <i style="color:red"> @Html.ValidationMessageFor(x => x.genres.NameGaner)</i>
-    <br />
-    <br />
+    <br /><br />
     <input id="add" type="button" value="Add ganer" onclick="SendData()" />
 
 </div>

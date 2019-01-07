@@ -3,15 +3,20 @@
 @{
     ViewBag.Title = "AddStar";
 }
-
+<p>
+    @Html.ActionLink("Add Movies", "AddNewMovie")<i> | </i>
+    @Html.ActionLink("Add Directors", "AddDir")<i> | </i>
+    @Html.ActionLink("Add Ganers", "AddGaner")
+</p>
 <h2>AddStar</h2>
 
 <div id="star">
 
+    @Html.ValueFor(m => m.movies.)
 
     <i>Namestar:</i> @Html.TextBoxFor(m => m.stars.Namestar)
     <i style="color:red"> @Html.ValidationMessageFor(x => x.stars.Namestar)</i>
-    <br />
+    <br /><br />
     <input id="add" type="button" value="Add star" onclick="SendData()" />
 
 </div>

@@ -9,7 +9,7 @@ namespace project.Models
     public class Imge
     {
         [Key]
-        public int Idmovie { get; set; }
+        public int Idimg { get; set; }
         [Required]
         public string img { get; set; }
         [Required]
@@ -21,7 +21,7 @@ namespace project.Models
         }
         public Imge(int id, string url, string titl, string alt)
         {
-            Idmovie = id;
+            Idimg = id;
             img = url;
             title = titl;
             this.alt = alt;

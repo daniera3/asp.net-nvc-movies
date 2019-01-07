@@ -12,7 +12,7 @@ namespace project.Controllers
     public class ManengerController : Controller
     {
 
-        private MoviesDel dal = new MoviesDel();
+        private Movies_Del dal = new Movies_Del();
 
         [HttpPost]
         public ActionResult Submit1(MoviesModelView T)

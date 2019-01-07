@@ -3,13 +3,17 @@
 @{
     ViewBag.Title = "AddDir";
 }
-
+<p>
+    @Html.ActionLink("Add Movies", "AddNewMovie")<i> | </i>
+    @Html.ActionLink("Add Ganers", "AddGaner")<i> | </i>
+    @Html.ActionLink("Add Starts", "AddStar")
+</p>
 <h2>Add Dir</h2>
 
 <div id="Director">
 
     <i>NameDirector:</i> @Html.TextBoxFor(m => m.directors.NameDirector)<i style="color:red"> @Html.ValidationMessageFor(x => x.directors.NameDirector)</i>
-    <br />
+    <br /><br />
     <input id="add" type="button" value="Add Director" onclick="SendData()" />
 
 </div>

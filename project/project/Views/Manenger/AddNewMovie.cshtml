@@ -10,49 +10,55 @@
 <p>
     @Html.ActionLink("Add Directors", "AddDir")<i> | </i>
     @Html.ActionLink("Add Ganers", "AddGaner")<i> | </i>
-    @Html.ActionLink("Add Starts", "AddStar")<i> | </i>
+    @Html.ActionLink("Add Starts", "AddStar")
 </p>
 <div id="image">
-    @using (Html.BeginForm("Submit1", "Manenger", FormMethod.Post, new { id = "frmimg" }))
+    @using (Html.BeginForm("Submit1", "Manenger", FormMethod.Post, new { id = "frmimg" , @class = "control-label col-md-2" }))
     {
-        <div class="table">
-            <i>img:</i> @Html.TextBoxFor(m => m.movie.Img.img) <a id="i1" style="color:red">@Html.ValidationMessageFor(x => x.movie.Img.img)</a>
-            <br />
-            <i>title:</i> @Html.TextBoxFor(m => m.movie.Img.title)<i id="i2" style="color:red"> @Html.ValidationMessageFor(x => x.movie.Img.title)</i>
-            <br />
-            <i>alt:</i> @Html.TextBoxFor(m => m.movie.Img.alt)  <i id="i3" style="color:red">    @Html.ValidationMessageFor(x => x.movie.Img.alt)</i>
-            <br />
-        </div>
-
-
-
-
-        <div id="Movies">
-
-            <div class="table">
-                <i>title:</i> @Html.TextBoxFor(m => m.movie.Title)<i style="color:red"> @Html.ValidationMessageFor(x => x.movie.Title)</i>
-                <br />
-                <i>Rating:</i> @Html.TextBoxFor(m => m.movie.Rating) <i style="color:red">@Html.ValidationMessageFor(x => x.movie.Rating)</i>
-                <br />
-                <i>Outline:</i> @Html.TextBoxFor(m => m.movie.Outline)<i style="color:red"> @Html.ValidationMessageFor(x => x.movie.Outline)</i>
-                <br />
-                <i>Certificate:</i> @Html.TextBoxFor(m => m.movie.Certificate) <i style="color:red">@Html.ValidationMessageFor(x => x.movie.Certificate)</i>
-                <br />
-                <i>time:</i> @Html.TextBoxFor(m => m.movie.Time) <i style="color:red">@Html.ValidationMessageFor(x => x.movie.Time)</i>
-                <br />
-            </div>
-
-        </div>
-
+        <table class="table-condensed">
+            <tr>
+                <td> <i>img:</i> @Html.TextBoxFor(m => m.movie.Img.img)</td>
+                <td> <a id="i1" style="color:red">@Html.ValidationMessageFor(x => x.movie.Img.img)</a></td>
+            </tr>
+            <tr>
+                <td><i>title:</i> @Html.TextBoxFor(m => m.movie.Img.title)</td>
+                <td> <i id="i2" style="color:red"> @Html.ValidationMessageFor(x => x.movie.Img.title)</i></td>
+            </tr>
+            <tr>
+                <td> <i>alt:</i> @Html.TextBoxFor(m => m.movie.Img.alt)</td>
+                <td> <i id="i3" style="color:red">    @Html.ValidationMessageFor(x => x.movie.Img.alt)</i></td>
+            </tr>
+            <tr>
+                <td> <i>title:</i> @Html.TextBoxFor(m => m.movie.Title)</td>
+                <td> <i style="color:red"> @Html.ValidationMessageFor(x => x.movie.Title)</i></td>
+            </tr>
+            <tr>
+                <td><i>Rating:</i> @Html.TextBoxFor(m => m.movie.Rating)</td>
+                <td> <i style="color:red">@Html.ValidationMessageFor(x => x.movie.Rating)</i></td>
+            </tr>
+            <tr>
+                <td><i>Outline:</i> @Html.TextBoxFor(m => m.movie.Outline)</td>
+                <td><i style="color:red"> @Html.ValidationMessageFor(x => x.movie.Outline)</i></td>
+            </tr>
+            <tr>
+                <td> <i>Certificate:</i> @Html.TextBoxFor(m => m.movie.Certificate)</td>
+                <td> <i style="color:red">@Html.ValidationMessageFor(x => x.movie.Certificate)</i></td>
+            </tr>
+            <tr>
+                <td><i>time:</i> @Html.TextBoxFor(m => m.movie.Time)</td>
+                <td><i style="color:red">@Html.ValidationMessageFor(x => x.movie.Time)</i></td>
+            </tr>
+        </table>
         <br />
         <input id="add" type="button" value="Add Movie" onclick="SendData()" />
     }
 </div>
+<br />
 
-<br />
-<span style="color:green"> Current Movies</span>
-<br />
 <table id="ShowALL" class="table">
+    <tr>
+        <td><span style="color:green"> Current Movies</span></td>
+    </tr>
     <tr>
         <td>title</td>
         <td>Rating</td>
@@ -64,41 +70,41 @@
 
 </table>
 
-<script>
+    <script>
 
-    $.get("GetMoviesByJson", null, BindData);
+        $.get("GetMoviesByJson", null, BindData);
 
-    function BindData(Movies) {
-        
-        $("#ShowALL").find("tr:gt(0)").remove();
-        var tb1 = $("#ShowALL");
-        for (k = 0; k < Movies.length; k++) {
-            var newRow = "<tr>" +
-                "<td>" + Movies[k].Title + "</td>" +
-                "<td>" + Movies[k].Rating + "</td>" +
-                "<td>" + Movies[k].Outline + "</td>" +
-                "<td>" + Movies[k].Certificate + "</td>" +
-                "<td>" + Movies[k].Time + "</td>" +
-                "</tr>";
-            tb1.append(newRow);
+        function BindData(Movies) {
+
+            $("#ShowALL").find("tr:gt(0,1)").remove();
+            var tb1 = $("#ShowALL");
+            for (k = 0; k < Movies.length; k++) {
+                var newRow = "<tr>" +
+                    "<td>" + Movies[k].Title + "</td>" +
+                    "<td>" + Movies[k].Rating + "</td>" +
+                    "<td>" + Movies[k].Outline + "</td>" +
+                    "<td>" + Movies[k].Certificate + "</td>" +
+                    "<td>" + Movies[k].Time + "</td>" +
+                    "</tr>";
+                tb1.append(newRow);
+            }
         }
-    }
 
 
-    function SendData() {
-        var frmData = $("#frmimg").serialize(); 
-        $.post("Submit1", frmData, BindData);
-        $("#movie_Img_img").val("");
-        $("#movie_Img_title").val("");
-        $("#movie_Img_alt").val("");
+        function SendData() {
+            var frmData = $("#frmimg").serialize();
+            $.post("Submit1", frmData, BindData);
+            $("#movie_Img_img").val("");
+            $("#movie_Img_title").val("");
+            $("#movie_Img_alt").val("");
 
-        $("#movie_Title").val("");
-        $("#movie_Rating").val("");
-        $("#movie_Outline").val("");
-        $("#movie_Certificate").val("");
-        $("#movie_Time").val("");
+            $("#movie_Title").val("");
+            $("#movie_Rating").val("");
+            $("#movie_Outline").val("");
+            $("#movie_Certificate").val("");
+            $("#movie_Time").val("");
 
 
-    }
-</script>
+        }
+    </script>
 
