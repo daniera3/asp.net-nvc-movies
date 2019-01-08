@@ -1,0 +1,14 @@
+﻿@model project.Models.MoviesModelView
+@using project.Models
+
+
+@using (Html.BeginForm("search", "Movies", FormMethod.Post, new { @class = "nav navbar-nav" }))
+{
+    <br />
+    <i style="color:white">Search:</i>
+    <input id="Text1" name="name movie" type="text" />
+
+    <input id="Submit1" type="submit" value="Search" />
+}
+
+
