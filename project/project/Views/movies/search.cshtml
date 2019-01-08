@@ -2,20 +2,67 @@
 @using project.Models
 @{
     ViewBag.Title = "search";
+    WebGrid obj = new WebGrid(Model.movies, rowsPerPage: 6, canPage: true);
 }
 
 
-<form action="SerchMovies" method="post">
-    Search: 
-    <input id="Text1" name="name movie" type="text" />
-    <br />
-    <input id="Submit" type="submit" value="Serch" />
-</form>
 
+}
+
+<style type="text/css">
+
+    .webgrid {
+        margin: 4px;
+        border-collapse: collapse;
+        width: 90%;
+    }
+
+    .header {
+        padding: 6px 5px;
+        text-align: center;
+        background-color: #e8eef4;
+        border-bottom: 2px solid #3966A2;
+        height: 40px;
+        font-weight: bold;
+        border-top: 2px solid #D6E8FF;
+        border-left: 2px solid #D6E8FF;
+        border-right: 2px solid #D6E8FF;
+    }
+    .webgrid th, .webgrid td {
+        border: 1px solid #C0C0C0;
+        padding: 5px;
+    }
+
+    .alt {
+        background-color: #ff0000;
+        color: #D6E8FF;
+    }
+
+    .product {
+        width: 50px;
+        font-weight: bold;
+    }
+</style>
 @{
 
-    WebGrid obj = new WebGrid(Model.movies);
+    @obj.GetHtml(tableStyle: "table",
+                 headerStyle: "Grid-Header",
+                 alternatingRowStyle: "Grid-alt",
+                 selectedRowStyle: "Grid-selected",
+                 rowStyle: "Grid-rowstyle",
+                 footerStyle: "Grid-Footer",
+                 mode: WebGridPagerModes.All,
+                  columns:
+                 obj.Columns
+                 (
+                     obj.Column(columnName: "Idmovie", header: "Movie Id"),
+                     obj.Column(columnName: "Title", header: "Movie Title"),
+                     obj.Column(columnName: "Rating", header: "Movie Rating"),
+                     obj.Column(columnName: "Outline", header: "Movie Outline"),
+                     obj.Column(columnName: "Time", header: "Movie Time in min")
 
-}
+                     )
+            )
+    }
 
-@obj.GetHtml()
+         
