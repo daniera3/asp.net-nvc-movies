@@ -1,5 +1,2 @@
-
 project/project/Web.config
-
-project/.vs/project/v15/.suo
-project/.vs/project/v15/Server/sqlite3/storage.ide-wal
+project/.vs/project/v15/*
