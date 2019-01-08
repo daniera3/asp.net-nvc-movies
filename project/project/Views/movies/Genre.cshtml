@@ -10,9 +10,9 @@
             @{foreach (String g in ViewBag.ganers)
                 {
                     <tr>
-                        <p>
+                        
                             <il id="doit" class="h3">  @Html.ActionLink(g, "MoviesPerGaner", "Movies", new { ganer = g }, new { @class = "active" })</il>
-                        </p>
+                        
                     </tr>
                     <tr>
                         @{foreach (Movies m in Model.movies)

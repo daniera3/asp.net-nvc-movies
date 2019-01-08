@@ -13,7 +13,7 @@
                             <td rowspan="2" valign="top" id="img_primary">
                                 <div class="image">
                                     <a>
-                                        <div href="/Movies/CMovie?id=@m.Idmovie.ToString()" class="hover-over-image zero-z-index">
+                                        <div class="hover-over-image zero-z-index">
                                             <img class="poster shadowed"
                                                  height=209
                                                  width=140
@@ -25,9 +25,9 @@
                                 </div>
                             </td>
                             <td class="overview-top">
-                                <h4>
-                                    <a href="/Movies/CMovie?id=@m.Idmovie.ToString()" title=@m.Title>@m.Title</a>
-                                </h4>
+
+                                    <li>@Html.ActionLink(m.Title, "CMovie", "Movies", new { id = m.Idmovie.ToString() }, new { @class = "active" })</li>      
+                                
                                 <p class="cert-runtime-genre">
                                     <img title="PG"
                                          alt="Certificate PG"

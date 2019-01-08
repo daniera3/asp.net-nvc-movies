@@ -36,7 +36,7 @@ namespace project.Controllers
                            select x).ToList<Director>();
 
 
-            return View(D.movie);
+            return View(D);
 
         }
 
@@ -96,9 +96,9 @@ namespace project.Controllers
         public ActionResult Genre()
         {
 
-            List<string> G= (from x in db.Ganers
-                              select x.NameGaner).ToList<string>();
-            ViewBag.ganers = G;
+            List<string> Ganer = (from x in db.Ganers
+                              select x.NameGaner).Distinct().ToList<string>();
+            ViewBag.ganers = Ganer;
             D.movie.Ganer = (from x in db.Ganers
                              select x).ToList<Ganers>();
             foreach (Ganers G in D.movie.Ganer)
@@ -120,8 +120,7 @@ namespace project.Controllers
 
         public ActionResult MoviesPerGaner(string ganer)
         {
-
-            
+            ViewBag.ganer= ganer;
             List<Ganers> Ganer = new List<Ganers>();
             Ganer = (from x in db.Ganers
                      where x.NameGaner.Equals(ganer)
