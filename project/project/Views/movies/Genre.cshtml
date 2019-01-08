@@ -3,33 +3,21 @@
 <body id="styleguide-v2" class="fixed">
 
 
-    <div class="article listo nm" style="background-image:url('')">
+    <div class="article listo nm">
         <h2>@ViewBag.Title</h2>
         <h4>choose your genre:</h4>
         <table class="table-hover">
-            @{foreach (Ganers g in Ganer)
+            @{foreach (Ganers g in Model.movie.Ganer)
                 {
-
-                    <td>
                     <tr>
                         <p>
-
                             <il id="doit" class="h3">  @Html.ActionLink(g.NameGaner, "MoviesPerGaner", "Movies", new { ganer = g.NameGaner }, new { @class = "active" })</il>
-
                         </p>
                     </tr>
                     <tr>
-
-
-
                         @{foreach (Movies m in Model.movies)
                             {
-                            <tr>
-
-
-
                                 <td>
-
                                     <img class="poster shadowed"
                                          height=209
                                          width=140
@@ -37,18 +25,14 @@
                                          title=@m.Img.title
                                          src=@m.Img.img />
                                 </td>
-                            </tr>
-                            <tr>
+                            <td>
                                 <a class="left" href="/Movies/CMovie?id=@m.Idmovie" title=@m.Title>@m.Title</a>
-                            </tr>
                             </td>
-
-
-
-                        <br />
-                        }
-
-                        }
+                            }
+                            }
+                        </tr>
+                                }
+                            }
                     </table>
 
     </div>
