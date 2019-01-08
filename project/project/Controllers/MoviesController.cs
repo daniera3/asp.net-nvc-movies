@@ -15,8 +15,9 @@ namespace asp.net_nvc_movies.Controllers
         // GET: Movies
 
 
-        public ActionResult CMovie()
+        public ActionResult CMovie(int id)
         {
+
             
             return View();
 
@@ -27,7 +28,21 @@ namespace asp.net_nvc_movies.Controllers
         {
 
             D.movies = db.Movies.ToList<Movies>();
-            
+            foreach(Movies movie in D.movies)
+            {
+                movie.Img =(from x in db.Imges
+                             where x.Idimg.Equals(movie.Idimg)
+                             select x).ToList<Imge>()[0];
+                movie.Str= (from x in db.Stars
+                            where x.Idmovie.Equals(movie.Idmovie)
+                            select x).ToList<Star>();
+                movie.Ganer = (from x in db.Ganers
+                             where x.Idmovie.Equals(movie.Idmovie)
+                             select x).ToList<Ganers>();
+                movie.Dir = (from x in db.Directors
+                             where x.idmovie.Equals(movie.Idmovie)
+                             select x).ToList<Director>();
+            }
             return View(D);
 
         }
@@ -36,9 +51,30 @@ namespace asp.net_nvc_movies.Controllers
         
         public ActionResult Top10(string num)
         {
+            if (num == null)
+                num = "10";
           
             ViewBag.num = num;
-            return View();
+            D.movies = (from x in db.Movies
+                        orderby  num,x.Rating descending
+                        select x ).ToList<Movies>();
+            foreach(Movies movie in D.movies)
+            {
+                movie.Img =(from x in db.Imges
+                             where x.Idimg.Equals(movie.Idimg)
+                             select x).ToList<Imge>()[0];
+                movie.Str= (from x in db.Stars
+                            where x.Idmovie.Equals(movie.Idmovie)
+                            select x).ToList<Star>();
+                movie.Ganer = (from x in db.Ganers
+                             where x.Idmovie.Equals(movie.Idmovie)
+                             select x).ToList<Ganers>();
+                movie.Dir = (from x in db.Directors
+                             where x.idmovie.Equals(movie.Idmovie)
+                             select x).ToList<Director>();
+            }
+            return View(D);
+        
             
         }
 
@@ -55,7 +91,18 @@ namespace asp.net_nvc_movies.Controllers
             
             return View();
         }
-      
+        public ActionResult search()
+        {
+            String VSearch = Request.Form["Text1"];
+             D.movies= (from x in db.Movies
+                               where x.Title.Contains(VSearch)
+                               select x).ToList<Movies>();
+
+
+            return View(D);
+        }
+
+
     }
 
 }

@@ -5,10 +5,10 @@
 }
 <div class="header">&nbsp;</div>
 <div class="list detail sub-list">
-    @{ foreach (Movies m in Model.movies.ToList<Movies>())
+    @{ foreach (Movies m in Model.movies)
         {
             <div class="list_item odd" itemscope itemtype="http://schema.org/Movie">
-                <table cellspacing="0" cellpadding="0" border="0" class="nm-title-overview-widget-layout">
+                <table cellspacing="0" cellpadding="0" border="0" class="table">
                     <tbody>
                         <tr>
                             <td rowspan="2" valign="top" id="img_primary">
@@ -51,46 +51,31 @@
                                     @m.Outline
                                 </div>
                                 <div class="txt-block">
-                                    <h5 class="inline">Directors:</h5>
+                                    <i class="inline">
+                                        <i>Directors:</i>
 
-                                    @foreach (Director d in @m.Dir)
-                                    {
-                                        <span>
-                                            <a>@d.NameDirector</a>
-                                        </span>
-                                    }
-
+                                        @foreach (Director d in @m.Dir)
+                                        {
+                                            <span>
+                                                <a>@d.NameDirector |</a>
+                                            </span>
+                                        }
+                                    </i>
                                 </div>
                                 <div class="txt-block">
-                                    <h5 class="inline">Stars:</h5>
-                                    @foreach (Star s in @m.Str)
-                                    {
-                                        <a> @s.Namestar ,</a>
-                                    }
+                                    <i class="inline">
+                                        <i>Stars:</i>
+                                        @foreach (Star s in @m.Str)
+                                        {
+                                            <a> @s.Namestar ,</a>
+                                        }
+                                    </i>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td class="overview-bottom">
-                                <script>
-                                    if (typeof uet == 'function') {
-                                        uet("bb", "SmallTrailerWidget", { wb: 1 });
-                                    }
-                                </script>
+                            <td>
 
-                                <script>
-                                    if (typeof uet == 'function') {
-                                        uet("be", "SmallTrailerWidget", { wb: 1 });
-                                    }
-                                </script>
-                                <script>
-                                    if (typeof uex == 'function') {
-                                        uex("ld", "SmallTrailerWidget", { wb: 1 });
-                                    }
-                                </script>
-                                <span class="wlb_wrapper">
-
-                                </span>
                             </td>
                         </tr>
                     </tbody>
