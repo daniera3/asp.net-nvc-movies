@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
@@ -14,10 +12,10 @@ namespace project.Controllers
 
         private Movie_del dal = new Movie_del();
         private MoviesModelView D=new MoviesModelView() ;
+
         [HttpPost]
         public ActionResult Submit1(MoviesModelView T)
         {
-
            
             if (ModelState.IsValid)
             {
@@ -25,7 +23,7 @@ namespace project.Controllers
                 dal.Movies.Add(T.movie);
                 dal.SaveChanges();
             }
-            return View("AddNewMovie", T);
+            return View();
         }
         [HttpPost]
         public ActionResult SubmitS(MoviesModelView T)
@@ -39,15 +37,14 @@ namespace project.Controllers
             
             catch (Exception)
             {
-                return View(T);
+                return View();
             }
             
-            return View(T);
+            return View();
         }
         [HttpPost]
         public ActionResult SubmitD(MoviesModelView T)
         {
-
 
             try
             {
@@ -59,15 +56,14 @@ namespace project.Controllers
             catch (Exception )
             {
               
-                return View(T);
+                return View();
             }
 
-            return View(T);
+            return View();
         }
         [HttpPost]
         public ActionResult SubmitG(MoviesModelView T)
         {
-
 
             try
             {
@@ -79,12 +75,12 @@ namespace project.Controllers
             catch (Exception )
             {
               
-                return View(T);
+                return View();
             }
 
-            return View(T);
+            return View();
         }
-
+        
         public ActionResult GetMoviesByJson()
         {
            

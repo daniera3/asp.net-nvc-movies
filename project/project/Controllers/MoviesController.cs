@@ -6,7 +6,7 @@ using project.DEL;
 using project.Models;
 
 
-namespace asp.net_nvc_movies.Controllers
+namespace project.Controllers
 {
     public class MoviesController : Controller
     {
