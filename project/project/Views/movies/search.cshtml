@@ -2,7 +2,6 @@
 @using project.Models
 @{
     ViewBag.Title = "search";
-    WebGrid obj = new WebGrid(Model.movies, rowsPerPage: 6, canPage: true);
 }
 
 <<<<<<< HEAD
@@ -11,7 +10,14 @@
 =======
 >>>>>>> parent of 2617073... movies show
 
+<form action="SerchMovies" method="post">
+    Search: 
+    <input id="Text1" name="name movie" type="text" />
+    <br />
+    <input id="Submit" type="submit" value="Serch" />
+</form>
 
+<<<<<<< HEAD
 }
 
 <<<<<<< HEAD
@@ -52,26 +58,12 @@
         font-weight: bold;
     }
 </style>
+=======
+>>>>>>> parent of bf70ebd... 1
 @{
 
-    @obj.GetHtml(tableStyle: "table",
-                 headerStyle: "Grid-Header",
-                 alternatingRowStyle: "Grid-alt",
-                 selectedRowStyle: "Grid-selected",
-                 rowStyle: "Grid-rowstyle",
-                 footerStyle: "Grid-Footer",
-                 mode: WebGridPagerModes.All,
-                  columns:
-                 obj.Columns
-                 (
-                     obj.Column(columnName: "Idmovie", header: "Movie Id"),
-                     obj.Column(columnName: "Title", header: "Movie Title"),
-                     obj.Column(columnName: "Rating", header: "Movie Rating"),
-                     obj.Column(columnName: "Outline", header: "Movie Outline"),
-                     obj.Column(columnName: "Time", header: "Movie Time in min")
+    WebGrid obj = new WebGrid(Model.movies);
 
-                     )
-            )
-    }
+}
 
-         
+@obj.GetHtml()
