@@ -2,12 +2,7 @@
 @using project.Models
 
 @{
-    List<Ganers> Ganer;
     ViewBag.Title = "Genres";
-    if (ViewBag.GanersList != null)
-    { Ganer = ViewBag.GanersList; }
-    else
-    { Ganer = new List<Ganers>(); }
 }
 
 
@@ -18,7 +13,7 @@
         <h2>@ViewBag.Title</h2>
         <h4>choose your genre:</h4>
         <table class="table-hover">
-            @{foreach (Ganers g in Ganer)
+            @{foreach (Ganers g in Model.movie.Ganer)
                 {
 
                     <td>
@@ -31,21 +26,21 @@
                     </tr>
                     <tr>
 
-                        @{foreach (NameMoviesAndIMG n in g.NMAndIMG)
+                        @{foreach (Movies m in Model.movies)
                             {
 
                                 <p class="fixed">
                                 <td>
+                    <tr>
+                        <img class="poster shadowed"
+                             height=209
+                             width=140
+                             alt=@m.Img.alt
+                             title=@m.Img.title
+                             src=@m.Img.img />>
+                    </tr>
                             <tr>
-                                <img class="poster shadowed"
-                                     height=50
-                                     width=50
-                                     alt=@n.NameMovies
-                                     title=@n.NameMovies
-                                     src=@n.NameIMG />
-                            </tr>
-                            <tr>
-                                <a class="left" href="/Movies/CMovie?id=@n.Idmovie" title=@n.NameMovies>@n.NameMovies</a>
+                                <a href="/Movies/CMovie?id=@m.Idmovie.ToString()" title=@m.Title>@m.Title</a>
                             </tr>
                             </td>
 
