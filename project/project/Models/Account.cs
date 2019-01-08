@@ -20,23 +20,6 @@ namespace project.Models
         public string Password { get; set; }
         public bool Admin { get; set; }
     }
-    public class Login
-    {
-        [Key]
-        [Required]
-        [Display(Name = "Email")]
-        [EmailAddress]
-        public string Email { get; set; }
-
-        [Required]
-        [DataType(DataType.Password)]
-        [Display(Name = "Password")]
-        public string Password { get; set; }
-
-        [Display(Name = "Remember me?")]
-        public bool RememberMe { get; set; }
-    }
-
     public class Register
     {
         [Key]
