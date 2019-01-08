@@ -43,7 +43,7 @@ namespace project.Controllers
                         return RedirectToAction("Register", A);
                     }
                     Session["Account"] = account;
-                    return RedirectToRoute("Index", "Home");
+                    return RedirectToAction("Index", "Home");
                 }
             }
             TempData["error"] = "incorrect";
@@ -65,14 +65,14 @@ namespace project.Controllers
                 if(T.Count==0)
                 {
                     TempData["error"] = "password or Email incorrect";
-                    return View("Login", A);
+                    return RedirectToAction("Login", A);
                 }
                 
                 Session["Account"] = A;
-                return View("Index", "Home");
+                return RedirectToAction("Index", "Home");
             }
             TempData["error"] = "password or Email incorrect";
-            return View("Login",A);
+            return RedirectToAction("Login",A);
         }
         
         public ActionResult LogOff()
