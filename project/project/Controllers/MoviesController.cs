@@ -96,9 +96,9 @@ namespace project.Controllers
         public ActionResult Genre()
         {
 
-            List<string> G= (from x in db.Ganers
-                              select x.NameGaner).ToList<string>();
-            ViewBag.ganers = G;
+            List<string> ganer= (from x in db.Ganers
+                              select x.NameGaner).Distinct().ToList<string>();
+            ViewBag.ganers = ganer;
             D.movie.Ganer = (from x in db.Ganers
                              select x).ToList<Ganers>();
             foreach (Ganers G in D.movie.Ganer)
