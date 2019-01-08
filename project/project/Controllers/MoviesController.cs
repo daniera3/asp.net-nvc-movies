@@ -98,7 +98,7 @@ namespace project.Controllers
 
            
             D.movie.Ganer = (from x in db.Ganers
-                             select x).ToList<Ganers>();
+                             select  x ).Distinct().ToList<Ganers>();
             foreach (Ganers G in D.movie.Ganer)
             {
                 D.movies = (from x in db.Movies
