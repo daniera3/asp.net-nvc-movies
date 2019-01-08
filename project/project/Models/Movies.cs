@@ -37,16 +37,18 @@ namespace project.Models
 
        
 
-        public Imge Img { get; set; }
 
-        [Required]
-        public string Outline { get; set; }
         [Key]
         public int Idmovie { get; set; }
         [Required]
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Length must be between 2 and 50 characters")]
         public string Title { get; set; }
         public int Idimg { get; set; }
+        public Imge Img { get; set; }
+
+        [Required]
+        public string Outline { get; set; }
+
         [Required]
         [RegularExpression("^[0-9]{1,4}$", ErrorMessage = "Time should contain between 1 and 4 digits")]
         public string Time { get; set; }
