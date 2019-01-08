@@ -143,7 +143,7 @@ namespace project.Controllers
         }
         public ActionResult search()
         {
-            String VSearch = Request.Form["name movie"];
+            String VSearch = Request.Form["Text1"];
              D.movies= (from x in db.Movies
                                where x.Title.Contains(VSearch)
                                select x).ToList<Movies>();
