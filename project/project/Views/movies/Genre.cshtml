@@ -1,16 +1,5 @@
 ﻿@model project.Models.MoviesModelView
 @using project.Models
-
-@{
-    List<Ganers> Ganer;
-    ViewBag.Title = "Genres";
-    if (ViewBag.GanersList != null)
-    { Ganer = ViewBag.GanersList; }
-    else
-    { Ganer = new List<Ganers>(); }
-}
-
-
 <body id="styleguide-v2" class="fixed">
 
 
@@ -31,36 +20,36 @@
                     </tr>
                     <tr>
 
-                        @{foreach (NameMoviesAndIMG n in g.NMAndIMG)
-                            {
 
-                                <p class="fixed">
-                                <td>
+
+                        @{foreach (Movies m in Model.movies)
+                            {
                             <tr>
-                                <img class="poster shadowed"
-                                     height=50
-                                     width=50
-                                     alt=@n.NameMovies
-                                     title=@n.NameMovies
-                                     src=@n.NameIMG />
+
+
+
+                                <td>
+
+                                    <img class="poster shadowed"
+                                         height=209
+                                         width=140
+                                         alt=@m.Img.alt
+                                         title=@m.Img.title
+                                         src=@m.Img.img />
+                                </td>
                             </tr>
                             <tr>
-                                <a class="left" href="/Movies/CMovie?id=@n.Idmovie" title=@n.NameMovies>@n.NameMovies</a>
+                                <a class="left" href="/Movies/CMovie?id=@m.Idmovie" title=@m.Title>@m.Title</a>
                             </tr>
                             </td>
 
-                            </p>
 
-                        }
-                        }
 
-                        </tr>
-                        </td>
                         <br />
-                    }
+                        }
 
-            }
-        </table>
+                        }
+                    </table>
 
     </div>
 </body>
