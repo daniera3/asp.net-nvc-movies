@@ -2,7 +2,7 @@
 @using project.Models
 <body id="styleguide-v2" class="fixed">
 
-
+    @Html.Partial("_search")
     <div class="article listo nm">
         <h2>@ViewBag.Title</h2>
         <h4>choose your genre:</h4>
@@ -10,9 +10,9 @@
             @{foreach (String g in ViewBag.ganers)
                 {
                     <tr>
-                        
-                            <il id="doit" class="h3">  @Html.ActionLink(g, "MoviesPerGaner", "Movies", new { ganer = g }, new { @class = "active" })</il>
-                        
+
+                        <il id="doit" class="h3">  @Html.ActionLink(g, "MoviesPerGaner", "Movies", new { ganer = g }, new { @class = "active" })</il>
+
                     </tr>
                     <tr>
                         @{foreach (Movies m in Model.movies)
@@ -25,15 +25,15 @@
                                          title=@m.Img.title
                                          src=@m.Img.img />
                                 </td>
-                            <td>
-                                <a class="left" href="/Movies/CMovie?id=@m.Idmovie" title=@m.Title>@m.Title</a>
-                            </td>
+                                <td>
+                                    <li>@Html.ActionLink(m.Title, "CMovie", "Movies", new { id = m.Idmovie.ToString() }, new { @class = "active" })</li>
+                                </td>
                             }
-                            }
-                        </tr>
-                                }
-                            }
-                    </table>
+                        }
+                    </tr>
+                }
+            }
+        </table>
 
     </div>
 </body>

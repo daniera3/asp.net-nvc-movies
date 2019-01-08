@@ -1,0 +1,33 @@
+﻿@model project.Models.Account
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+<div id="Login">
+    <i style="color:red">@TempData["error"]</i><br/>
+    @using (Html.BeginForm("SubmitLogin", "Accounts", FormMethod.Post, new { id = "frmLogin", @class = "table" }))
+    {
+        <i>Email:</i> @Html.TextBoxFor(m => m.Email)
+        <i style="color:red">@Html.ValidationMessageFor(x => x.Email)</i>
+        <br /><br />
+        <i>Password:</i> @Html.PasswordFor(m => m.Password)
+        <i style="color:red">@Html.ValidationMessageFor(x => x.Password)</i>
+        <br /><br />
+        <input type="button" value="Login" onclick="check()" />
+    }
+</div>
+<p style="font-size:20px">
+    @Html.ActionLink("Register", "Register")
+</p>
+<script>
+    function check() {
+        var frmData = $("#frmLogin").serialize();
+        $.post("SubmitLogin", frmData);
+        
+
+
+    }
+</script>

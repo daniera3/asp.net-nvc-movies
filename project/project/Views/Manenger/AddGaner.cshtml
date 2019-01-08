@@ -16,7 +16,7 @@
 <h2>Add Ganer</h2>
 
 <div id="ganer">
-    @using (Html.BeginForm("SubmitG", "Manenger", FormMethod.Post, new { id = "frmimg", @class = "control-label col-md-2" }))
+    @using (Html.BeginForm("SubmitG", "Manenger", FormMethod.Post, new { id = "frmimg", @class = "table" }))
     {
         
         @Html.DropDownListFor(m => m.movie.Title,

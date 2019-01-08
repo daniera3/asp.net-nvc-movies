@@ -4,6 +4,7 @@
     ViewBag.Title = "search";
     WebGrid obj = new WebGrid(Model.movies, rowsPerPage: 6, canPage: true);
 }
+@Html.Partial("_search")
 <style type="text/css">
 
     .webgrid {
@@ -23,6 +24,7 @@
         border-left: 2px solid #D6E8FF;
         border-right: 2px solid #D6E8FF;
     }
+
     .webgrid th, .webgrid td {
         border: 1px solid #C0C0C0;
         padding: 5px;
@@ -58,6 +60,5 @@
 
                      )
             )
-    }
+}
 
-         

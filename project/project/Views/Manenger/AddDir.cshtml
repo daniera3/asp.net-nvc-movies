@@ -16,7 +16,7 @@
 <h2>Add Dir</h2>
 
 <div id="Director">
-    @using (Html.BeginForm("SubmitD", "Manenger", FormMethod.Post, new { id = "frmimg", @class = "control-label col-md-2" }))
+    @using (Html.BeginForm("SubmitD", "Manenger", FormMethod.Post, new { id = "frmimg", @class = "table" }))
     {
         
         @Html.DropDownListFor(m => m.movie.Title,
