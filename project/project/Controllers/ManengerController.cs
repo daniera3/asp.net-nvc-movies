@@ -11,7 +11,7 @@ namespace project.Controllers
     public class ManengerController : Controller
     {
 
-        private Movie_del dal = new Movie_del();
+        private DataLayer dal = new DataLayer();
         private MoviesModelView D=new MoviesModelView() ;
 
         [HttpPost]

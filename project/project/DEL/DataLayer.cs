@@ -4,7 +4,7 @@ using System.Data.Entity;
 
 namespace project.DEL
 {
-    public class Movie_del : DbContext
+    public class DataLayer : DbContext
     {
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -13,7 +13,7 @@ namespace project.DEL
             modelBuilder.Entity<Movies>().ToTable("Movies");
         }
 
-        public Movie_del() : base("name=MoviesDel")
+        public DataLayer() : base("name=MoviesDel")
         {
         }
 

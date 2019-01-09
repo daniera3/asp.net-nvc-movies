@@ -14,12 +14,12 @@ namespace project.Controllers
 {
     public class AccountController : Controller
     {
-        private Movie_del dal = new Movie_del();
+        private DataLayer dal = new DataLayer();
         public ActionResult Register(Register A)
         {
             return View(A);
         }
-
+        [HttpPost]
         public ActionResult SubmitRegister(Register A)
         {
             if (ModelState.IsValid)
@@ -41,14 +41,14 @@ namespace project.Controllers
                    catch (Exception)
                     {
                         TempData["error"] = "Email using";
-                        return RedirectToAction("Register", A);
+                        return View("Register", A);
                     }
                     Session["Account"] = account;
-                    return RedirectToAction("Index", "Home");
+                    return View("Index", "Home");
                 }
             }
             TempData["error"] = "incorrect";
-            return RedirectToAction("Register", A);
+            return View("Register", A);
         }
 
         public ActionResult Login(Account A)
@@ -56,6 +56,7 @@ namespace project.Controllers
 
             return View(A);
         }
+        [HttpPost]
         public ActionResult SubmitLogin(Account A)
         {
             if (ModelState.IsValid)
@@ -66,15 +67,15 @@ namespace project.Controllers
                 if(T.Count==0)
                 {
                     TempData["error"] = "password or Email incorrect";
-                    return RedirectToAction("Login", A);
+                    return View("Login", A);
                 }
                 if (T[0].Admin == true)
                     FormsAuthentication.SetAuthCookie("cookie", true);
                 Session["Account"] = A;
-                return RedirectToAction("Index", "Home");
+                return View("Index", "Home");
             }
             TempData["error"] = "password or Email incorrect";
-            return RedirectToAction("Login",A);
+            return View("Login",A);
         }
         
         public ActionResult LogOff()

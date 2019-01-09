@@ -163,7 +163,7 @@
     <Compile Include="ModelView\GanersViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\ManengerController.cs" />
-    <Compile Include="DEL\MoviesDel.cs" />
+    <Compile Include="DEL\DataLayer.cs" />
     <Compile Include="Models\Director.cs" />
     <Compile Include="Models\Ganers.cs" />
     <Compile Include="Models\Imge.cs" />

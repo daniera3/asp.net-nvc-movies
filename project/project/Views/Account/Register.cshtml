@@ -7,7 +7,7 @@
 <script src="~/Scripts/jquery.validate.min.js"></script>
 <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
 <div id="Login">
-    <i style="color:red">@TempData["error"].ToString()</i><br />
+    <i style="color:red">@TempData["error"]</i><br />
     @using (Html.BeginForm("SubmitRegister", "Accounts", FormMethod.Post, new { id = "frmRegister", @class = "table" }))
     {
         <i>Email:</i> @Html.TextBoxFor(m => m.Email)

@@ -10,7 +10,7 @@ namespace project.Controllers
 {
     public class MoviesController : Controller
     {
-        private Movie_del db = new Movie_del();
+        private DataLayer db = new DataLayer();
         private MoviesModelView D = new MoviesModelView();
         // GET: Movies
 
@@ -120,7 +120,7 @@ namespace project.Controllers
                 }
                 Ganer.Add(new GanersViewModel(s, D.movies));
             }
-            return View(Ganer);
+            return View(new ListGanersViewModel() { GanersList = Ganer });
 
         }
 
