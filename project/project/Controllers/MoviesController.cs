@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web.Mvc;
 using project.DEL;
 using project.Models;
-
+using project.ModelView;
 
 namespace project.Controllers
 {
@@ -93,27 +93,34 @@ namespace project.Controllers
             
         }
 
-        public ActionResult Genre()
+        public ActionResult Gener()
         {
+            
+            List<GanersViewModel> Ganer = new List<GanersViewModel>();
 
-            List<string> Ganer = (from x in db.Ganers
+             List<string> tamp = (from x in db.Ganers
                               select x.NameGaner).Distinct().ToList<string>();
-            ViewBag.ganers = Ganer;
-            D.movie.Ganer = (from x in db.Ganers
-                             select x).ToList<Ganers>();
-            foreach (Ganers G in D.movie.Ganer)
+            foreach (String s in tamp)
             {
-                D.movies = (from x in db.Movies
-                            where x.Idmovie.Equals(G.Idmovie)
-                            select x).Take(3).ToList<Movies>();
+
+                D.movie.Ganer = (from x in db.Ganers
+                                 where x.NameGaner.Equals(s)
+                                 select x).ToList<Ganers>();
+                foreach (Ganers G in D.movie.Ganer)
+                {
+                    D.movies = (from x in db.Movies
+                                where x.Idmovie.Equals(G.Idmovie)
+                                select x).Take(3).ToList<Movies>();
+                }
+                foreach (Movies movie in D.movies)
+                {
+                    movie.Img = (from x in db.Imges
+                                 where x.Idimg.Equals(movie.Idimg)
+                                 select x).ToList<Imge>()[0];
+                }
+                Ganer.Add(new GanersViewModel(s, D.movies));
             }
-            foreach (Movies movie in D.movies)
-            {
-                movie.Img = (from x in db.Imges
-                             where x.Idimg.Equals(movie.Idimg)
-                             select x).ToList<Imge>()[0];
-            }
-            return View(D);
+            return View(Ganer);
 
         }
 

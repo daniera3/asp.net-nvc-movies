@@ -7,7 +7,7 @@
 
 <ul class="nav navbar-nav navbar-right">
     @* <li style="color:white;font-size:18px">*@
-    @Html.ActionLink("Hello" + ((Account)Session["Account"]).Email + " !", null);
+    @Html.ActionLink("Hello" + ((Account)Session["Account"]).Email + " !", "AddNewMovie", "Manenger");
     @*  </li>*@
     <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
 </ul>

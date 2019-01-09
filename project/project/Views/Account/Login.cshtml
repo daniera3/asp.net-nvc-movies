@@ -5,9 +5,11 @@
 }
 
 <h2>Login</h2>
-
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
 <div id="Login">
-    <i style="color:red">@TempData["error"]</i><br/>
+    <i style="color:red">@TempData["error"]</i><br />
     @using (Html.BeginForm("SubmitLogin", "Accounts", FormMethod.Post, new { id = "frmLogin", @class = "table" }))
     {
         <i>Email:</i> @Html.TextBoxFor(m => m.Email)
@@ -16,7 +18,7 @@
         <i>Password:</i> @Html.PasswordFor(m => m.Password)
         <i style="color:red">@Html.ValidationMessageFor(x => x.Password)</i>
         <br /><br />
-        <input type="button" value="Login" onclick="check()" />
+        <input type="submit" value="Login" onclick="check()" />
     }
 </div>
 <p style="font-size:20px">
@@ -26,7 +28,7 @@
     function check() {
         var frmData = $("#frmLogin").serialize();
         $.post("SubmitLogin", frmData);
-        
+
 
 
     }

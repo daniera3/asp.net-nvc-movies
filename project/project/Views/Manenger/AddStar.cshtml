@@ -8,6 +8,9 @@
         names.Add(s.Idmovie.ToString() + " " + s.Title);
     }
 }
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
 <p>
     @Html.ActionLink("Add Movies", "AddNewMovie")<i> | </i>
     @Html.ActionLink("Add Directors", "AddDir")<i> | </i>
@@ -19,7 +22,7 @@
 
     @using (Html.BeginForm("SubmitS", "Manenger", FormMethod.Post, new { id = "frmimg", @class = "table" }))
     {
-        
+
         @Html.DropDownListFor(m => m.movie.Title,
                               new SelectList(names),
                               "Select movie")

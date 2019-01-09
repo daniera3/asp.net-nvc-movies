@@ -3,7 +3,9 @@
 @{
     ViewBag.Title = "Register";
 }
-
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
 <div id="Login">
     <i style="color:red">@TempData["error"].ToString()</i><br />
     @using (Html.BeginForm("SubmitRegister", "Accounts", FormMethod.Post, new { id = "frmRegister", @class = "table" }))
@@ -17,7 +19,7 @@
         <i>ConfirmPassword:</i> @Html.PasswordFor(m => m.ConfirmPassword)
         <i style="color:red">@Html.ValidationMessageFor(x => x.ConfirmPassword)</i>
         <br /><br />
-        <input type="button" value="Register" onclick="check()" />
+        <input type="submit" value="Register" onclick="check()" />
     }
 </div>
 <p style="font-size:20px">
