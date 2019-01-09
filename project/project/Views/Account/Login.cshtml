@@ -10,7 +10,7 @@
 <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
 <div id="Login">
     <i style="color:red">@TempData["error"]</i><br />
-    @using (Html.BeginForm("SubmitLogin", "Accounts", FormMethod.Post, new { id = "frmLogin", @class = "table" }))
+    @using (Html.BeginForm("SubmitLogin", "Account", FormMethod.Post))
     {
         <i>Email:</i> @Html.TextBoxFor(m => m.Email)
         <i style="color:red">@Html.ValidationMessageFor(x => x.Email)</i>
@@ -18,18 +18,9 @@
         <i>Password:</i> @Html.PasswordFor(m => m.Password)
         <i style="color:red">@Html.ValidationMessageFor(x => x.Password)</i>
         <br /><br />
-        <input type="submit" value="Login" onclick="check()" />
+        <input type="submit" name="Submit" value="Login"  />
     }
 </div>
 <p style="font-size:20px">
     @Html.ActionLink("Register", "Register")
 </p>
-<script>
-    function check() {
-        var frmData = $("#frmLogin").serialize();
-        $.post("SubmitLogin", frmData);
-
-
-
-    }
-</script>

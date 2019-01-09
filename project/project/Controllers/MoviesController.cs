@@ -16,11 +16,11 @@ namespace project.Controllers
 
 
 
-        public ActionResult CMovie(int id)
+        public ActionResult CMovie(String id)
         {
 
             D.movie = (from x in db.Movies
-                       where x.Idmovie.Equals(id)
+                       where x.Idmovie.ToString().Equals(id)
                        select x).ToList<Movies>()[0];
             D.movie.Img = (from x in db.Imges
                            where x.Idimg.Equals(D.movie.Idimg)
@@ -36,7 +36,7 @@ namespace project.Controllers
                            select x).ToList<Director>();
 
 
-            return View(D);
+            return View(D.movie);
 
         }
 
@@ -103,22 +103,23 @@ namespace project.Controllers
             foreach (String s in tamp)
             {
 
-                D.movie.Ganer = (from x in db.Ganers
+                List<Ganers> ganerlist = (from x in db.Ganers
                                  where x.NameGaner.Equals(s)
                                  select x).ToList<Ganers>();
-                foreach (Ganers G in D.movie.Ganer)
+                List<Movies> m = new List<Movies>();
+                foreach (Ganers G in ganerlist)
                 {
-                    D.movies = (from x in db.Movies
+                    m.Add((from x in db.Movies
                                 where x.Idmovie.Equals(G.Idmovie)
-                                select x).Take(3).ToList<Movies>();
+                                select x).ToList<Movies>()[0]);
                 }
-                foreach (Movies movie in D.movies)
+                foreach (Movies movie in m)
                 {
                     movie.Img = (from x in db.Imges
                                  where x.Idimg.Equals(movie.Idimg)
                                  select x).ToList<Imge>()[0];
                 }
-                Ganer.Add(new GanersViewModel(s, D.movies));
+                Ganer.Add(new GanersViewModel(s, m));
             }
             return View(new ListGanersViewModel() { GanersList = Ganer });
 

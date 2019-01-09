@@ -44,7 +44,7 @@ namespace project.Controllers
                         return View("Register", A);
                     }
                     Session["Account"] = account;
-                    return View("Index", "Home");
+                    return RedirectToAction("Index", "Home");
                 }
             }
             TempData["error"] = "incorrect";
@@ -72,7 +72,7 @@ namespace project.Controllers
                 if (T[0].Admin == true)
                     FormsAuthentication.SetAuthCookie("cookie", true);
                 Session["Account"] = A;
-                return View("Index", "Home");
+                return RedirectToAction("Index", "Home");
             }
             TempData["error"] = "password or Email incorrect";
             return View("Login",A);
@@ -80,8 +80,10 @@ namespace project.Controllers
         
         public ActionResult LogOff()
         {
-            FormsAuthentication.SetAuthCookie("cookie", false);
-            Session["Account"] = null;
+            FormsAuthentication.SignOut();
+            Session.Abandon();
+
+
             return RedirectToAction("Index", "Home");
         }
     }

@@ -14,17 +14,27 @@ namespace project.Controllers
         private DataLayer dal = new DataLayer();
         private MoviesModelView D=new MoviesModelView() ;
 
-        [HttpPost]
-        public ActionResult Submit1(MoviesModelView T)
-        {
-           
+     
+        public ActionResult Submit1()
+            {
+            Movies movie = new Movies();
+            movie.Img.img = Request.Form["movie.Img.img"].ToString();
+            movie.Img.title = Request.Form["movie.Img.title"].ToString();
+            movie.Img.alt = Request.Form["movie.Img.alt"].ToString();
+            movie.Title = Request.Form["movie.Title"].ToString();
+            movie.Rating = Int32.Parse(Request.Form["movie.Rating"].ToString());
+            movie.Outline = Request.Form["movie.Outline"].ToString();
+            movie.Certificate = Request.Form["movie.Certificate"].ToString();
+            movie.Time = Request.Form["movie.Time"].ToString();
+
             if (ModelState.IsValid)
             {
 
-                dal.Movies.Add(T.movie);
+                dal.Movies.Add(movie);
                 dal.SaveChanges();
             }
-            return View();
+            List<Movies> objmovies = dal.Movies.ToList<Movies>();
+            return Json(objmovies, JsonRequestBehavior.AllowGet);
         }
         [HttpPost]
         public ActionResult SubmitS(MoviesModelView T)

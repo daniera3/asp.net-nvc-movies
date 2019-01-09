@@ -3,19 +3,18 @@
 @using project.ModelView
 <body id="styleguide-v2" class="fixed">
     <div class="article listo nm">
-        <h2>@ViewBag.Title</h2>
-        <h4>choose your genre:</h4>
-        <table class="table-hover">
+        <h2>Ganers</h2>
+        <table class="table">
             @{foreach (GanersViewModel g in Model.GanersList)
                 {
                     <tr>
-
-                        <il id="doit" class="h3">  @Html.ActionLink(g.NameGaner, "MoviesPerGaner", "Movies", new { ganer = g.NameGaner }, new { @class = "active" })</il>
-
-                    </tr>
+                        <td>
+                            <il id="doit" class="h3">  @Html.ActionLink(g.NameGaner, "MoviesPerGaner", "Movies", new { ganer = g.NameGaner }, new { @class = "active" })</il>
+                        </td>
                     <tr>
                         @{foreach (Movies m in g.movies)
                             {
+
                                 <td>
                                     <img class="poster shadowed"
                                          height=209
@@ -29,6 +28,7 @@
                                 </td>
                             }
                         }
+                    </tr>
                     </tr>
                 }
             }

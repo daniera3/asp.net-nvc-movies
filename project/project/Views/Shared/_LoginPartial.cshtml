@@ -15,6 +15,7 @@
 }
 else
 {
+    FormsAuthentication.SignOut();
     <ul class="nav navbar-nav navbar-right">
         <li>@Html.ActionLink("Register", "Register", "Account")</li>
         <li>@Html.ActionLink("Log in", "Login", "Account")</li>
