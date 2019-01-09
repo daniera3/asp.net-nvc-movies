@@ -5,12 +5,12 @@
     {
     @Html.AntiForgeryToken()
 
-    <ul class="nav navbar-nav navbar-right">
-        <li style="color:white;font-size:18px">
-            Hello @(((Account) Session["Account"]).Email) !
-        </li>
-        <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
-    </ul>
+<ul class="nav navbar-nav navbar-right">
+    @* <li style="color:white;font-size:18px">*@
+    @Html.ActionLink("Hello" + ((Account)Session["Account"]).Email + " !", null);
+    @*  </li>*@
+    <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+</ul>
     }
 }
 else

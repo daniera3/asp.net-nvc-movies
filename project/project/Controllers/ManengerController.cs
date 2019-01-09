@@ -7,6 +7,7 @@ using project.Models;
 
 namespace project.Controllers
 {
+    [Authorize]
     public class ManengerController : Controller
     {
 

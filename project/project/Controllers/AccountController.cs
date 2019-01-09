@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 using project.DEL;
 using project.Models;
 
@@ -67,7 +68,8 @@ namespace project.Controllers
                     TempData["error"] = "password or Email incorrect";
                     return RedirectToAction("Login", A);
                 }
-                
+                if (T[0].Admin == true)
+                    FormsAuthentication.SetAuthCookie("cookie", true);
                 Session["Account"] = A;
                 return RedirectToAction("Index", "Home");
             }
@@ -77,8 +79,9 @@ namespace project.Controllers
         
         public ActionResult LogOff()
         {
-
-            return View();
+            FormsAuthentication.SetAuthCookie("cookie", false);
+            Session["Account"] = null;
+            return RedirectToAction("Index", "Home");
         }
     }
 }
