@@ -1,0 +1,9 @@
+project/project/Web.config
+project/.vs/project/v15/*
+project/.vs/project/v15/Server/sqlite3/storage.ide-shm
+project/.vs/project/v15/.suo
+project/.vs/project/v15/Server/sqlite3/storage.ide-wal
+project/project/bin/project.dll
+project/project/bin/project.pdb
+project/project/obj/Debug/project.dll
+project/project/obj/Debug/project.pdb

@@ -1,0 +1,20 @@
+﻿@model asp.net_nvc_movies.ModelView.MoviesModelView
+
+@{
+    ViewBag.Title = "search";
+}
+
+<form action="SerchMovies" method="post">
+
+    <input id="Text1" name="name movie" type="text" />
+    <br />
+    <input id="Submit1" type="submit" value="Serch" />
+</form>
+
+@{
+
+    WebGrid obj = new WebGrid(Model.movies);
+
+}
+
+@obj.GetHtml()

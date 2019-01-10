@@ -1,20 +1,11 @@
-﻿@using WebApplication1.Models;
-@using System.Collections.Generic;
-
+﻿
+@model asp.net_nvc_movies.ModelView.MoviesModelView
+@using asp.net_nvc_movies.Models;
 @{
-    List<Movies> movie;
-    if (ViewBag.moviesList != null)
-    {
-        movie = ViewBag.moviesList;
-    }
-    else
-    {
-        movie = new List<Movies>();
-    }
 }
 <div class="header">&nbsp;</div>
 <div class="list detail sub-list">
-    @{ foreach (Movies m in movie)
+    @{ foreach (Movies m in Model.movies.ToList<Movies>())
         {
             <div class="list_item odd" itemscope itemtype="http://schema.org/Movie">
                 <table cellspacing="0" cellpadding="0" border="0" class="nm-title-overview-widget-layout">
@@ -25,8 +16,8 @@
                                     <a>
                                         <div href="/Movies/CMovie?id=@m.Idmovie.ToString()" class="hover-over-image zero-z-index">
                                             <img class="poster shadowed"
-                                                 height=@m.Img.height
-                                                 width=@m.Img.width
+                                                 height=209
+                                                 width=140
                                                  alt=@m.Img.alt
                                                  title=@m.Img.title
                                                  src=@m.Img.img />
@@ -108,4 +99,4 @@
         }
     }
 
-    </div>
+</div>

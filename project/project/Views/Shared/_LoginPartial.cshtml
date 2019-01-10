@@ -1,0 +1,23 @@
+﻿@using project.Models
+@if (Session["Account"] != null)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+    @Html.AntiForgeryToken()
+
+<ul class="nav navbar-nav navbar-right">
+  
+    <li>@Html.ActionLink("Hello " + ((Account)Session["Account"]).Email + " !", "AddNewMovie", "Manenger")</li>
+ 
+    <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+</ul>
+    }
+}
+else
+{
+    FormsAuthentication.SignOut();
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("Register", "Register", "Account")</li>
+        <li>@Html.ActionLink("Log in", "Login", "Account")</li>
+    </ul>
+}

@@ -1,0 +1,86 @@
+﻿
+@model project.Models.MoviesModelView
+@using project.Models
+
+<div class="header">&nbsp;</div>
+<div class="list detail sub-list">
+    @{ foreach (Movies m in Model.movies)
+        {
+            <div class="list_item odd" itemscope itemtype="http://schema.org/Movie">
+                <table cellspacing="0" cellpadding="0" border="0" class="table">
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" valign="top" id="img_primary">
+                                <div class="image">
+                                    <a>
+                                        <div class="hover-over-image zero-z-index">
+                                            <img class="poster shadowed"
+                                                 height=209
+                                                 width=140
+                                                 alt=@m.Img.alt
+                                                 title=@m.Img.title
+                                                 src=@m.Img.img />
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="overview-top">
+
+                                    <li>@Html.ActionLink(m.Title, "CMovie", "Movies", new { id = m.Idmovie.ToString() }, new { @class = "active" })</li>      
+                                
+                                <p class="cert-runtime-genre">
+                                    <img title="PG"
+                                         alt="Certificate PG"
+                                         class="absmiddle certimage"
+                                         src=@m.Certificate />
+                                    <time datetime="PT117M">@m.Time min</time>
+                                    &nbsp;&nbsp;-&nbsp;&nbsp;
+                                    @foreach (Ganers g in @m.Ganer)
+                                    {
+                                        <span>@g.NameGaner</span>
+                                        <span class="ghost">|</span>
+                                    }
+
+                                </p>
+                                <div class="rating_txt">
+                                    <span class="metascore favorable">@m.Rating </span>
+                                    Metascore
+                                </div>
+                                <div class="outline">
+                                    @m.Outline
+                                </div>
+                                <div class="txt-block">
+                                    <i class="inline">
+                                        <i>Directors:</i>
+
+                                        @foreach (Director d in @m.Dir)
+                                        {
+                                            <span>
+                                                <a>@d.NameDirector |</a>
+                                            </span>
+                                        }
+                                    </i>
+                                </div>
+                                <div class="txt-block">
+                                    <i class="inline">
+                                        <i>Stars:</i>
+                                        @foreach (Star s in @m.Str)
+                                        {
+                                            <a> @s.Namestar ,</a>
+                                        }
+                                    </i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        }
+    }
+
+</div>

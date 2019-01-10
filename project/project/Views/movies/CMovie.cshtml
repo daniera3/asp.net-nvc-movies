@@ -1,0 +1,74 @@
+﻿@model project.Models.Movies
+@using project.Models
+@{
+    ViewBag.Title = "CMovie";
+}
+
+<h2>Coose Movie</h2>
+<body id="styleguide-v2" class="fixed">
+    <div class="list_item odd" itemscope itemtype="http://schema.org/Movie">
+        <table cellspacing="0" cellpadding="0" border="0" class="nm-title-overview-widget-layout">
+            <tr>
+                <td rowspan="2" valign="top" id="img_primary">
+                    <div class="image">
+                        <a>
+                            <div class="hover-over-image zero-z-index">
+                                <img class="poster shadowed"
+                                     height=209
+                                     width=140
+                                     alt=@Model.Img.alt
+                                     title=@Model.Img.title
+                                     src=@Model.Img.img />
+                            </div>
+                        </a>
+                    </div>
+                </td>
+                <td class="overview-top">
+                    <h4>
+                        <a title=@Model.Title>@Model.Title</a>
+                    </h4>
+                    <p class="cert-runtime-genre">
+                        <img title="PG"
+                             alt="Certificate PG"
+                             class="absmiddle certimage"
+                             src=@Model.Certificate />
+                        <time datetime="PT117M">@Model.Time min</time>
+                        &nbsp;&nbsp;-&nbsp;&nbsp;
+                        @foreach (Ganers g in @Model.Ganer)
+                        {
+                            <span>@g.NameGaner</span>
+                            <span class="ghost">|</span>
+                        }
+
+                    </p>
+                    <div class="rating_txt">
+                        <span class="metascore favorable">@Model.Rating </span>
+                        Metascore
+                    </div>
+                    <div class="outline">
+                        @Model.Outline
+                    </div>
+                    <div class="txt-block">
+                        <h5 class="inline">Directors:</h5>
+                        @foreach (Director d in @Model.Dir)
+                        {
+                            <span>
+                                <a>@d.NameDirector</a>
+                            </span>
+                        }
+
+                    </div>
+                    <div class="txt-block">
+                        <h5 class="inline">Stars:</h5>
+                        @foreach (Star s in @Model.Str)
+                        {
+                            <span>
+                                <a>@s.Namestar ,</a>
+                            </span>
+                        }
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>

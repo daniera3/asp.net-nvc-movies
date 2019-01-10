@@ -1,0 +1,42 @@
+﻿@model project.Models.MoviesModelView
+@using project.Models
+@{
+    ViewBag.Title = "AddDir";
+    List<String> names = new List<string>();
+    foreach (Movies s in Model.movies)
+    {
+        names.Add(s.Idmovie.ToString() + " " + s.Title);
+    }
+}
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<p>
+    @Html.ActionLink("Add Movies", "AddNewMovie")<i> | </i>
+    @Html.ActionLink("Add Ganers", "AddGaner")<i> | </i>
+    @Html.ActionLink("Add Starts", "AddStar")
+</p>
+<h2>Add Dir</h2>
+
+<div id="Director">
+    @using (Html.BeginForm("SubmitD", "Manenger", FormMethod.Post, new { id = "frmimg", @class = "table" }))
+    {
+
+        @Html.DropDownListFor(m => m.movie.Title,
+                         new SelectList(names),
+                         "Select movie")
+        <br /><br />
+        <i>NameDirector: </i> @Html.TextBoxFor(m => m.directors.NameDirector)
+        <br /><br />
+        <input type="button" value="Add Director" onclick="SendData()" />
+    }
+</div>
+<script>
+    function SendData() {
+        var frmData = $("#frmimg").serialize();
+        $.post("SubmitD", frmData);
+        $("#directors_NameDirector").val("");
+
+
+    }
+</script>

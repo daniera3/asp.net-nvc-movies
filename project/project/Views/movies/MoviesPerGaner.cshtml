@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "MoviesPerGaner";
+
+}
+@Html.Partial("_search")
+<h2>Movies Per Ganer: @ViewBag.ganer</h2>
+
+<div id="main" class="fixed">
+    <div class="article listo nm">
+
+        <h1 class="header">
+            Movies
+        </h1>
+        @Html.Partial("ShowAllMovies")
+    </div>
+</div>

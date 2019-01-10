@@ -1,0 +1,47 @@
+﻿@model project.ModelView.ListGanersViewModel
+@using project.Models
+@using project.ModelView
+<body id="styleguide-v2" class="fixed">
+    <div class="article listo nm">
+        <h2>Ganers</h2>
+        <table class="table-hover">
+            @{foreach (GanersViewModel g in Model.GanersList)
+                {
+                    <td>
+                    <tr>
+                        <p>
+
+                            <il id="doit" class="h3">  @Html.ActionLink(g.NameGaner, "MoviesPerGaner", "Movies", new { ganer = g.NameGaner }, new { @class = "active" })</il>
+                        </p>
+                    </tr>
+                    <tr>
+                        @{foreach (Movies m in g.movies)
+                            {
+
+                                <p class="fixed">
+                                <td>
+                            <tr>
+                                <img class="poster shadowed"
+                                     height=209
+                                     width=140
+                                     alt=@m.Img.alt
+                                     title=@m.Img.title
+                                     src=@m.Img.img />
+                            </tr>
+                            <tr>
+                                <li>@Html.ActionLink(m.Title, "CMovie", "Movies", new { id = m.Idmovie.ToString() }, new { @class = "active" })</li>
+                            </tr>
+                            </td>
+
+                            </p>
+                        }
+                        }
+                        </tr>
+                        </td>
+                        <br />
+                    }
+            }
+        </table>
+
+    </div>
+</body>

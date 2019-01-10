@@ -1,4 +1,4 @@
-﻿@using WebApplication1.Models;
+﻿@using asp.net_nvc_movies.Models;
 @using System.Collections.Generic;
 @{
     ViewBag.Title = "_panelSite";
@@ -492,14 +492,14 @@
                                 <ul>
                                     @{foreach (Movies m in Movie)
                                         {
-                                            <il  class="h4">  @Html.ActionLink(m.Title, "CMovie", "Movies", new { id = m.Idmovie.ToString() }, new { @class = "active" })</il>
+                                            <il class="h4">  @Html.ActionLink(m.Title, "CMovie", "Movies", new { id = m.Idmovie.ToString() }, new { @class = "active" })</il>
                                             <br />
 
                                         }
                                     }
                                 </ul>
 
-                                  
+
                             </div>
                         </div>
                     </div>
@@ -537,9 +537,9 @@
                             <ul>
                                 @{foreach (Ganers g in Ganer)
                                     {
-                                            <il id="doit" class="h4">  @Html.ActionLink(g.NameGaner, "MoviesPerGaner", "Movies", new { ganer = g.NameGaner }, new { @class = "active" })</il>
+                                        <il id="doit" class="h4">  @Html.ActionLink(g.NameGaner, "MoviesPerGaner", "Movies", new { ganer = g.NameGaner }, new { @class = "active" })</il>
                                         <br />
-                                   
+
                                     }
                                 }
                             </ul>
@@ -547,6 +547,9 @@
                     </div>
                 </li>
                 <li class="spacer"></li>
+               
+
+                 <li class="spacer"></li>
                 <li class="spacer"></li>
             </ul>
         </div>
