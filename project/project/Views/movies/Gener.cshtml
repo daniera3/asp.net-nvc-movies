@@ -4,33 +4,42 @@
 <body id="styleguide-v2" class="fixed">
     <div class="article listo nm">
         <h2>Ganers</h2>
-        <table class="table">
+        <table class="table-hover">
             @{foreach (GanersViewModel g in Model.GanersList)
                 {
+                    <td>
                     <tr>
-                        <td>
+                        <p>
+
                             <il id="doit" class="h3">  @Html.ActionLink(g.NameGaner, "MoviesPerGaner", "Movies", new { ganer = g.NameGaner }, new { @class = "active" })</il>
-                        </td>
+                        </p>
+                    </tr>
                     <tr>
                         @{foreach (Movies m in g.movies)
                             {
 
+                                <p class="fixed">
                                 <td>
-                                    <img class="poster shadowed"
-                                         height=209
-                                         width=140
-                                         alt=@m.Img.alt
-                                         title=@m.Img.title
-                                         src=@m.Img.img />
-                                </td>
-                                <td>
-                                    <li>@Html.ActionLink(m.Title, "CMovie", "Movies", new { id = m.Idmovie.ToString() }, new { @class = "active" })</li>
-                                </td>
-                            }
+                            <tr>
+                                <img class="poster shadowed"
+                                     height=209
+                                     width=140
+                                     alt=@m.Img.alt
+                                     title=@m.Img.title
+                                     src=@m.Img.img />
+                            </tr>
+                            <tr>
+                                <li>@Html.ActionLink(m.Title, "CMovie", "Movies", new { id = m.Idmovie.ToString() }, new { @class = "active" })</li>
+                            </tr>
+                            </td>
+
+                            </p>
                         }
-                    </tr>
-                    </tr>
-                }
+                        }
+                        </tr>
+                        </td>
+                        <br />
+                    }
             }
         </table>
 

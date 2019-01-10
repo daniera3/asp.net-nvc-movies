@@ -73,7 +73,7 @@ namespace project.Controllers
                     TempData["error"] = "password or\and Email incorrect";
                     return View("Login", A);
                 }
-                if (enc.ValidatePassword(A.Password, T[0].Password)
+                if (enc.ValidatePassword(A.Password, T[0].Password))
                     {
                     if (T[0].Admin == true)
                         FormsAuthentication.SetAuthCookie("cookie", true);
