@@ -2,7 +2,7 @@
 @using project.Models
 @{
     ViewBag.Title = "search";
-    WebGrid obj = new WebGrid(Model.movies, rowsPerPage: 1, canPage: true,canSort:false);
+    WebGrid obj = new WebGrid(Model.movies, canPage: false,canSort:false);
 }
 @Html.Partial("_search")
 <style type="text/css">
@@ -42,7 +42,7 @@
 </style>
 @{
 
-    @obj.GetHtml(tableStyle: "table",
+    @obj.GetHtml(tableStyle: "table table-hover",
                  headerStyle: "Grid-Header",
                  alternatingRowStyle: "Grid-alt",
                  selectedRowStyle: "Grid-selected",
