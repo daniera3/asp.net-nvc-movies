@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using System.Web.Security;
 using project.DEL;
 using project.Models;
+using project.ModelView;
 
 namespace project.Controllers
 {
@@ -26,11 +27,13 @@ namespace project.Controllers
             {
                 if (A.Password == A.ConfirmPassword)
                 {
+                    Encryption enc = new Encryption();
+                    String hashPass = enc.CreateHash(A.Password);
 
                         Account account = new Account()
                         {
                             Email = A.Email,
-                            Password = A.Password,
+                            Password = hashPass,
                             Admin = false
                         };
                     try
@@ -59,20 +62,24 @@ namespace project.Controllers
         [HttpPost]
         public ActionResult SubmitLogin(Account A)
         {
+            Encryption enc = new Encryption();
             if (ModelState.IsValid)
             {
                 List<Account> T = (from x in dal.Accounts
-                            where x.Password.Equals(A.Password) && x.Email.Equals(A.Email)
+                            where x.Email.Equals(A.Email)
                              select x).ToList<Account>();
                 if(T.Count==0)
                 {
-                    TempData["error"] = "password or Email incorrect";
+                    TempData["error"] = "password or\and Email incorrect";
                     return View("Login", A);
                 }
-                if (T[0].Admin == true)
-                    FormsAuthentication.SetAuthCookie("cookie", true);
-                Session["Account"] = A;
-                return RedirectToAction("Index", "Home");
+                if (enc.ValidatePassword(A.Password, T[0].Password)
+                    {
+                    if (T[0].Admin == true)
+                        FormsAuthentication.SetAuthCookie("cookie", true);
+                    Session["Account"] = A;
+                    return RedirectToAction("Index", "Home");
+                }
             }
             TempData["error"] = "password or Email incorrect";
             return View("Login",A);
