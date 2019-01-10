@@ -8,8 +8,8 @@ namespace project.ModelView
 {
     public class Encryption
     {
-        public const int SALT_SIZE = 40;
-        public const int HASH_SIZE = 40;
+        public const int SALT_SIZE = 24;
+        public const int HASH_SIZE = 24;
         public const int PBKDF2_ITT = 1000;
 
         public String CreateHash(string password)

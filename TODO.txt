@@ -1,7 +1,0 @@
-Check bootstrap, do we have it? ask Gilad.
-
-Genre - View
-
-Login Name
-
-Logoff

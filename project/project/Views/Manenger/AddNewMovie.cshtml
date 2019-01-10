@@ -14,7 +14,7 @@
 </p>
 
     <form id="Add" >
-        <table class="table-condensed">
+        <table class="table table-hover">
             <tr>
                 <td> <i>img:</i> @Html.TextBoxFor(m => m.movie.Img.img)</td>
                 <td> <a id="i1" style="color:red">@Html.ValidationMessageFor(x => x.movie.Img.img)</a></td>
@@ -49,13 +49,14 @@
             </tr>
         </table>
     </form>
-    <input id="add" type="button" value="Add Movie" onclick="SendData()" />
+    <input id="add" type="button" class="btn btn-success"  value="Add Movie" onclick="SendData()" />
+   
 
 <br />
 <span>
     <i style="color:aqua"><span style="color:green"> Current Movies</span></i>
 </span>
-<table id="ShowALL" class="table">
+<table id="ShowALL" class="table table-hover">
 
     <tr>
         <td>title</td>

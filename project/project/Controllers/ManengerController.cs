@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
+using System.Web.Security;
 using project.DEL;
 using project.Models;
 
@@ -10,8 +11,8 @@ namespace project.Controllers
     [Authorize]
     public class ManengerController : Controller
     {
-
-        private DataLayer dal = new DataLayer();
+      
+    private DataLayer dal = new DataLayer();
         private MoviesModelView D=new MoviesModelView() ;
 
      

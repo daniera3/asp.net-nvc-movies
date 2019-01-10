@@ -43,7 +43,7 @@ namespace project.Controllers
                     }
                    catch (Exception)
                     {
-                        TempData["error"] = "Email using";
+                        TempData["error"] = "Account already exists";
                         return View("Register", A);
                     }
                     Session["Account"] = account;
@@ -70,7 +70,7 @@ namespace project.Controllers
                              select x).ToList<Account>();
                 if(T.Count==0)
                 {
-                    TempData["error"] = "password or\and Email incorrect";
+                    TempData["error"] = "password or Email incorrect";
                     return View("Login", A);
                 }
                 if (enc.ValidatePassword(A.Password, T[0].Password))
@@ -93,5 +93,6 @@ namespace project.Controllers
 
             return RedirectToAction("Index", "Home");
         }
+        
     }
 }
