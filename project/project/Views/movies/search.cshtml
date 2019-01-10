@@ -2,7 +2,7 @@
 @using project.Models
 @{
     ViewBag.Title = "search";
-    WebGrid obj = new WebGrid(Model.movies, rowsPerPage: 6, canPage: true);
+    WebGrid obj = new WebGrid(Model.movies, rowsPerPage: 1, canPage: true,canSort:false);
 }
 @Html.Partial("_search")
 <style type="text/css">
