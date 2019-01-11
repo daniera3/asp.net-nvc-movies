@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Web.Mvc;
 using System.Web.Security;
 using project.DEL;
@@ -8,7 +9,7 @@ using project.Models;
 
 namespace project.Controllers
 {
-    [Authorize]
+    [Authorize]//Only authorized personnel may access this. Else, sends to home index view.
     public class ManengerController : Controller
     {
       
@@ -18,7 +19,7 @@ namespace project.Controllers
      
         public ActionResult Submit1()
             {
-            Movies movie = new Movies();
+            Movies movie = new Movies();//Creates new movie and fills it from the sent form.
             movie.Img.img = Request.Form["movie.Img.img"].ToString();
             movie.Img.title = Request.Form["movie.Img.title"].ToString();
             movie.Img.alt = Request.Form["movie.Img.alt"].ToString();
@@ -34,16 +35,17 @@ namespace project.Controllers
                 dal.Movies.Add(movie);
                 dal.SaveChanges();
             }
-            List<Movies> objmovies = dal.Movies.ToList<Movies>();
-            return Json(objmovies, JsonRequestBehavior.AllowGet);
+            Thread.Sleep(4000);//Sleep in order to show async.
+            List<Movies> objmovies = dal.Movies.ToList<Movies>();//Retrieves all the movie data from the db. 
+            return Json(objmovies, JsonRequestBehavior.AllowGet);//Creates Json from the data collected above.
         }
         [HttpPost]
-        public ActionResult SubmitS(MoviesModelView T)
+        public ActionResult SubmitS(MoviesModelView T)//Stars submitting.
         {
             try
             {
-                var id = T.movie.Title.Split(' ').GetValue(0);
-                dal.Stars.Add(new Star(T.stars.Namestar, Int32.Parse(id.ToString())));
+                var id = T.movie.Title.Split(' ').GetValue(0);//Retrieves the id from the user's choice.
+                dal.Stars.Add(new Star(T.stars.Namestar, Int32.Parse(id.ToString())));//Saves in the memory and creates a new star.
                 dal.SaveChanges();
             }
             
@@ -55,7 +57,7 @@ namespace project.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult SubmitD(MoviesModelView T)
+        public ActionResult SubmitD(MoviesModelView T)//Submits directors.
         {
 
             try
@@ -74,7 +76,7 @@ namespace project.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult SubmitG(MoviesModelView T)
+        public ActionResult SubmitG(MoviesModelView T)//Submits genres.
         {
 
             try
@@ -95,34 +97,34 @@ namespace project.Controllers
         
         public ActionResult GetMoviesByJson()
         {
-           
-            List<Movies> objmovies = dal.Movies.ToList<Movies>();
-            return Json(objmovies, JsonRequestBehavior.AllowGet);
+            Thread.Sleep(4000);//Sleep in order to show async.
+            List<Movies> objmovies = dal.Movies.ToList<Movies>();//Retrieves all the movie data from the db. 
+            return Json(objmovies, JsonRequestBehavior.AllowGet);//Creates Json from the data collected above.
         }
 
         
        
-        public ActionResult AddStar() {
+        public ActionResult AddStar() {//Collects all the info about the movie from the DB and sends it to the corresponding view.
             D.movies = dal.Movies.ToList<Movies>();
             return View(D);
         }
 
         
         
-        public ActionResult AddGaner() {
+        public ActionResult AddGaner() {//Collects all the info about the movie from the DB and sends it to the corresponding view.
             D.movies = dal.Movies.ToList<Movies>();
             return View(D);
         }
 
         
         
-        public ActionResult AddDir() {
+        public ActionResult AddDir() {//Collects all the info about the movie from the DB and sends it to the corresponding view.
             D.movies = dal.Movies.ToList<Movies>();
             return View(D);
 
         }
 
-        public ActionResult AddNewMovie()
+        public ActionResult AddNewMovie()//Collects all the info about the movie from the DB and sends it to the corresponding view.
         {
             
             D.movies = dal.Movies.ToList<Movies>();

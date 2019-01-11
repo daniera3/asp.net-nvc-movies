@@ -13,7 +13,7 @@ namespace project.DEL
             modelBuilder.Entity<Movies>().ToTable("Movies");
         }
 
-        public DataLayer() : base("name=MoviesDel")
+        public DataLayer() : base("name=MoviesDel")//Name for connection string in the web config.
         {
         }
 

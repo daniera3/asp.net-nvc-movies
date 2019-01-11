@@ -8,7 +8,7 @@ namespace project.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index()//Shows homepage by calling the index view.
         {
             return View();
         }

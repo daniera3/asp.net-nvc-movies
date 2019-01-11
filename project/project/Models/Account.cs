@@ -17,11 +17,6 @@ namespace project.Models
         [Display(Name = "Password")]
         public string Password { get; set; }
         public bool Admin { get; set; }
-        //public string SALT { get; set; }
-        //public Account()
-        //{
-        //    SALT=
-        //}
     }
     public class Register
     {

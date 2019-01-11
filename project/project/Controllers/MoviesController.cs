@@ -16,7 +16,7 @@ namespace project.Controllers
 
 
 
-        public ActionResult CMovie(String id)
+        public ActionResult CMovie(String id)//Gets the id from the movie, the info about the movie which the id belongs to and sends to the view.
         {
 
             D.movie = (from x in db.Movies
@@ -43,8 +43,8 @@ namespace project.Controllers
         public ActionResult Movie()
         {
 
-            D.movies = db.Movies.ToList<Movies>();
-            foreach(Movies movie in D.movies)
+            D.movies = db.Movies.ToList<Movies>();//Collects all the info about the movies from the DB and sends it to the corresponding view.
+            foreach (Movies movie in D.movies)
             {
                 movie.Img =(from x in db.Imges
                              where x.Idimg.Equals(movie.Idimg)
@@ -65,7 +65,7 @@ namespace project.Controllers
 
 
         
-        public ActionResult Top10(string num)
+        public ActionResult Top10(string num)//Collects all the info about the movie from the DB sorted by rating and number given and sends it to the corresponding view.
         {
           
             ViewBag.num = num;
@@ -93,7 +93,7 @@ namespace project.Controllers
             
         }
 
-        public ActionResult Gener()
+        public ActionResult Gener()//Collects all the info about the movie from the DB sorted by genres, 3 shown at a time and sends it to the corresponding view.
         {
             
             List<GanersViewModel> Ganer = new List<GanersViewModel>();
@@ -105,7 +105,7 @@ namespace project.Controllers
 
                 List<Ganers> ganerlist = (from x in db.Ganers
                                  where x.NameGaner.Equals(s)
-                                 select x).ToList<Ganers>();
+                                 select x).Take<Ganers>(3).ToList<Ganers>();
                 List<Movies> m = new List<Movies>();
                 foreach (Ganers G in ganerlist)
                 {
@@ -126,7 +126,7 @@ namespace project.Controllers
         }
 
 
-        public ActionResult MoviesPerGaner(string ganer)
+        public ActionResult MoviesPerGaner(string ganer)//Collects the movie info only corresponding to a chosen genre.
         {
             ViewBag.ganer= ganer;
             List<Ganers> Ganer = new List<Ganers>();
@@ -156,7 +156,7 @@ namespace project.Controllers
             }
             return View(D);
         }
-        public ActionResult search()
+        public ActionResult search()//Retrieves the movie info according to a movie title chosen out of the given options.
         {
 
                 String VSearch = Request.Form["name movie"];
@@ -164,7 +164,6 @@ namespace project.Controllers
                 D.movies= (from x in db.Movies
                                where x.Title.Contains(VSearch)
                                select x).ToList<Movies>();
-
 
             return View(D);
         }

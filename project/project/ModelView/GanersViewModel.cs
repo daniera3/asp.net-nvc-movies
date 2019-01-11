@@ -9,7 +9,6 @@ namespace project.ModelView
     public class GanersViewModel
     {
         
-
         public GanersViewModel(string s, List<Movies> movies)
         {
             this.NameGaner = s;

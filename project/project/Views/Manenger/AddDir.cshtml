@@ -3,7 +3,7 @@
 @{
     ViewBag.Title = "AddDir";
     List<String> names = new List<string>();
-    foreach (Movies s in Model.movies)
+    foreach (Movies s in Model.movies)//Goes through all the movies and adds the movie title to the id and puts it into a string list.
     {
         names.Add(s.Idmovie.ToString() + " " + s.Title);
     }

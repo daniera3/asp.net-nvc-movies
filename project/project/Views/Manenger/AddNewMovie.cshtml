@@ -51,7 +51,6 @@
     </form>
     <input id="add" type="button" class="btn btn-success"  value="Add Movie" onclick="SendData()" />
    
-
 <br />
 <span>
     <i style="color:aqua"><span style="color:green"> Current Movies</span></i>
@@ -68,14 +67,15 @@
 
 
 </table>
-
+<i id="messg" style="font-size:50px;color:gold"></i>
 <script>
-
+    
     $.get("GetMoviesByJson", null, BindData);
-
+    document.getElementById('messg').innerHTML = 'Loading table...';
     function BindData(Movies) {
-
+        
         $("#ShowALL").find("tr:gt(0)").remove();
+
         var tb1 = $("#ShowALL");
         for (k = 0; k < Movies.length; k++) {
             var newRow = "<tr>" +
@@ -87,11 +87,15 @@
                 "</tr>";
             tb1.append(newRow);
         }
+        document.getElementById('messg').innerHTML = '';
     }
 
 
     function SendData() {
         var frmData = $("#Add").serialize();
+        document.getElementById("messg").style.fontSize = '18px';
+        document.getElementById("messg").style.color = 'red';
+        document.getElementById('messg').innerHTML = 'Loading...';
         $.post("Submit1", frmData, BindData);
 
         $("#movie_Img_img").val("");
@@ -103,7 +107,6 @@
         $("#movie_Outline").val("");
         $("#movie_Certificate").val("");
         $("#movie_Time").val("");
-
 
     }
 </script>
